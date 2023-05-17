@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pede Roça-Carrinho de compras</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../css/estilo.css">
+  <!-- Bootstrap Script -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Folha de estilo -->
+
+
+
+</head>
+
+<body>
+  <header>
+    <div>
+      <div class="row g-0 bgBanner">
+        <div class="col-md-12 d-flex justify-content-center">
+          <a href="index.html"><img src="../Imagens/Logo - Pede Roça.svg" class="img-fluid rounded-start ajusteLogo"
+              alt="Pede Roça"></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- BARRA DE NAVEGAÇÃO MOBILE DO SITE -->
+    <nav class="navbar bg-body-tertiary nav-mobile mobileNavbar bgNav">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <li class="efeitoMouse editListaMobile">
+          <a class="LinkBarraMobile" aria-current="page" href="#"><img class="configImgMobile"
+              src="../Imagens/Icones/user.svg" alt="Login"> Login</a>
+        </li>
+        <div class="offcanvas offcanvas-start NavLat detalheNav" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title tituloNav" id="offcanvasNavbarLabel">Navegação</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="input-group">
+              <input class="form-control" type="text" placeholder="Digite sua busca">
+              <div class="input-group-append">
+                <button class="btn btnPesquisaMobile" type="button">Pesquisar</button>
+              </div>
+            </div>
+            <hr>
+            <h5 class="tituloNav">Páginas</h5>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item efeitoMouse">
+                <a class="nav-link linkNavLat active2" aria-current="page" href="index.html"><img
+                    class="configImgMobile" src="../Imagens/Icones/layout.svg" alt="Login"> Home</a>
+              </li>
+              <li class="nav-item efeitoMouse">
+                <a class="nav-link linkNavLat" href="carrinho.html"><img class="configImgMobile"
+                    src="../Imagens/Icones/shopping-cart.svg" alt="carrinho de compra"> Meu Carrinho</a>
+              </li>
+              <li class="nav-item efeitoMouse">
+                <a class="nav-link linkNavLat" href="Sobre.html"><img class="configImgMobile" src="../Imagens/Icones/home.svg"
+                    alt=""> Sobre a Empresa</a>
+              </li>
+              <li class="nav-item dropdown efeitoMouse">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img class="configImgMobile" src="../Imagens/Icones/settings.svg" alt="">
+                  Minha Conta
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Área do usuário</a></li>
+                  <li><a class="dropdown-item disabled" href="#">Informações pessoais</a></li>
+                  <li><a class="dropdown-item disabled" href="#">Privacidade</a></li>
+                  <li><a class="dropdown-item disabled" href="#">Segurança</a></li>
+                  <li><a class="dropdown-item disabled" href="#">Notificações</a></li>
+                  <li><a class="dropdown-item disabled" href="#">Assinatura</a></li>
+                  <li><a class="dropdown-item disabled" href="#">Dúvidas Frequentes</a></li>
+                  <li><a class="dropdown-item disabled" href="#">Configurações</a></li>
+                </ul>
+              </li>
+            </ul>
+            <hr>
+            <h5 class="tituloNav">Redes sociais</h5>
+            <div class="offcanvas-end text-center end-100 bg-light p-3 rounded-3">
+              <a class="linkNavMobile mx-2" href=""><img src="../Imagens/Icones/circle/facebook.svg"
+                  alt="Facebook">Facebook</a>
+              <a class="linkNavMobile mx-2" href=""><img src="../Imagens/Icones/circle/instagram.svg"
+                  alt="instagram">Instagram</a>
+              <a class="linkNavMobile mx-2" href=""><img class="ajusteGmail" src="../Imagens/Icones/mail4.svg"
+                  alt="Gmail">Gmail</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- BARRA DE NAVEGAÇÃO DESKTOP-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light desktopNavbar bgNav">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item efeitoMouseDesktop">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item efeitoMouseDesktop">
+              <a class="nav-link activeDesktop" aria-current="page" href="CarrinhoCompras.html">Meu Carrinho</a>
+            </li>
+            <li class="nav-item efeitoMouseDesktop">
+              <a class="nav-link" aria-current="page" href="Sobre.html">Sobre a Empresa</a>
+            </li>
+            <li class="nav-item dropdown efeitoMouseDesktop">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Minha conta
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Área do usuário</a></li>
+                <li><a class="dropdown-item disabled" href="#">Informações pessoais</a></li>
+                <li><a class="dropdown-item disabled" href="#">Privacidade</a></li>
+                <li><a class="dropdown-item disabled" href="#">Segurança</a></li>
+                <li><a class="dropdown-item disabled" href="#">Notificações</a></li>
+                <li><a class="dropdown-item disabled" href="#">Assinatura</a></li>
+                <li><a class="dropdown-item disabled" href="#">Dúvidas Frequentes</a></li>
+                <li><a class="dropdown-item disabled" href="#">Configurações</a></li>
+              </ul>
+            </li>
+          </ul>
+          <li class="efeitoMouse editListaMobile">
+            <a class="LinkBarraMobile" aria-current="page" href="#"><img class="configImgMobile"
+                src="../Imagens/Icones/user.svg" alt="Login"> Login</a>
+          </li>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Carrinho de compras-->
+
+  <main>
+    <section style="background-color: #2F2F2F;">
+      <section class="h-100 gradient-custom">
+        <div class="container">
+          <div class="row d-flex justify-content-center my-3">
+            <div class="col-md-8">
+              <div class="card mb-4">
+                <div class="card-header py-1 comecoCard">
+                  <h5 class="mb-0 ">Produtos - 6 itens</h5>
+                </div>
+                <div class="card-body">
+                  <!-- Item simples -->
+                  <div class="row">
+                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                      <!-- Imagem -->
+                      <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
+                        <img src="../Imagens/Verdura - Alface.jpg" class="w-100 img-fluid" alt="Imagem alface" />
+                        <a href="#!">
+                          <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                        </a>
+                      </div>
+                      <!-- Imagem -->
+                    </div>
+
+                    <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
+                      <!-- Descrição-->
+                      <p><strong>Alface</strong></p>
+                      <p class="textoJustificado">A alface é uma verdura com baixo teor calórico e rica em fibras, vitaminas e minerais, como
+                        vitamina C, vitamina K, folato e potássio.</p>
+                      <button type="button" class="btn btn-primary btn-sm me-1 mb-2 removerCarrinho"
+                        data-mdb-toggle="tooltip" title="Remove item">
+                        <i class="bi bi-trash-fill"></i>
+                      </button>
+                      <button type="button" class="btn btn-danger btn-sm mb-2 favoriosCarrinho"
+                        data-mdb-toggle="tooltip" title="Adicionar favotiros">
+                        <i class="bi bi-heart-fill"></i>
+                      </button>
+                      <!-- Descrição -->
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                      <!-- Quantidade -->
+                      <div class="d-flex mb-4" style="max-width: 300px">
+                        <button class="btn btn-primary px-3 me-2 seletorQuantidade"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                          <i class="bi bi-dash-lg"></i>
+                        </button>
+
+                        <div class="form-outline">
+                          <input id="form1" min="0" name="quantidade" value="1" type="number" class="form-control" />
+                        </div>
+
+                        <button class="btn btn-primary px-3 ms-2 seletorQuantidade"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                          <i class="bi bi-plus-lg"></i>
+                        </button>
+                      </div>
+                      <!-- Quantidade -->
+
+                      <!-- Preço -->
+                      <p class="text-start text-md-center precoCarrinho">
+                        <strong>R$2,75</strong>
+                      </p>
+                      <!-- Preço -->
+                    </div>
+                  </div>
+                  <!-- Item simples -->
+
+                  <hr class="my-4" />
+
+                  <!-- Item simples -->
+                  <div class="row">
+                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                      <!-- Imagem -->
+                      <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
+                        <img src="../Imagens/Verdura - Cebolinha.jpg" class="w-100" alt="Imagem cebolinha" />
+                        <a href="#!">
+                          <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                        </a>
+                      </div>
+                      <!-- Imagem -->
+                    </div>
+
+                    <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
+                      <!-- Descrição-->
+                      <p><strong>Cebolinha</strong></p>
+                      <p class="textoJustificado">A cebolinha é uma erva aromática que contém vitaminas A, C e K, além de minerais como ferro,
+                        cálcio e potássio.
+                      </p>
+                      <button type="button" class="btn btn-primary btn-sm me-1 mb-2 removerCarrinho"
+                        data-mdb-toggle="tooltip" title="Remove item">
+                        <i class="bi bi-trash-fill"></i>
+                      </button>
+                      <button type="button" class="btn btn-danger btn-sm mb-2 favoriosCarrinho"
+                        data-mdb-toggle="tooltip" title="Adicionar favotiros">
+                        <i class="bi bi-heart-fill"></i>
+                      </button>
+                      <!-- Descrição -->
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                      <!-- Quantidade -->
+                      <div class="d-flex mb-4" style="max-width: 300px">
+                        <button class="btn btn-primary px-3 me-2 seletorQuantidade"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                          <i class="bi bi-dash-lg"></i>
+                        </button>
+
+                        <div class="form-outline">
+                          <input id="form1" min="0" name="quantidade" value="1" type="number" class="form-control" />
+                        </div>
+
+                        <button class="btn btn-primary px-3 ms-2 seletorQuantidade"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                          <i class="bi bi-plus-lg"></i>
+                        </button>
+                      </div>
+                      <!-- Quantidade -->
+
+                      <!-- Preço -->
+                      <p class="text-start text-md-center precoCarrinho">
+                        <strong>R$2,75</strong>
+                      </p>
+                      <!-- Preço -->
+                    </div>
+                  </div>
+                  <!-- Item simples -->
+
+                  <hr class="my-4" />
+
+                  <!-- Item simples -->
+                  <div class="row">
+                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                      <!-- Imagem -->
+                      <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
+                        <img src="../Imagens/Verdura - Repolho Roxo.jpg" class="w-100" alt="Imagem repolho roxo" />
+                        <a href="#!">
+                          <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                        </a>
+                      </div>
+                      <!-- Imagem -->
+                    </div>
+
+                    <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
+                      <!-- Descrição-->
+                      <p><strong>Repolho roxo</strong></p>
+                      <p class="textoJustificado">O repolho roxo é uma hortaliça rica em antioxidantes e vitaminas, incluindo vitamina C,
+                        vitamina K e ácido fólico.
+                      </p>
+                      <button type="button" class="btn btn-primary btn-sm me-1 mb-2 removerCarrinho"
+                        data-mdb-toggle="tooltip" title="Remove item">
+                        <i class="bi bi-trash-fill"></i>
+                      </button>
+                      <button type="button" class="btn btn-danger btn-sm mb-2 favoriosCarrinho"
+                        data-mdb-toggle="tooltip" title="Adicionar favotiros">
+                        <i class="bi bi-heart-fill"></i>
+                      </button>
+                      <!-- Descrição -->
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                      <!-- Quantidade -->
+                      <div class="d-flex mb-4" style="max-width: 300px">
+                        <button class="btn btn-primary px-3 me-2 seletorQuantidade"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                          <i class="bi bi-dash-lg"></i>
+                        </button>
+
+                        <div class="form-outline">
+                          <input id="form1" min="0" name="quantidade" value="1" type="number" class="form-control" />
+                        </div>
+
+                        <button class="btn btn-primary px-3 ms-2 seletorQuantidade"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                          <i class="bi bi-plus-lg"></i>
+                        </button>
+                      </div>
+                      <!-- Quantidade -->
+
+                      <!-- Preço -->
+                      <p class="text-start text-md-center precoCarrinho">
+                        <strong>R$2,75</strong>
+                      </p>
+                      <!-- Preço -->
+                    </div>
+                  </div>
+                  <!-- Item simples -->
+
+                  <hr class="my-4" />
+
+                  <!-- Item simples -->
+                  <div class="row">
+                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                      <!-- Imagem -->
+                      <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
+                        <img src="../Imagens/Fruta-Banana.jpg" class="w-100" alt="Imagem banana" />
+                        <a href="#!">
+                          <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                        </a>
+                      </div>
+                      <!-- Imagem -->
+                    </div>
+
+                    <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
+                      <!-- Descrição-->
+                      <p><strong>Banana</strong></p>
+                      <p class="textoJustificado">A banana é uma fruta rica em fibras, potássio, vitaminas B6 e C, além de conter antioxidantes
+                        como carotenoides e flavonoides.
+                      </p>
+                      <button type="button" class="btn btn-primary btn-sm me-1 mb-2 removerCarrinho"
+                        data-mdb-toggle="tooltip" title="Remove item">
+                        <i class="bi bi-trash-fill"></i>
+                      </button>
+                      <button type="button" class="btn btn-danger btn-sm mb-2 favoriosCarrinho"
+                        data-mdb-toggle="tooltip" title="Adicionar favotiros">
+                        <i class="bi bi-heart-fill"></i>
+                      </button>
+                      <!-- Descrição -->
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                      <!-- Quantidade -->
+                      <div class="d-flex mb-4" style="max-width: 300px">
+                        <button class="btn btn-primary px-3 me-2 seletorQuantidade"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                          <i class="bi bi-dash-lg"></i>
+                        </button>
+
+                        <div class="form-outline">
+                          <input id="form1" min="0" name="quantidade" value="1" type="number" class="form-control" />
+                        </div>
+
+                        <button class="btn btn-primary px-3 ms-2 seletorQuantidade"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                          <i class="bi bi-plus-lg"></i>
+                        </button>
+                      </div>
+                      <!-- Quantidade -->
+
+                      <!-- Preço -->
+                      <p class="text-start text-md-center precoCarrinho">
+                        <strong>R$2,75</strong>
+                      </p>
+                      <!-- Preço -->
+                    </div>
+                  </div>
+                  <!-- Item simples -->
+
+                  <hr class="my-4" />
+
+                  <!-- Item simples -->
+                  <div class="row">
+                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                      <!-- Imagem -->
+                      <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
+                        <img src="../Imagens/Fruta-Maca.jpg" class="w-100" alt="Imagem maçã" />
+                        <a href="#!">
+                          <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                        </a>
+                      </div>
+                      <!-- Imagem -->
+                    </div>
+
+                    <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
+                      <!-- Descrição-->
+                      <p><strong>Maçã</strong></p>
+                      <p class="textoJustificado">A maçã é uma fruta com baixo teor calórico e rica em fibras solúveis, além de conter vitamina
+                        C, antioxidantes como flavonoides e ácido fenólico, e minerais como potássio e cálcio.
+                      </p>
+                      <button type="button" class="btn btn-primary btn-sm me-1 mb-2 removerCarrinho"
+                        data-mdb-toggle="tooltip" title="Remove item">
+                        <i class="bi bi-trash-fill"></i>
+                      </button>
+                      <button type="button" class="btn btn-danger btn-sm mb-2 favoriosCarrinho"
+                        data-mdb-toggle="tooltip" title="Adicionar favotiros">
+                        <i class="bi bi-heart-fill"></i>
+                      </button>
+                      <!-- Descrição -->
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                      <!-- Quantidade -->
+                      <div class="d-flex mb-4" style="max-width: 300px">
+                        <button class="btn btn-primary px-3 me-2 seletorQuantidade"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                          <i class="bi bi-dash-lg"></i>
+                        </button>
+
+                        <div class="form-outline">
+                          <input id="form1" min="0" name="quantidade" value="1" type="number" class="form-control" />
+                        </div>
+
+                        <button class="btn btn-primary px-3 ms-2 seletorQuantidade"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                          <i class="bi bi-plus-lg"></i>
+                        </button>
+                      </div>
+                      <!-- Quantidade -->
+
+                      <!-- Preço -->
+                      <p class="text-start text-md-center precoCarrinho">
+                        <strong>R$2,75</strong>
+                      </p>
+                      <!-- Preço -->
+                    </div>
+                  </div>
+                  <!-- Item simples -->
+
+                  <hr class="my-4" />
+
+                  <!-- Item simples -->
+                  <div class="row">
+                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                      <!-- Imagem -->
+                      <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
+                        <img src="../Imagens/Fruta-Uva.jpg" class="w-100" alt="Imagem Uva" />
+                        <a href="#!">
+                          <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                        </a>
+                      </div>
+                      <!-- Imagem -->
+                    </div>
+
+                    <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
+                      <!-- Descrição-->
+                      <p><strong>Uva</strong></p>
+                      <p class="textoJustificado">A uva verde é uma fruta com baixo teor calórico e rica em antioxidantes, como resveratrol e
+                        quercetina, além de conter vitaminas C e K e minerais como potássio e magnésio.</p>
+                      <button type="button" class="btn btn-primary btn-sm me-1 mb-2 removerCarrinho"
+                        data-mdb-toggle="tooltip" title="Remove item">
+                        <i class="bi bi-trash-fill"></i>
+                      </button>
+                      <button type="button" class="btn btn-danger btn-sm mb-2 favoriosCarrinho"
+                        data-mdb-toggle="tooltip" title="Adicionar favotiros">
+                        <i class="bi bi-heart-fill"></i>
+                      </button>
+                      <!-- Descrição -->
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                      <!-- Quantidade -->
+                      <div class="d-flex mb-4" style="max-width: 300px">
+                        <button class="btn btn-primary px-3 me-2 seletorQuantidade"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                          <i class="bi bi-dash-lg"></i>
+                        </button>
+
+                        <div class="form-outline">
+                          <input id="form1" min="0" name="quantidade" value="1" type="number" class="form-control" />
+                        </div>
+
+                        <button class="btn btn-primary px-3 ms-2 seletorQuantidade"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                          <i class="bi bi-plus-lg"></i>
+                        </button>
+                      </div>
+                      <!-- Quantidade -->
+
+                      <!-- Preço -->
+                      <p class="text-start text-md-center precoCarrinho">
+                        <strong>R$2,75</strong>
+                      </p>
+                      <!-- Preço -->
+                    </div>
+                  </div>
+                  <!-- Item simples -->
+
+                  <hr class="my-4" />
+                  <!-- Item simples -->
+                </div>
+              </div>
+
+            </div>
+            <aside class="col-md-4">
+              <div class="card mb-4">
+                <div class="card-header py-3 comecoCard">
+                  <h5 class="mb-0">Sumário</h5>
+                </div>
+                <div class="card-body">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                      Total Produdos
+                      <span>R$16,50</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                      Frete
+                      <span>R$5,00</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                      <div>
+                        <strong>Total</strong>
+                        <strong>
+                          <p class="mb-0">(Frete incluso)</p>
+                        </strong>
+                      </div>
+                      <span><strong>R$21,50</strong></span>
+                    </li>
+                  </ul>
+
+                  <button type="button" class="btn btn-primary btn-lg btn-block finalizarCompra">
+                    Finalizar compra
+                  </button>
+                </div>
+              </div>
+              <div class="card-body comecoCard freteCarrinho">
+                <p><strong>Expectativa de entrega</strong></p>
+                <p class="mb-0">Sexta-Feira - 26.05.2023</p>
+              </div>
+              <div class="card mb-4 mb-lg-0 formaPagamento">
+                <div class="card-body formaPagamento">
+                  <p><strong>Nós aceitamos</strong></p>
+                  <img class="me-2" width="45px"
+                    src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/visa.svg"
+                    alt="Visa" />
+                  <img class="me-2" width="45px"
+                    src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/amex.svg"
+                    alt="American Express" />
+                  <img class="me-2" width="45px"
+                    src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/mastercard.svg"
+                    alt="Mastercard" />
+                  <img class="me-2" width="45px"
+                    src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce/includes/gateways/paypal/assets/images/paypal.webp"
+                    alt="PayPal acceptance mark" />
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+  </main>
+</body>
+
+</html>

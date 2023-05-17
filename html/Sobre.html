@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pede Roça - Sobre a empresa</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../css/estilo.min.css">
+        <!-- Bootstrap Script -->
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Folha de estilo -->
+
+    </head>
+
+    <body>
+       <header>
+        <div>
+          <div class="row g-0 bgBanner">
+            <div class="col-md-12 d-flex justify-content-center">
+              <a href="index.html"> <img src="../Imagens/Logo - Pede Roça.svg" class="img-fluid rounded-start ajusteLogo" alt="Pede Roça"></a>
+             
+            </div>
+          </div>
+        </div>
+        <!-- BARRA DE NAVEGAÇÃO MOBILE DO SITE -->
+        <nav class="navbar bg-body-tertiary nav-mobile mobileNavbar bgNav">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <li class="efeitoMouse editListaMobile">
+              <a class="LinkBarraMobile" aria-current="page" href="#"><img class="configImgMobile" src="../Imagens/Icones/user.svg" alt="Login"> Login</a>
+            </li>
+            <div class="offcanvas offcanvas-start NavLat detalheNav" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title tituloNav" id="offcanvasNavbarLabel">Navegação</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="input-group">
+                  <input class="form-control" type="text" placeholder="Digite sua busca" >
+                  <div class="input-group-append">
+                      <button class="btn btnPesquisaMobile" type="button">Pesquisar</button>
+                  </div>
+                </div>
+                <hr>
+                <h5 class="tituloNav">Páginas</h5>
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item efeitoMouse">
+                    <a class="nav-link linkNavLat" aria-current="page" href="index.html"><img class="configImgMobile" src="../Imagens/Icones/layout.svg" alt="Login"> Home</a>
+                  </li>
+                  <li class="nav-item efeitoMouse">
+                    <a class="nav-link linkNavLat" href="#"><img class="configImgMobile" src="../Imagens/Icones/shopping-cart.svg" alt="carrinho de compra"> Meu Carrinho</a>
+                  </li>
+                  <li class="nav-item efeitoMouse">
+                    <a class="nav-link linkNavLat active2" href="Sobre a empresa.html"><img class="configImgMobile" src="../Imagens/Icones/home.svg" alt=""> Sobre a Empresa</a>
+                  </li>
+                  <li class="nav-item dropdown efeitoMouse">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img class="configImgMobile" src="../Imagens/Icones/settings.svg" alt="">
+                      Minha Conta
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Área do usuário</a></li>
+                      <li><a class="dropdown-item disabled" href="#">Informações pessoais</a></li>
+                      <li><a class="dropdown-item disabled" href="#">Privacidade</a></li>
+                      <li><a class="dropdown-item disabled" href="#">Segurança</a></li>
+                      <li><a class="dropdown-item disabled" href="#">Notificações</a></li>
+                      <li><a class="dropdown-item disabled" href="#">Assinatura</a></li>
+                      <li><a class="dropdown-item disabled" href="#">Dúvidas Frequentes</a></li>
+                      <li><a class="dropdown-item disabled" href="#">Configurações</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <hr>
+                <h5 class="tituloNav">Redes sociais</h5>
+                <div class="offcanvas-end text-center end-100 bg-light p-3 rounded-3">
+                  <a class="linkNavMobile mx-2" href=""><img src="../Imagens/Icones/circle/facebook.svg" alt="Facebook">Facebook</a>
+                  <a class="linkNavMobile mx-2" href=""><img src="../Imagens/Icones/circle/instagram.svg" alt="instagram">Instagram</a>
+                  <a class="linkNavMobile mx-2" href=""><img class="ajusteGmail" src="../Imagens/Icones/mail4.svg" alt="Gmail">Gmail</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- BARRA DE NAVEGAÇÃO DESKTOP-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light desktopNavbar bgNav">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item efeitoMouseDesktop">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item efeitoMouseDesktop">
+                  <a class="nav-link active" aria-current="page" href="CarrinhoCompras.html">Meu Carrinho</a>
+                </li>
+                <li class="nav-item efeitoMouseDesktop">
+                  <a class="nav-link active activeDesktop" aria-current="page" href="Sobre.html">Sobre a Empresa</a>
+                </li>
+                
+                <li class="nav-item dropdown efeitoMouseDesktop">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Minha conta
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Área do usuário</a></li>
+                    <li><a class="dropdown-item disabled" href="#">Informações pessoais</a></li>
+                    <li><a class="dropdown-item disabled" href="#">Privacidade</a></li>
+                    <li><a class="dropdown-item disabled" href="#">Segurança</a></li>
+                    <li><a class="dropdown-item disabled" href="#">Notificações</a></li>
+                    <li><a class="dropdown-item disabled" href="#">Assinatura</a></li>
+                    <li><a class="dropdown-item disabled" href="#">Dúvidas Frequentes</a></li>
+                    <li><a class="dropdown-item disabled" href="#">Configurações</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <li class="efeitoMouse editListaMobile">
+                <a class="LinkBarraMobile" aria-current="page" href="#"><img class="configImgMobile" src="../Imagens/Icones/user.svg" alt="Login"> Login</a>
+              </li>
+            </div>
+          </div>
+        </nav>
+       </header>
+
+       <main>
+        <!-- Apresentação desktop -->
+        <div class=tituloSobreEmpresa><h2>História</h2></div>
+
+          <Section class="d-flex flex-wrap align-content-around justify-content-around containerApresentacao desktopNavbar" id="Apresentação ">
+            <img class="img-fluid FormatImgApresentacao" src="../Imagens/hist-Desenvolvemento.jpg" alt="">
+            <div class="text-end FormatTextoApresentacao">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit vel urna sit amet lobortis. Etiam varius consequat augue eget rhoncus. Ut sed varius risus, sit amet pulvinar tellus. Aliquam eu eros eu erat gravida pellentesque at at mi. Suspendisse venenatis tellus quis blandit tincidunt. Proin eleifend justo nulla, quis blandit arcu porttitor at. Curabitur iaculis est nisl, vitae blandit justo pulvinar ut. Vestibulum tempus hendrerit ultrices. Quisque ut diam non lorem aliquet sodales. Ut iaculis ultricies enim non scelerisque. Donec ut fringilla risus.</p>
+            </div>
+          </Section>
+
+          <div class=tituloSobreEmpresa><h2>Colaboradores</h2></div>
+
+          <section id="equipePedeRoca" class="d-flex flex-wrap align-content-around justify-content-around gap-1 containerApresentacao ">
+            <div class="w-25 caixaFundador">
+              <img src="../Imagens/Pessoa1.svg" alt="Foto fundador 1">
+              <h6 class="nomesFundador">Fundador 1</h6>
+              <p class="descricaoFundador">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis magna ac est consectetur pretium. Curabitur vestibulum diam a turpis varius.</p>
+            </div>
+            <div class="w-25 caixaFundador">
+              <img src="../Imagens/Pessoa2.svg" alt="Foto fundador 2">
+              <h6 class="nomesFundador">Fundador 2</h6>
+              <p class="descricaoFundador">Sed euismod augue tristique. Ut tincidunt, lacus quis luctus venenatis, urna urna interdum nunc, non hendrerit velit lorem eu risus. Donec luctus diam in eros vehicula egestas.</p>
+            </div>
+            <div class="w-25 caixaFundador">
+              <img src="../Imagens/Pessoa3.svg" alt="Foto fundador 3">
+              <h6 class="nomesFundador">Fundador 3</h6>
+              <p class="descricaoFundador">Donec placerat arcu quis pulvinar auctor. Nunc vel scelerisque mauris, vitae vulputate risus. Fusce ac tristique massa, eu tempus ante</p>
+            </div>
+          </section>
+
+          <div class=tituloSobreEmpresa><h2>Contato</h2></div>
+
+          <section id="contato" class="d-flex align-content-around justify-content-evenly gap-1 flex-wrap containerApresentacao">
+            <div class="linha">
+              <h6>Redes Sociais</h6>
+              <a class="linkNavMobile" href=""><img src="../Imagens/Icones/circle/facebook.svg" alt="Facebook">Facebook</a>
+              <a class="linkNavMobile" href=""><img src="../Imagens/Icones/circle/instagram.svg" alt="instagram">Instagram</a>
+              <a class="linkNavMobile" href=""><img class="ajusteGmail" src="../Imagens/Icones/mail4.svg" alt="Gmail">Gmail</a>
+              <h6>Email</h6>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu email">
+              </div>
+              <div class="mb-3 ">
+                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                <textarea class="form-control formBorda" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <button class="btnEnviar">Enviar</button>
+              </div>
+            </div>
+            <div class="limiteQuebra">
+              <h6>Localização</h6>
+              <p>Endereço: Av. Habib Gabriel, 1360 - Jardim Buscardi, Matão - SP, 15990-539</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.1854623734766!2d-48.362309285057385!3d-21.617695585682327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b8e159d287a237%3A0x70df7e81597e2d08!2sFatec%20Mat%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1683990342691!5m2!1spt-BR!2sbr" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </section>
+       </main>
+
+       <footer id="footer">
+        <p class="footerText"><i class="bi bi-c-circle"></i> Todos os direitos reservados aos alunos Hugo, Gabriel e Daniel - Fatec Matão</p>
+       </footer>
+       
+       <script src="../javascript/_cardPrecoTotal.js"></script>
+    </body>
+</html>
