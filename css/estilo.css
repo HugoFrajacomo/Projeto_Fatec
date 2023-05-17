@@ -12252,6 +12252,8 @@ body {
 .FormatImgApresentacao {
   border-radius: 10px;
   margin: 10px;
+  margin: 0px 30px;
+  max-height: 40vh;
 }
 
 .FormatTextoApresentacao p {
@@ -12307,6 +12309,7 @@ body {
 #contato iframe {
   border-radius: 10px;
   height: 280px;
+  width: 100%;
 }
 
 .btnEnviar {
@@ -12321,9 +12324,14 @@ body {
   background: rgba(124, 140, 3, 0.5);
 }
 
+.caixaFundador {
+  min-width: 300px;
+}
+
 /*---------------------------------------paginaCarrinho------------------------------------------------------*/
 .gradient-custom {
   background: #2F2F2F;
+  min-width: 300px;
 }
 
 .comecoCard {
