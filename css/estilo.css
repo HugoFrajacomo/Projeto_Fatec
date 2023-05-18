@@ -11935,7 +11935,7 @@ body {
 /*------------- HEADER - BARRA NAVEGAÇÃO MOBILE --------------- */
 .detalheNav {
   border-radius: 0px 10px 10px 0px;
-  background: linear-gradient(to top, rgb(241, 235, 214), #f2f2f2);
+  background: #F2F2F2;
 }
 
 .tituloNav {
