@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pede Roça-Carrinho de compras</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../css/estilo.css">
+  <!-- Bootstrap Script -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Folha de estilo -->
+</head>
+
+<body>
+  <header>
+    <div>
+      <div class="row g-0 bgBanner">
+        <div class="col-md-12 d-flex justify-content-center">
+          <a href="index.html"><img src="../Imagens/Logo - Pede Roça.svg" class="img-fluid rounded-start ajusteLogo"
+              alt="Pede Roça"></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- BARRA DE NAVEGAÇÃO MOBILE DO SITE -->
+    <nav class="navbar bg-body-tertiary nav-mobile mobileNavbar bgNav">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <li class="efeitoMouse editListaMobile">
+          <a class="LinkBarraMobile" aria-current="page" href="#"><img class="configImgMobile"
+              src="../Imagens/Icones/user.svg" alt="Login"> Login</a>
+        </li>
+        <div class="offcanvas offcanvas-start NavLat detalheNav" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title tituloNav" id="offcanvasNavbarLabel">Navegação</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="input-group">
+              <input class="form-control" type="text" placeholder="Digite sua busca">
+              <div class="input-group-append">
+                <button class="btn btnPesquisaMobile" type="button">Pesquisar</button>
+              </div>
+            </div>
+            <hr>
+            <h5 class="tituloNav">Páginas</h5>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item efeitoMouse">
+                <a class="nav-link linkNavLat active2" aria-current="page" href="index.html"><img
+                    class="configImgMobile" src="../Imagens/Icones/layout.svg" alt="Login"> Home</a>
+              </li>
+              <li class="nav-item efeitoMouse">
+                <a class="nav-link linkNavLat" href="carrinho.html"><img class="configImgMobile"
+                    src="../Imagens/Icones/shopping-cart.svg" alt="carrinho de compra"> Meu Carrinho</a>
+              </li>
+              <li class="nav-item efeitoMouse">
+                <a class="nav-link linkNavLat" href="Sobre.html"><img class="configImgMobile" src="../Imagens/Icones/home.svg"
+                    alt=""> Sobre a Empresa</a>
+              </li>
+              <li class="nav-item dropdown efeitoMouse">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img class="configImgMobile" src="../Imagens/Icones/settings.svg" alt="">
+                  Minha Conta
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Área do usuário</a></li>
+                  <li><a class="dropdown-item disabled" href="#">Informações pessoais</a></li>
+                  <li><a class="dropdown-item disabled" href="#">Privacidade</a></li>
+                  <li><a class="dropdown-item disabled" href="#">Segurança</a></li>
+                  <li><a class="dropdown-item disabled" href="#">Notificações</a></li>
+                  <li><a class="dropdown-item disabled" href="#">Assinatura</a></li>
+                  <li><a class="dropdown-item disabled" href="#">Dúvidas Frequentes</a></li>
+                  <li><a class="dropdown-item disabled" href="#">Configurações</a></li>
+                </ul>
+              </li>
+            </ul>
+            <hr>
+            <h5 class="tituloNav">Redes sociais</h5>
+            <div class="offcanvas-end text-center end-100 bg-light p-3 rounded-3">
+              <a class="linkNavMobile mx-2" href=""><img src="../Imagens/Icones/circle/facebook.svg"
+                  alt="Facebook">Facebook</a>
+              <a class="linkNavMobile mx-2" href=""><img src="../Imagens/Icones/circle/instagram.svg"
+                  alt="instagram">Instagram</a>
+              <a class="linkNavMobile mx-2" href=""><img class="ajusteGmail" src="../Imagens/Icones/mail4.svg"
+                  alt="Gmail">Gmail</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- BARRA DE NAVEGAÇÃO DESKTOP-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light desktopNavbar bgNav">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item efeitoMouseDesktop">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item efeitoMouseDesktop">
+              <a class="nav-link activeDesktop" aria-current="page" href="CarrinhoCompras.html">Meu Carrinho</a>
+            </li>
+            <li class="nav-item efeitoMouseDesktop">
+              <a class="nav-link" aria-current="page" href="Sobre.html">Sobre a empresa</a>
+            </li>
+            <li class="nav-item dropdown efeitoMouseDesktop">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Minha conta
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Área do usuário</a></li>
+                <li><a class="dropdown-item disabled" href="#">Informações pessoais</a></li>
+                <li><a class="dropdown-item disabled" href="#">Privacidade</a></li>
+                <li><a class="dropdown-item disabled" href="#">Segurança</a></li>
+                <li><a class="dropdown-item disabled" href="#">Notificações</a></li>
+                <li><a class="dropdown-item disabled" href="#">Assinatura</a></li>
+                <li><a class="dropdown-item disabled" href="#">Dúvidas Frequentes</a></li>
+                <li><a class="dropdown-item disabled" href="#">Configurações</a></li>
+              </ul>
+            </li>
+          </ul>
+          <li class="efeitoMouse editListaMobile">
+            <a class="LinkBarraMobile" aria-current="page" href="#"><img class="configImgMobile"
+                src="../Imagens/Icones/user.svg" alt="Login"> Login</a>
+          </li>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Finalização de compra-->
+
+    <main class=" d-flex justify-content-center align-content-center">
+        <div class="col-md-4">
+            <div class="card mb-4">
+             <div class="card-header py-3 compraFinalizada">
+                <h5 class="mb-0">Sumário</h5>
+             </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                      Total Produdos
+                      <span>R$16,50</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                      Frete
+                      <span>R$5,00</spa>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                    <div>
+                      <strong>Total</strong>
+                      <strong>
+                        <p class="mb-0">(Frete incluso)</p>
+                       </strong>
+                    </div>
+                      <span><strong>R$21,50</strong></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                        <div>
+                          <strong>Geremias da Silva</strong>
+                          <br>
+                          <strong>g.s@gmail.com</strong>
+                          <br>
+                          <strong>CPF: 455.456.977-01</strong><br>
+                          <strong>
+                            <p class="mb-0">Rua 9 de Julho 458 Araraquara - SP</p>
+                           </strong><br>
+                           <strong>
+                            <p class="mb-0">CEP: 14.800-254</p>
+                           </strong><br>
+                        </div>
+                          <span><strong>Telefone: (16)9999-7070</strong></span>
+                        </li>
+                    </ul>
+
+                    <button type="button" class="btn btn-primary btn-lg btn-block finalizarCompra">
+                       Rastrear compra
+                    </button>
+                </div>
+            </div>
+            <div class="card-body comecoCard freteCarrinho">
+                <p><strong>Espectativa de entrega</strong></p>
+                <p class="mb-0">Sexta-Feira - 26.05.2023</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
