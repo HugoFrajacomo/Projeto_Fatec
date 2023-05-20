@@ -11905,6 +11905,7 @@ textarea.form-control-lg {
 }
 /*----Fontes-------*/
 /*---- Icones bootstrap ----- */
+/*----Estilos das páginas----*/
 /*! ------------- header - Cabeçalho --------------- !*/
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: "Merienda", Times, serif;
@@ -12238,8 +12239,18 @@ body {
   width: 48%;
 }
 
-/*!------------------------------------ PAGINA - SOBRE A EMPRESA --------------------------------!*/
-/* main */
+/*--------Footer------*/
+#footer {
+  background: #f2f2f2;
+  box-shadow: 0px 0px 5px 5px #2f2f2f;
+}
+
+.footerText {
+  padding: 10px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
 #Apresentação {
   border-radius: 10px 10px 0px 0px;
 }
@@ -12332,7 +12343,6 @@ body {
   min-width: 300px;
 }
 
-/*---------------------------------------paginaCarrinho------------------------------------------------------*/
 .gradient-custom {
   background: #2F2F2F;
   min-width: 300px;
@@ -12392,19 +12402,6 @@ body {
   text-align: justify;
 }
 
-/*--------------- FOOTER - CONFIGURAÇÕES --------------------*/
-#footer {
-  background: #f2f2f2;
-  box-shadow: 0px 0px 5px 5px #2f2f2f;
-}
-
-.footerText {
-  padding: 10px;
-  margin-bottom: 0px;
-  text-align: center;
-}
-
-/* -------------- TELA DE LOGIN ------------------------------- */
 #telaDeLogin {
   background: url(../Imagens/bglogin.jpg);
   background-size: cover;
@@ -12488,7 +12485,6 @@ body {
   margin-top: 20px;
 }
 
-/*---------------------------------------finalização Compra------------------------------------------------------*/
 .gradient-custom {
   background: #2F2F2F;
   background: #2F2F2F;
@@ -12534,7 +12530,6 @@ body {
   margin-top: 20px;
 }
 
-/*--------------- Cadastro de usuário --------------*/
 .mainCadastro {
   background: #f2f2f2;
   width: 100%;
@@ -12561,4 +12556,117 @@ body {
 
 .btnCadastro:hover {
   background: rgba(124, 140, 3, 0.5);
+}
+
+/*! ---------------------MAIN-MOBILE-AREA-DE-USUARIO---------------------- !*/
+@media only screen and (max-width: 767px) {
+  .desktopNavbar {
+    display: none;
+  }
+  .main-desktop {
+    display: none;
+    visibility: hidden;
+  }
+  #formulario-mobile {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 5%;
+    margin: 6%;
+  }
+  .input-perguntas-1 {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: solid 0.5px #a7acb1;
+  }
+  .form-label {
+    color: #f2f2f2;
+    background: #A83C01;
+    border-radius: 5px;
+    box-shadow: 0px 2px 3px 2px rgba(47, 47, 47, 0.4392156863);
+    padding: 7px;
+    font-size: 2.8vw;
+    max-width: max-content;
+    min-width: max-content;
+  }
+  #form-label-titulo {
+    background-color: #7C8C03;
+    border-radius: 5px;
+    color: #f2f2f2;
+    text-align: center;
+    min-width: 100px;
+  }
+  .input-label-uf {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    height: 60%;
+    border: solid 0.5px #a7acb1;
+  }
+  #ajustar-form {
+    height: 100%;
+    width: 100%;
+  }
+  #mensagem1 {
+    text-align: center;
+  }
+  .col {
+    flex-wrap: wrap;
+  }
+}
+/*! ---------------------MAIN-DESKTOP-AREA-DE-USUARIO---------------------- !*/
+@media only screen and (min-width: 768px) {
+  .mobileNavbar {
+    display: none;
+  }
+  .main-mobile {
+    display: none;
+    visibility: hidden;
+  }
+  #formulario-desktop {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 2%;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    width: 80%;
+  }
+  .input-perguntas-2 {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: solid 0.5px #a7acb1;
+    min-width: 10vw;
+    max-width: 60vw;
+  }
+  .form-label {
+    color: #f2f2f2;
+    background: #A83C01;
+    border-radius: 5px;
+    box-shadow: 0px 2px 3px 2px rgba(47, 47, 47, 0.4392156863);
+    padding: 10px;
+    max-width: max-content;
+    min-width: max-content;
+    font-size: 19px;
+  }
+  #form-label-titulo {
+    background-color: #7C8C03;
+    border-radius: 5px;
+    color: #f2f2f2;
+    text-align: center;
+    width: 100%;
+  }
+  .input-label-uf {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    height: 60%;
+    border: solid 0.5px #a7acb1;
+  }
+  #ajustar-form {
+    height: 100%;
+    width: 100%;
+  }
+  .menu-drop {
+    display: inline-flex;
+  }
 }

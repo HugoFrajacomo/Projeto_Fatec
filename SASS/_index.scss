@@ -1,0 +1,360 @@
+/*! ------------- header - Cabeçalho --------------- !*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merienda', Times, serif;
+  }
+  
+  body {
+    font-family: 'Ubuntu', Tahoma, Geneva, Verdana, sans-serif;
+    background: #2f2f2f;
+  }
+  
+  .ajusteLogo {
+    width: 150px;
+    margin: 10px 20px;
+  }
+  
+  .bgBanner {
+    background: linear-gradient(to left, #7C8C03, #f2f2f2, #7C8C03);
+  }
+  
+  
+  /*! ------------- header - Barra de navegação  --------------- !*/
+  @media only screen and (max-width: 767px) {
+    .desktopNavbar {
+      display: none;
+    }
+  }
+  
+  /* Estilos para desktops */
+  @media only screen and (min-width: 768px) {
+    .mobileNavbar {
+      display: none;
+    }
+  }
+  
+  /*------------- HEADER - BARRA NAVEGAÇÃO MOBILE --------------- */
+  .detalheNav {
+    border-radius: 0px 10px 10px 0px;
+    background: #F2F2F2;
+  }
+  
+  .tituloNav {
+    font-family: 'Merienda', Times, serif;
+    color: #A83C01;
+  }
+  
+  .btnPesquisaMobile {
+    background: #7C8C03;
+    border-radius: 0px 5px 5px 0px;
+  }
+  
+  .btnPesquisaMobile:hover, .active2 {
+    background: rgba(124, 140, 3, 0.5);
+    border-radius: 0px 5px 5px 0px;
+    border-radius: 5px;
+  }
+  
+  
+  .linkNavMobile {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .efeitoMouse:hover {
+    background: #7C8C03;
+    padding-left: 5px;
+    border-radius: 5px;
+    transition: 0.5s;
+  }
+  
+  .efeitoMouse:active {
+    background: #7C8C03;
+    padding-left: 5px;
+    border-radius: 5px;
+    transition: 0.5s;
+  }
+  
+  .ajusteGmail, .configImgMobile {
+    width: 30px;
+  }
+  
+  .bgNav {
+    margin-bottom: 8px;
+    box-shadow: 0px 0px 5px 5px #2f2f2f70;
+  }
+  
+  .LinkBarraMobile {
+    color: #f2f2f2;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .editListaMobile {
+    list-style: none;
+    background: #7C8C03;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  /*---------- NAVEGAÇÃO DESKTOP -----------*/
+  
+  .efeitoMouseDesktop:hover {
+    background: rgba(124, 140, 3, 0.8);
+    border-radius: 5px;
+    transition: 0.5s;
+  }
+  
+  .efeitoMouseDesktop:active {
+    background: #7C8C03;
+    border-radius: 5px;
+    transition: 0.5s;
+  }
+  
+  .activeDesktop {
+    background: rgba(124, 140, 3, 1);
+    border-radius: 0px 5px 5px 0px;
+    border-radius: 5px;
+    color: #f2f2f2;
+  }
+  /*-------Main--------*/
+  
+  .imagemCarrossel {
+    width: 200px;
+  }
+  
+  .tamanhoCarrocel {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .filtroNav {
+    background: #f2f2f2;
+    color: #7C8C03;
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .filtroNav h5 {
+    margin: 10px;
+    text-align: center;
+    padding-top: 15px;
+    text-transform: uppercase;
+  }
+  
+  .btnFiltro {
+    background: #7C8C03;
+    border-radius: 5px;
+    color: #f2f2f2;
+  }
+  
+  .btnFiltro:hover {
+    background: rgba(124, 140, 3, 0.7);
+    color: #f2f2f2
+  }
+  
+  .procuraFiltro {
+    margin: 10px;
+    text-align: center;
+    padding-top: 15px;
+  }
+  
+  .coluna {
+    column-count: 3;
+    column-gap: 10px;
+    -ms-grid-column-align: center;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+  }
+  
+  .colunaItem {
+    margin: 0px 10px;
+  }
+  
+  /* Personalização cartões de venda */
+  
+  
+  .geralCard {
+    width: 18rem;
+  }
+  
+  .inferior {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .superiorPreco {
+    position: absolute;
+    z-index: 2;
+  }
+  
+  .superiorFavorito {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0px;
+    margin: 1px;
+  }
+  
+  .geralCard {
+    width: 15rem;
+  }
+  
+  #nomeProduto {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #nomeProduto h5 {
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: #7C8C03;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  #nomeProduto p {
+    text-align: justify;
+  }
+  
+  .tamanhoCard {
+    padding: 5px 10px 0px 10px;
+  }
+  
+  .precoProduto {
+    background: #A83C01;
+    color: white;
+    display: inline;
+    padding: 5px;
+    margin: 1px;
+    border-radius: 5px 0px 5px 0px;
+  }
+  
+  .tamanhoFavorito {
+    font-size: 1.6rem;
+    color: #A83C01;
+    font-weight: bolder;
+  }
+  
+  .tamanhoFavorito:hover {
+    background: #a83b0146;
+    border-radius: 50%;
+  }
+  
+  .posicaoFavorito {
+    display: inline;
+    text-align: end;
+    cursor: pointer;
+  }
+  
+  .btnComprar {
+    background: #7C8C03;
+    color: #f2f2f2;
+    border: 1px solid black;
+    border-radius: 0px 0px 5px 5px;
+  }
+  
+  .btnComprar:hover {
+    background: rgba(124, 140, 3, 0.5);
+  }
+  
+  .sizeCarrinho {
+    width: 1.4rem;
+  }
+  
+  #quantidadeProduto {
+    width: 50%;
+  }
+  
+  .inputBorda {
+    border: #7C8C03 1px solid;
+  }
+  
+  .InputBordaEsquerdo {
+    border-radius: 5px 0px 0px 0px;
+    width: 50%;
+  }
+  
+  .InputBordaDireito {
+    border-radius: 0px 5px 0px 0px;
+    width: 50%;
+  }
+  
+  /*---------------- Card de venda  - Mobile -------------*/
+  
+  .cardMobile {
+    background: #f2f2f2;
+    display: grid;
+    grid-template-areas: 
+    "tit tit tit"
+    "img val val"
+    "img par par"
+    "img par par"
+    "img inp inp"
+    "img btn btn"
+    ;
+  }
+  
+  
+  .cardMobile h5 {
+    height: 4vh;
+    grid-area: tit;
+    text-align: center;
+    background: #7C8C03;
+    color: #f2f2f2;
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 0px;
+  }
+  
+  .cardMobile img {
+    width: 20vh;
+    grid-area: img;
+    border-radius: 10px;
+  }
+  
+  .cardMobile span {
+    grid-area: val;
+    margin: 0px 5px;
+    font-weight: bold;
+    color: #A83C01;
+  }
+  
+  .cardMobile p {
+    grid-area: par;
+    margin: 0px 5px;
+  }
+  
+  .gridInputMobile {
+    grid-area: inp;
+    margin: 0px 5px;
+    height: 6vh;
+  }
+  
+  .gridBtnMobile {
+    grid-area: btn;
+    margin: 0px 5px;
+    height: 6vh;
+    margin-bottom: 5px;
+  }
+  
+  
+  .tamDireitoMobile {
+    width: 48%;
+}
+
+/*--------Footer------*/
+#footer {
+  background: #f2f2f2;
+  box-shadow: 0px 0px 5px 5px #2f2f2f;
+}
+
+.footerText {
+  padding: 10px;
+  margin-bottom: 0px;
+  text-align: center;
+}
