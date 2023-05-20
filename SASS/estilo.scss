@@ -526,17 +526,25 @@ body {
 
 /* -------------- TELA DE LOGIN ------------------------------- */
 #telaDeLogin {
-  background: url(../Imagens/);
+  background: url(../Imagens/bglogin.jpg);
+  background-size: cover;
+  border: 1px solid red;
+  height: 100%;
+  margin: 0px;
 }
 
 .AreaLogin {
   background: #F2F2F2;
   min-width: 300px;
   max-width: 600px;
-  margin-top: 10vh;
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0px 0px 5px 5px rgba(124, 140, 3, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .AreaLoginCelular{
