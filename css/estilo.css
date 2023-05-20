@@ -11906,6 +11906,10 @@ textarea.form-control-lg {
 /*----Fontes-------*/
 /*---- Icones bootstrap ----- */
 /*! ------------- header - Cabeçalho --------------- !*/
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: "Merienda", Times, serif;
+}
+
 body {
   font-family: "Ubuntu", Tahoma, Geneva, Verdana, sans-serif;
   background: #2f2f2f;
@@ -12390,8 +12394,8 @@ body {
 
 /*--------------- FOOTER - CONFIGURAÇÕES --------------------*/
 #footer {
-  border-radius: 10px 10px 0px 0px;
   background: #f2f2f2;
+  box-shadow: 0px 0px 5px 5px #2f2f2f;
 }
 
 .footerText {
@@ -12404,7 +12408,6 @@ body {
 #telaDeLogin {
   background: url(../Imagens/bglogin.jpg);
   background-size: cover;
-  border: 1px solid red;
   height: 100%;
   margin: 0px;
 }
@@ -12529,4 +12532,33 @@ body {
 
 .formaPagamento {
   margin-top: 20px;
+}
+
+/*--------------- Cadastro de usuário --------------*/
+.mainCadastro {
+  background: #f2f2f2;
+  width: 100%;
+  margin: 0px 0px 10px 0px;
+  padding: 10px;
+}
+
+.mainCadastro form h4, .mainCadastro form .h4 {
+  background: #7C8C03;
+  display: inline-block;
+  border-radius: 10px;
+  color: #F2F2F2;
+  padding: 5px 10px;
+}
+
+.btnCadastro {
+  border: none;
+  border-radius: 10px;
+  background: #7C8C03;
+  color: #f2f2f2;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.btnCadastro:hover {
+  background: rgba(124, 140, 3, 0.5);
 }

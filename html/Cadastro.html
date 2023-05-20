@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pede Roça - Sobre a empresa</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../css/estilo.min.css">
+        <!-- Bootstrap Script -->
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Folha de estilo -->
+
+    </head>
+
+    <body>
+       <header>
+        <!-- Banner -->
+        <div>
+          <div class="row g-0 bgBanner">
+            <div class="col-md-12 d-flex justify-content-center">
+              <a href="index.html"> <img src="../Imagens/Logo - Pede Roça.svg" class="img-fluid rounded-start ajusteLogo" alt="Pede Roça"></a>
+             
+            </div>
+          </div>
+        </div>
+        <!-- BARRA DE NAVEGAÇÃO MOBILE DO SITE -->
+        <nav class="navbar bg-body-tertiary nav-mobile mobileNavbar bgNav">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <li class="efeitoMouse editListaMobile">
+              <a class="LinkBarraMobile" aria-current="page" href="Login.html"><img class="configImgMobile" src="../Imagens/Icones/user.svg" alt="Login"> Login</a>
+            </li>
+            <div class="offcanvas offcanvas-start NavLat detalheNav" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title tituloNav" id="offcanvasNavbarLabel">Navegação</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="input-group">
+                  <input class="form-control" type="text" placeholder="Digite sua busca" >
+                  <div class="input-group-append">
+                      <button class="btn btnPesquisaMobile" type="button">Pesquisar</button>
+                  </div>
+                </div>
+                <hr>
+                <h5 class="tituloNav">Páginas</h5>
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item my-1 efeitoMouse">
+                    <a class="nav-link linkNavLat" aria-current="page" href="index.html"><img class="configImgMobile" src="../Imagens/Icones/layout.svg" alt="Login"> Home</a>
+                  </li>
+                  <li class="nav-item my-1 efeitoMouse">
+                    <a class="nav-link linkNavLat" href="#"><img class="configImgMobile" src="../Imagens/Icones/shopping-cart.svg" alt="carrinho de compra"> Meu Carrinho</a>
+                  </li>
+                  <li class="nav-item my-1 efeitoMouse">
+                    <a class="nav-link linkNavLat active2" href="Sobre a empresa.html"><img class="configImgMobile" src="../Imagens/Icones/home.svg" alt=""> Sobre a Empresa</a>
+                  </li>
+                  <li class="nav-item my-1 efeitoMouse">
+                    <a class="nav-link linkNavLat" href=""><img class="configImgMobile" src="../Imagens/Icones/settings.svg" alt=""> Área do Usuário</a>
+                  </li>
+                  <!--
+                  <li class="nav-item dropdown efeitoMouse">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img class="configImgMobile" src="../Imagens/Icones/settings.svg" alt="">
+                      Minha Conta
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Área do usuário</a></li>
+                      <li><a class="dropdown-item disabled" href="#">Informações pessoais</a></li>
+                      <li><a class="dropdown-item disabled" href="#">Privacidade</a></li>
+                      <li><a class="dropdown-item disabled" href="#">Segurança</a></li>
+                      <li><a class="dropdown-item disabled" href="#">Notificações</a></li>
+                      <li><a class="dropdown-item disabled" href="#">Assinatura</a></li>
+                      <li><a class="dropdown-item disabled" href="#">Dúvidas Frequentes</a></li>
+                      <li><a class="dropdown-item disabled" href="#">Configurações</a></li>
+                    </ul>
+                  </li>
+                  -->
+                </ul>
+                <hr>
+                <h5 class="tituloNav">Redes sociais</h5>
+                <div class="offcanvas-end text-center end-100 bg-light p-3 rounded-3">
+                  <a class="linkNavMobile mx-2" href=""><img src="../Imagens/Icones/circle/facebook.svg" alt="Facebook">Facebook</a>
+                  <a class="linkNavMobile mx-2" href=""><img src="../Imagens/Icones/circle/instagram.svg" alt="instagram">Instagram</a>
+                  <a class="linkNavMobile mx-2" href=""><img class="ajusteGmail" src="../Imagens/Icones/mail4.svg" alt="Gmail">Gmail</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- BARRA DE NAVEGAÇÃO DESKTOP-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light desktopNavbar bgNav">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item mx-1 efeitoMouseDesktop">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item mx-1 efeitoMouseDesktop">
+                  <a class="nav-link active" aria-current="page" href="CarrinhoCompras.html">Meu Carrinho</a>
+                </li>
+                <li class="nav-item mx-1 efeitoMouseDesktop">
+                  <a class="nav-link active activeDesktop" aria-current="page" href="Sobre.html">Sobre a Empresa</a>
+                </li>
+                <li class="nav-item mx-1 efeitoMouseDesktop">
+                  <a class="nav-link" aria-current="page" href="">Área do Usuário</a>
+                </li>
+                <!--
+                <li class="nav-item dropdown efeitoMouseDesktop">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Minha conta
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Área do usuário</a></li>
+                    <li><a class="dropdown-item disabled" href="#">Informações pessoais</a></li>
+                    <li><a class="dropdown-item disabled" href="#">Privacidade</a></li>
+                    <li><a class="dropdown-item disabled" href="#">Segurança</a></li>
+                    <li><a class="dropdown-item disabled" href="#">Notificações</a></li>
+                    <li><a class="dropdown-item disabled" href="#">Assinatura</a></li>
+                    <li><a class="dropdown-item disabled" href="#">Dúvidas Frequentes</a></li>
+                    <li><a class="dropdown-item disabled" href="#">Configurações</a></li>
+                  </ul>
+                </li>
+                -->
+              </ul>
+              <li class="efeitoMouse editListaMobile">
+                <a class="LinkBarraMobile" aria-current="page" href="Login.html"><img class="configImgMobile" src="../Imagens/Icones/user.svg" alt="Login"> Login</a>
+              </li>
+            </div>
+          </div>
+        </nav>
+       </header>
+       <div id="containerCadastro" class="d-flex justify-content-center align-items-center">
+        <main class="mainCadastro">
+            <form class="row g-3 mx-2 needs-validation" novalidate>
+                <h4>Cadastro de acesso</h4>
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">Nome Completo</label>
+                  <input type="text" class="form-control" id="validationCustom01" required>
+                  <div class="valid-feedback">
+                    Nome disponível
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">CPF / CNPJ</label>
+                  <input type="text" class="form-control" id="validationCustom01" required>
+                  <div class="valid-feedback">
+                    Nome disponível
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Telefone</label>
+                  <input type="tel" class="form-control" id="validationCustom02" placeholder="(XX) XXXXX-XXXX" required>
+                  <div class="valid-feedback">
+                    Telefone valido
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">Data Nascimento</label>
+                  <input type="date" class="form-control" id="validationCustom01" required>
+                  <div class="valid-feedback">
+                    Nome disponível
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">E-mail</label>
+                  <input type="email" class="form-control" id="validationCustom01" required>
+                  <div class="valid-feedback">
+                    Nome disponível
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Confirmação E-mail</label>
+                  <input type="tel" class="form-control" id="validationCustom02" required>
+                  <div class="valid-feedback">
+                    Telefone valido
+                  </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom05" class="form-label">CEP</label>
+                    <input type="text" class="form-control" id="validationCustom05" required>
+                    <div class="invalid-feedback">
+                      Informe um CEP valido
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationCustom04" class="form-label">Estado</label>
+                    <select class="form-select" id="validationCustom04" required>
+                      <option selected disabled value="">Estado</option>
+                      <option>Acre</option>
+                      <option>Alagoas</option>
+                      <option>Amapá</option>
+                      <option>Amazonas</option>
+                      <option>Bahia</option>
+                      <option>Ceará</option>
+                      <option>Distrito Federal</option>
+                      <option>Espirito Santo</option>
+                      <option>Goiás</option>
+                      <option>Maranhão</option>
+                      <option>Mato Grosso</option>
+                      <option>Mato Grosso do sul</option>
+                      <option>Minas Gerais</option>
+                      <option>Pará</option>
+                      <option>Paraíba</option>
+                      <option>Paraná</option>
+                      <option>Pernambuco</option>
+                      <option>Piaúi</option>
+                      <option>Rio de Janeiro</option>
+                      <option>Rio Grande do Norte</option>
+                      <option>Rio Grande do Sul</option>
+                      <option>Rondônia</option>
+                      <option>Roraima</option>
+                      <option>Santa Catarina</option>
+                      <option>São Paulo</option>
+                      <option>Sergipe</option>
+                      <option>Tocantins</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Selecione um estado
+                    </div>
+                  </div>
+                <div class="col-md-4">
+                  <label for="validationCustom03" class="form-label">Endereço de entrega</label>
+                  <input type="text" class="form-control" id="validationCustom03" required>
+                  <div class="invalid-feedback">
+                    Escreva o nome da sua cidade
+                  </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom05" class="form-label">Senha</label>
+                    <input type="text" class="form-control" id="validationCustom05" required>
+                    <div class="invalid-feedback">
+                    Senha deve contar no mínimo 8 caracteres. Sendo ao menos: 1 Letra maiúscula, 1 Letra Minúscula, 1 número e 1 caracteres especial
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationCustom05" class="form-label">Confirmação de Senha</label>
+                    <input type="text" class="form-control" id="validationCustom05" required>
+                    <div class="invalid-feedback">
+                      Senhas não correspondentes nos campos de "Senha" e "Confirmação de senha"
+                    </div>
+                  </div>
+                  <hr>
+                  <p>Aceito receber notificações e ofertas por:</p>
+                  <div class="d-flex">
+                    <div class="form-check mx-3">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Whatsapp
+                        </label>
+                      </div>
+                      <div class="form-check mx-3">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                          SMS
+                        </label>
+                      </div>
+                      <div class="form-check mx-3">
+                        <input class="form-check-input " type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                          E-mail
+                        </label>
+                      </div>
+                  </div>
+                <hr>
+                <div class="col-12">
+                  <a href="Login.html" class="btnCadastro" type="submit">Cadastrar</a>
+                </div>
+              </form>
+        </main>
+       </div>
+
+
+
+       <footer id="footer">
+        <p class="footerText"><i class="bi bi-c-circle"></i> Todos os direitos reservados aos alunos Hugo, Gabriel e Daniel - Fatec Matão</p>
+       </footer>
+       
+       <script src="../javascript/_cardPrecoTotal.js"></script>
+    </body>
+</html>
