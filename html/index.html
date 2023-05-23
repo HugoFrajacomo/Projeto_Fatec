@@ -207,543 +207,472 @@
         </nav>
         <!-- Cards de venda -->
         <section id="Cartoes" class="px-2 py-2 d-flex flex-wrap gap-2 justify-content-center align-content-center">
-        <!---------------- Card de venda  - desktop ------------->
-          <div class="card geralCard desktopNavbar">
-            <div class="card-header inferior">
-              <img class="card-img-top" src="../Imagens/Verdura - Alface.jpg" alt="alface">
+          <div class="geralCard">
+            <div class="posicaoPreco">
+              <span id="precoProduto1" class="tagMoeda">2,75</span>
             </div>
-            <div class="posicaoFavorito superiorFavorito"><i class="bi bi-heart tamanhoFavorito"></i></div>
-            <div class="precoProduto superiorPreco"><span id="precoProduto1" class="tagMoeda">2,75</span></div>
-            <div class="card-body tamanhoCard"> 
-              <div id="nomeProduto">
-                <h5>Alface</h5>
-                <p> Verdura com baixo teor calórico e rica em fibras, vitaminas e minerais, como vitamina C, vitamina K, folato e potássio.</p>
-              </div>
+            <div class="posicaoFavorito">
+              <button><i class="bi bi-heart tamanhoFavorito"></i></button>
             </div>
-            <div class="card-footer compraFooter">
-              <div class="input-group bordaInputCard" role="group" aria-label="Basic example">
-                <input class="inputBorda InputBordaEsquerdo" type="number" min="0" name="quantidadeProduto1" id="quantidadeProduto1" placeholder="Qtd" onchange="calcularValorTotal(1)">
-                <span class="inputBorda InputBordaDireito" id="valorTotalProduto1"></span>
+            <div class="imagemVenda">
+              <img class="card-img-top tamanhoImgVenda" src="../Imagens/Verdura - Alface.jpg" alt="alface">
+            </div>
+            <hr>
+            <div id="nomeProduto">
+              <h5>Alface</h5>
+              <p>Verdura com baixo teor calórico e rica em fibras, vitaminas e minerais, como vitamina C, vitamina K, folato e potássio.</p>
+            </div>
+            <hr>
+            <div class="qtdTotalCompraCarrinho">
+              <div class="d-flex input-group grupoQtdTotal" role="group" aria-label="Basic example">
+                <input class="inputBorda quantidadeProduto" type="number" min="0" name="quantidadeProduto1" id="quantidadeProduto1" placeholder="Qtd" onchange="calcularValorTotal(1)">
+                <span class="inputBorda valorTotalProduto" id="valorTotalProduto1"></span>
               </div>
               <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btnComprar">Comprar</button>
-                <button type="button" class="btn btnComprar"><img class="sizeCarrinho" src="../Imagens/Icones/shopping-cart-add.svg" alt="Carrinho de compras">Adicionar</button>
+                <button type="button" class="btnComprar">Comprar</button>
+                <button type="button" class="btnCarrinho"><i class="bi bi-cart-plus tamanhoCarrinho"></i></button>
               </div>
             </div>          
           </div>
-          <div class="card geralCard desktopNavbar">
-            <div class="card-header inferior">
-              <img class="card-img-top" src="../Imagens/Verdura - Cebolinha.jpg" alt="Cebolinha">
+          <div class="geralCard">
+            <div class="posicaoPreco">
+              <span id="precoProduto2" class="tagMoeda">1,49</span>
             </div>
-            <div class="posicaoFavorito superiorFavorito"><i class="bi bi-heart tamanhoFavorito"></i></div>
-            <div class="precoProduto superiorPreco"><span id="precoProduto2" class="tagMoeda">3,20</span></div>
-            <div class="card-body tamanhoCard"> 
-              <div id="nomeProduto">
-                <h5>Cebolinha</h5>
-                <p> Verdura com baixo teor calórico e rica em fibras, vitaminas e minerais, como vitamina C, vitamina K, folato e potássio.</p>
-              </div>
+            <div class="posicaoFavorito">
+              <button><i class="bi bi-heart tamanhoFavorito"></i></button>
             </div>
-            <div class="card-footer">
-              <div class="input-group bordaInputCard" role="group" aria-label="Basic example">
-                <input class="inputBorda InputBordaEsquerdo" type="number" min="0" name="quantidadeProduto" id="quantidadeProduto2" placeholder="Qtd" onchange="calcularValorTotal(2)">
-                <span class="inputBorda InputBordaDireito" id="valorTotalProduto2"></span>
+            <div class="imagemVenda">
+              <img class="card-img-top tamanhoImgVenda" src="../Imagens/Verdura - Cebolinha.jpg" alt="alface">
+            </div>
+            <hr>
+            <div id="nomeProduto">
+              <h5>Cebolinha</h5>
+              <p>Erva aromática baixa em calorias, rica em antioxidantes e vitaminas A e C.</p>
+            </div>
+            <hr>
+            <div class="qtdTotalCompraCarrinho">
+              <div class="d-flex input-group grupoQtdTotal" role="group" aria-label="Basic example">
+                <input class="inputBorda quantidadeProduto" type="number" min="0" name="quantidadeProduto1" id="quantidadeProduto2" placeholder="Qtd" onchange="calcularValorTotal(2)">
+                <span class="inputBorda valorTotalProduto" id="valorTotalProduto2"></span>
               </div>
               <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btnComprar">Comprar</button>
-                <button type="button" class="btn btnComprar"><img class="sizeCarrinho" src="../Imagens/Icones/shopping-cart-add.svg" alt="Carrinho de compras">Adicionar</button>
+                <button type="button" class="btnComprar">Comprar</button>
+                <button type="button" class="btnCarrinho"><i class="bi bi-cart-plus tamanhoCarrinho"></i></button>
               </div>
             </div>          
           </div>
-          <div class="card geralCard desktopNavbar">
-            <div class="card-header inferior">
-              <img class="card-img-top" src="../Imagens/Verdura - Repolho Roxo.jpg" alt="Repolho Roxo">
+          <div class="geralCard">
+            <div class="posicaoPreco">
+              <span id="precoProduto3" class="tagMoeda">2,48</span>
             </div>
-            <div class="posicaoFavorito superiorFavorito"><i class="bi bi-heart tamanhoFavorito"></i></div>
-            <div class="precoProduto superiorPreco"><span id="precoProduto3" class="tagMoeda">4,00</span></div>
-            <div class="card-body tamanhoCard"> 
-              <div id="nomeProduto">
-                <h5>Cebolinha</h5>
-                <p> Verdura com baixo teor calórico e rica em fibras, vitaminas e minerais, como vitamina C, vitamina K, folato e potássio.</p>
-              </div>
+            <div class="posicaoFavorito">
+              <button><i class="bi bi-heart tamanhoFavorito"></i></button>
             </div>
-            <div class="card-footer">
-              <div class="input-group bordaInputCard" role="group" aria-label="Basic example">
-                <input class="inputBorda InputBordaEsquerdo" type="number" min="0" name="quantidadeProduto" id="quantidadeProduto3" placeholder="Qtd" onchange="calcularValorTotal(3)">
-                <span class="inputBorda InputBordaDireito" id="valorTotalProduto3"></span>
+            <div class="imagemVenda">
+              <img class="card-img-top tamanhoImgVenda" src="../Imagens/Verdura - Repolho Roxo.jpg" alt="alface">
+            </div>
+            <hr>
+            <div id="nomeProduto">
+              <h5>Repolho roxo</h5>
+              <p>Hortaliça nutritiva, rico em fibras, vitamina C e antioxidantes, que auxiliam na saúde intestinal e fortalecem o sistema imunológico.</p>
+            </div>
+            <hr>
+            <div class="qtdTotalCompraCarrinho">
+              <div class="d-flex input-group grupoQtdTotal" role="group" aria-label="Basic example">
+                <input class="inputBorda quantidadeProduto" type="number" min="0" name="quantidadeProduto1" id="quantidadeProduto3" placeholder="Qtd" onchange="calcularValorTotal(3)">
+                <span class="inputBorda valorTotalProduto" id="valorTotalProduto3"></span>
               </div>
               <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btnComprar">Comprar</button>
-                <button type="button" class="btn btnComprar"><img class="sizeCarrinho" src="../Imagens/Icones/shopping-cart-add.svg" alt="Carrinho de compras">Adicionar</button>
+                <button type="button" class="btnComprar">Comprar</button>
+                <button type="button" class="btnCarrinho"><i class="bi bi-cart-plus tamanhoCarrinho"></i></button>
               </div>
             </div>          
           </div>
-          <div class="card geralCard desktopNavbar">
-            <div class="card-header inferior">
-              <img class="card-img-top" src="../Imagens/Verdura - Rucula.jpg" alt="Rúcula">
+          <div class="geralCard">
+            <div class="posicaoPreco">
+              <span id="precoProduto4" class="tagMoeda">2,20</span>
             </div>
-            <div class="posicaoFavorito superiorFavorito"><i class="bi bi-heart tamanhoFavorito"></i></div>
-            <div class="precoProduto superiorPreco"><span id="precoProduto4" class="tagMoeda">2,50</span></div>
-            <div class="card-body tamanhoCard"> 
-              <div id="nomeProduto">
-                <h5>Rúcula</h5>
-                <p> Verdura com baixo teor calórico e rica em fibras, vitaminas e minerais, como vitamina C, vitamina K, folato e potássio.</p>
-              </div>
+            <div class="posicaoFavorito">
+              <button><i class="bi bi-heart tamanhoFavorito"></i></button>
             </div>
-            <div class="card-footer">
-              <div class="input-group bordaInputCard" role="group" aria-label="Basic example">
-                <input class="inputBorda InputBordaEsquerdo" type="number" min="0" name="quantidadeProduto" id="quantidadeProduto4" placeholder="Qtd" onchange="calcularValorTotal(4)">
-                <span class="inputBorda InputBordaDireito" id="valorTotalProduto4"></span>
+            <div class="imagemVenda">
+              <img class="card-img-top tamanhoImgVenda" src="../Imagens/Verdura - Repolho.jpg" alt="alface">
+            </div>
+            <hr>
+            <div id="nomeProduto">
+              <h5>Repolho</h5>
+              <p>Hortaliça versátil, baixa em calorias e rica em fibras, vitaminas C e K, além de minerais como potássio e cálcio, trazendo benefícios para a digestão e saúde óssea.</p>
+            </div>
+            <hr>
+            <div class="qtdTotalCompraCarrinho">
+              <div class="d-flex input-group grupoQtdTotal" role="group" aria-label="Basic example">
+                <input class="inputBorda quantidadeProduto" type="number" min="0" name="quantidadeProduto1" id="quantidadeProduto4" placeholder="Qtd" onchange="calcularValorTotal(4)">
+                <span class="inputBorda valorTotalProduto" id="valorTotalProduto4"></span>
               </div>
               <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btnComprar">Comprar</button>
-                <button type="button" class="btn btnComprar"><img class="sizeCarrinho" src="../Imagens/Icones/shopping-cart-add.svg" alt="Carrinho de compras">Adicionar</button>
+                <button type="button" class="btnComprar">Comprar</button>
+                <button type="button" class="btnCarrinho"><i class="bi bi-cart-plus tamanhoCarrinho"></i></button>
               </div>
             </div>          
           </div>
-          <div class="card geralCard desktopNavbar">
-            <div class="card-header inferior">
-              <img class="card-img-top" src="../Imagens/Verdura - Salsinha.jpg" alt="Salsinha">
+          <div class="geralCard">
+            <div class="posicaoPreco">
+              <span id="precoProduto5" class="tagMoeda">2,60</span>
             </div>
-            <div class="posicaoFavorito superiorFavorito"><i class="bi bi-heart tamanhoFavorito"></i></div>
-            <div class="precoProduto superiorPreco"><span id="precoProduto5" class="tagMoeda">2,80</span></div>
-            <div class="card-body tamanhoCard"> 
-              <div id="nomeProduto">
-                <h5>Salsinha</h5>
-                <p> Verdura com baixo teor calórico e rica em fibras, vitaminas e minerais, como vitamina C, vitamina K, folato e potássio.</p>
-              </div>
+            <div class="posicaoFavorito">
+              <button><i class="bi bi-heart tamanhoFavorito"></i></button>
             </div>
-            <div class="card-footer">
-              <div class="input-group bordaInputCard" role="group" aria-label="Basic example">
-                <input class="inputBorda InputBordaEsquerdo" type="number" min="0" name="quantidadeProduto" id="quantidadeProduto5" placeholder="Qtd" onchange="calcularValorTotal(5)">
-                <span class="inputBorda InputBordaDireito" id="valorTotalProduto5"></span>
+            <div class="imagemVenda">
+              <img class="card-img-top tamanhoImgVenda" src="../Imagens/Verdura - Rucula.jpg" alt="alface">
+            </div>
+            <hr>
+            <div id="nomeProduto">
+              <h5>Rúcula</h5>
+              <p>Baixo teor calórico, vitaminas A e K, além de minerais como ferro e cálcio, promovendo a saúde ocular, óssea e contribuindo para a imunidade</p>
+            </div>
+            <hr>
+            <div class="qtdTotalCompraCarrinho">
+              <div class="d-flex input-group grupoQtdTotal" role="group" aria-label="Basic example">
+                <input class="inputBorda quantidadeProduto" type="number" min="0" name="quantidadeProduto1" id="quantidadeProduto5" placeholder="Qtd" onchange="calcularValorTotal(5)">
+                <span class="inputBorda valorTotalProduto" id="valorTotalProduto5"></span>
               </div>
               <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btnComprar">Comprar</button>
-                <button type="button" class="btn btnComprar"><img class="sizeCarrinho" src="../Imagens/Icones/shopping-cart-add.svg" alt="Carrinho de compras">Adicionar</button>
+                <button type="button" class="btnComprar">Comprar</button>
+                <button type="button" class="btnCarrinho"><i class="bi bi-cart-plus tamanhoCarrinho"></i></button>
               </div>
             </div>          
           </div>
-          <div class="card geralCard desktopNavbar">
-            <div class="card-header inferior">
-              <img class="card-img-top" src="../Imagens/Fruta-Banana.jpg" alt="banana">
+          <div class="geralCard">
+            <div class="posicaoPreco">
+              <span id="precoProduto6" class="tagMoeda">1,25</span>
             </div>
-            <div class="posicaoFavorito superiorFavorito"><i class="bi bi-heart tamanhoFavorito"></i></div>
-            <div class="precoProduto superiorPreco"><span id="precoProduto6" class="tagMoeda">4,99</span></div>
-            <div class="card-body tamanhoCard"> 
-              <div id="nomeProduto">
-                <h5>Banana</h5>
-                <p> Verdura com baixo teor calórico e rica em fibras, vitaminas e minerais, como vitamina C, vitamina K, folato e potássio.</p>
-              </div>
+            <div class="posicaoFavorito">
+              <button><i class="bi bi-heart tamanhoFavorito"></i></button>
             </div>
-            <div class="card-footer">
-              <div class="input-group bordaInputCard" role="group" aria-label="Basic example">
-                <input class="inputBorda InputBordaEsquerdo" type="number" min="0" name="quantidadeProduto" id="quantidadeProduto6" placeholder="Qtd" onchange="calcularValorTotal(6)">
-                <span class="inputBorda InputBordaDireito" id="valorTotalProduto6"></span>
+            <div class="imagemVenda">
+              <img class="card-img-top tamanhoImgVenda" src="../Imagens/Verdura - Salsinha.jpg" alt="alface">
+            </div>
+            <hr>
+            <div id="nomeProduto">
+              <h5>Salsinha</h5>
+              <p>A salsinha é uma erva aromática rica em vitaminas A e C, além de minerais, com propriedades benéficas para a saúde.</p>
+            </div>
+            <hr>
+            <div class="qtdTotalCompraCarrinho">
+              <div class="d-flex input-group grupoQtdTotal" role="group" aria-label="Basic example">
+                <input class="inputBorda quantidadeProduto" type="number" min="0" name="quantidadeProduto1" id="quantidadeProduto6" placeholder="Qtd" onchange="calcularValorTotal(6)">
+                <span class="inputBorda valorTotalProduto" id="valorTotalProduto6"></span>
               </div>
               <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btnComprar">Comprar</button>
-                <button type="button" class="btn btnComprar"><img class="sizeCarrinho" src="../Imagens/Icones/shopping-cart-add.svg" alt="Carrinho de compras">Adicionar</button>
+                <button type="button" class="btnComprar">Comprar</button>
+                <button type="button" class="btnCarrinho"><i class="bi bi-cart-plus tamanhoCarrinho"></i></button>
               </div>
             </div>          
           </div>
-          <div class="card geralCard desktopNavbar">
-            <div class="card-header inferior">
-              <img class="card-img-top" src="../Imagens/Fruta-Maca.jpg" alt="maça">
+          <div class="geralCard">
+            <div class="posicaoPreco">
+              <span id="precoProduto7" class="tagMoeda">4,10</span>
             </div>
-            <div class="posicaoFavorito superiorFavorito"><i class="bi bi-heart tamanhoFavorito"></i></div>
-            <div class="precoProduto superiorPreco"><span id="precoProduto7" class="tagMoeda">1,52</span></div>
-            <div class="card-body tamanhoCard"> 
-              <div id="nomeProduto">
-                <h5>Maça</h5>
-                <p> Verdura com baixo teor calórico e rica em fibras, vitaminas e minerais, como vitamina C, vitamina K, folato e potássio.</p>
-              </div>
+            <div class="posicaoFavorito">
+              <button><i class="bi bi-heart tamanhoFavorito"></i></button>
             </div>
-            <div class="card-footer">
-              <div class="input-group bordaInputCard" role="group" aria-label="Basic example">
-                <input class="inputBorda InputBordaEsquerdo" type="number" min="0" name="quantidadeProduto" id="quantidadeProduto7" placeholder="Qtd" onchange="calcularValorTotal(7)">
-                <span class="inputBorda InputBordaDireito" id="valorTotalProduto7"></span>
+            <div class="imagemVenda">
+              <img class="card-img-top tamanhoImgVenda" src="../Imagens/Fruta-Banana.jpg" alt="Banana">
+            </div>
+            <hr>
+            <div id="nomeProduto">
+              <h5>Banana</h5>
+              <p>A banana é uma fruta nutritiva, rica em potássio, fibras e vitaminas C e B6, fornecendo energia, auxiliando na saúde do coração e no funcionamento do sistema nervoso.</p>
+            </div>
+            <hr>
+            <div class="qtdTotalCompraCarrinho">
+              <div class="d-flex input-group grupoQtdTotal" role="group" aria-label="Basic example">
+                <input class="inputBorda quantidadeProduto" type="number" min="0" name="quantidadeProduto1" id="quantidadeProduto7" placeholder="Qtd" onchange="calcularValorTotal(7)">
+                <span class="inputBorda valorTotalProduto" id="valorTotalProduto7"></span>
               </div>
               <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btnComprar">Comprar</button>
-                <button type="button" class="btn btnComprar"><img class="sizeCarrinho" src="../Imagens/Icones/shopping-cart-add.svg" alt="Carrinho de compras">Adicionar</button>
+                <button type="button" class="btnComprar">Comprar</button>
+                <button type="button" class="btnCarrinho"><i class="bi bi-cart-plus tamanhoCarrinho"></i></button>
               </div>
             </div>          
           </div>
-          <div class="card geralCard desktopNavbar">
-            <div class="card-header inferior">
-              <img class="card-img-top" src="../Imagens/Fruta-Melancia.jpg" alt="Melancia">
+          <div class="geralCard">
+            <div class="posicaoPreco">
+              <span id="precoProduto8" class="tagMoeda">0,50</span>
             </div>
-            <div class="posicaoFavorito superiorFavorito"><i class="bi bi-heart tamanhoFavorito"></i></div>
-            <div class="precoProduto superiorPreco"><span id="precoProduto8" class="tagMoeda">8,50</span></div>
-            <div class="card-body tamanhoCard"> 
-              <div id="nomeProduto">
-                <h5>Melância</h5>
-                <p> Verdura com baixo teor calórico e rica em fibras, vitaminas e minerais, como vitamina C, vitamina K, folato e potássio.</p>
-              </div>
+            <div class="posicaoFavorito">
+              <button><i class="bi bi-heart tamanhoFavorito"></i></button>
             </div>
-            <div class="card-footer">
-              <div class="input-group bordaInputCard" role="group" aria-label="Basic example">
-                <input class="inputBorda InputBordaEsquerdo" type="number" min="0" name="quantidadeProduto" id="quantidadeProduto8" placeholder="Qtd" onchange="calcularValorTotal(8)">
-                <span class="inputBorda InputBordaDireito" id="valorTotalProduto8"></span>
+            <div class="imagemVenda">
+              <img class="card-img-top tamanhoImgVenda" src="../Imagens/Fruta-Maca.jpg" alt="Maça">
+            </div>
+            <hr>
+            <div id="nomeProduto">
+              <h5>Maça</h5>
+              <p>A salsinha é uma erva aromática rica em vitaminas A e C, além de minerais, com propriedades benéficas para a saúde.</p>
+            </div>
+            <hr>
+            <div class="qtdTotalCompraCarrinho">
+              <div class="d-flex input-group grupoQtdTotal" role="group" aria-label="Basic example">
+                <input class="inputBorda quantidadeProduto" type="number" min="0" name="quantidadeProduto1" id="quantidadeProduto8" placeholder="Qtd" onchange="calcularValorTotal(8)">
+                <span class="inputBorda valorTotalProduto" id="valorTotalProduto8"></span>
               </div>
               <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btnComprar">Comprar</button>
-                <button type="button" class="btn btnComprar"><img class="sizeCarrinho" src="../Imagens/Icones/shopping-cart-add.svg" alt="Carrinho de compras">Adicionar</button>
+                <button type="button" class="btnComprar">Comprar</button>
+                <button type="button" class="btnCarrinho"><i class="bi bi-cart-plus tamanhoCarrinho"></i></button>
               </div>
             </div>          
           </div>
-          <div class="card geralCard desktopNavbar">
-            <div class="card-header inferior">
-              <img class="card-img-top" src="../Imagens/Fruta-Pera.jpg" alt="Pera">
+          <div class="geralCard">
+            <div class="posicaoPreco">
+              <span id="precoProduto9" class="tagMoeda">0,75</span>
             </div>
-            <div class="posicaoFavorito superiorFavorito"><i class="bi bi-heart tamanhoFavorito"></i></div>
-            <div class="precoProduto superiorPreco"><span id="precoProduto9" class="tagMoeda">0,80</span></div>
-            <div class="card-body tamanhoCard"> 
-              <div id="nomeProduto">
-                <h5>Pera</h5>
-                <p> Verdura com baixo teor calórico e rica em fibras, vitaminas e minerais, como vitamina C, vitamina K, folato e potássio.</p>
-              </div>
+            <div class="posicaoFavorito">
+              <button><i class="bi bi-heart tamanhoFavorito"></i></button>
             </div>
-            <div class="card-footer">
-              <div class="input-group bordaInputCard" role="group" aria-label="Basic example">
-                <input class="inputBorda InputBordaEsquerdo" type="number" min="0" name="quantidadeProduto" id="quantidadeProduto9" placeholder="Qtd" onchange="calcularValorTotal(9)">
-                <span class="inputBorda InputBordaDireito" id="valorTotalProduto9"></span>
+            <div class="imagemVenda">
+              <img class="card-img-top tamanhoImgVenda" src="../Imagens/Fruta-Limao.jpg" alt="Limão">
+            </div>
+            <hr>
+            <div id="nomeProduto">
+              <h5>Limão</h5>
+              <p>Fruta cítrica rica em vitamina C e antioxidantes, com propriedades desintoxicantes, digestivas e fortalecedoras do sistema imunológico.</p>
+            </div>
+            <hr>
+            <div class="qtdTotalCompraCarrinho">
+              <div class="d-flex input-group grupoQtdTotal" role="group" aria-label="Basic example">
+                <input class="inputBorda quantidadeProduto" type="number" min="0" name="quantidadeProduto1" id="quantidadeProduto9" placeholder="Qtd" onchange="calcularValorTotal(9)">
+                <span class="inputBorda valorTotalProduto" id="valorTotalProduto9"></span>
               </div>
               <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btnComprar">Comprar</button>
-                <button type="button" class="btn btnComprar"><img class="sizeCarrinho" src="../Imagens/Icones/shopping-cart-add.svg" alt="Carrinho de compras">Adicionar</button>
+                <button type="button" class="btnComprar">Comprar</button>
+                <button type="button" class="btnCarrinho"><i class="bi bi-cart-plus tamanhoCarrinho"></i></button>
               </div>
             </div>          
           </div>
-          <div class="card geralCard desktopNavbar">
-            <div class="card-header inferior">
-              <img class="card-img-top" src="../Imagens/Fruta-Uva.jpg" alt="Pera">
+          <div class="geralCard">
+            <div class="posicaoPreco">
+              <span id="precoProduto10" class="tagMoeda">8,90</span>
             </div>
-            <div class="posicaoFavorito superiorFavorito"><i class="bi bi-heart tamanhoFavorito"></i></div>
-            <div class="precoProduto superiorPreco"><span id="precoProduto10" class="tagMoeda">6,10</span></div>
-            <div class="card-body tamanhoCard"> 
-              <div id="nomeProduto">
-                <h5>Uva</h5>
-                <p> Verdura com baixo teor calórico e rica em fibras, vitaminas e minerais, como vitamina C, vitamina K, folato e potássio.</p>
-              </div>
+            <div class="posicaoFavorito">
+              <button><i class="bi bi-heart tamanhoFavorito"></i></button>
             </div>
-            <div class="card-footer">
-              <div class="input-group bordaInputCard" role="group" aria-label="Basic example">
-                <input class="inputBorda InputBordaEsquerdo" type="number" min="0" name="quantidadeProduto" id="quantidadeProduto10" placeholder="Qtd" onchange="calcularValorTotal(10)">
-                <span class="inputBorda InputBordaDireito" id="valorTotalProduto10"></span>
+            <div class="imagemVenda">
+              <img class="card-img-top tamanhoImgVenda" src="../Imagens/Fruta-Melancia.jpg" alt="Melancia">
+            </div>
+            <hr>
+            <div id="nomeProduto">
+              <h5>Melancia</h5>
+              <p>A melancia é uma fruta refrescante e hidratante, composta principalmente por água, além de ser fonte de vitaminas A e C, oferecendo benefícios para a hidratação, saúde da pele e sistema imunológico.
+              </p>
+            </div>
+            <hr>
+            <div class="qtdTotalCompraCarrinho">
+              <div class="d-flex input-group grupoQtdTotal" role="group" aria-label="Basic example">
+                <input class="inputBorda quantidadeProduto" type="number" min="0" name="quantidadeProduto1" id="quantidadeProduto10" placeholder="Qtd" onchange="calcularValorTotal(10)">
+                <span class="inputBorda valorTotalProduto" id="valorTotalProduto10"></span>
               </div>
               <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btnComprar">Comprar</button>
-                <button type="button" class="btn btnComprar"><img class="sizeCarrinho" src="../Imagens/Icones/shopping-cart-add.svg" alt="Carrinho de compras">Adicionar</button>
+                <button type="button" class="btnComprar">Comprar</button>
+                <button type="button" class="btnCarrinho"><i class="bi bi-cart-plus tamanhoCarrinho"></i></button>
               </div>
             </div>          
           </div>
-          <div class="card geralCard desktopNavbar">
-            <div class="card-header inferior">
-              <img class="card-img-top" src="../Imagens/Legume-Abobrinha.jpg" alt="abobrinha">
+          <div class="geralCard">
+            <div class="posicaoPreco">
+              <span id="precoProduto11" class="tagMoeda">2,47</span>
             </div>
-            <div class="posicaoFavorito superiorFavorito"><i class="bi bi-heart tamanhoFavorito"></i></div>
-            <div class="precoProduto superiorPreco"><span id="precoProduto11" class="tagMoeda">0,65</span></div>
-            <div class="card-body tamanhoCard"> 
-              <div id="nomeProduto">
-                <h5>Abobrinha</h5>
-                <p> Verdura com baixo teor calórico e rica em fibras, vitaminas e minerais, como vitamina C, vitamina K, folato e potássio.</p>
-              </div>
+            <div class="posicaoFavorito">
+              <button><i class="bi bi-heart tamanhoFavorito"></i></button>
             </div>
-            <div class="card-footer">
-              <div class="input-group bordaInputCard" role="group" aria-label="Basic example">
-                <input class="inputBorda InputBordaEsquerdo" type="number" min="0" name="quantidadeProduto" id="quantidadeProduto11" placeholder="Qtd" onchange="calcularValorTotal(11)">
-                <span class="inputBorda InputBordaDireito" id="valorTotalProduto11"></span>
+            <div class="imagemVenda">
+              <img class="card-img-top tamanhoImgVenda" src="../Imagens/Fruta-Pera.jpg" alt="Melancia">
+            </div>
+            <hr>
+            <div id="nomeProduto">
+              <h5>Pera</h5>
+              <p>Fruta suculenta e rica em fibras, vitaminas C e K, além de minerais como cobre e potássio, promovendo a saúde digestiva, cardiovascular e fortalecendo o sistema imunológico.
+              </p>
+            </div>
+            <hr>
+            <div class="qtdTotalCompraCarrinho">
+              <div class="d-flex input-group grupoQtdTotal" role="group" aria-label="Basic example">
+                <input class="inputBorda quantidadeProduto" type="number" min="0" name="quantidadeProduto1" id="quantidadeProduto11" placeholder="Qtd" onchange="calcularValorTotal(11)">
+                <span class="inputBorda valorTotalProduto" id="valorTotalProduto11"></span>
               </div>
               <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btnComprar">Comprar</button>
-                <button type="button" class="btn btnComprar"><img class="sizeCarrinho" src="../Imagens/Icones/shopping-cart-add.svg" alt="Carrinho de compras">Adicionar</button>
+                <button type="button" class="btnComprar">Comprar</button>
+                <button type="button" class="btnCarrinho"><i class="bi bi-cart-plus tamanhoCarrinho"></i></button>
               </div>
             </div>          
           </div>
-          <div class="card geralCard desktopNavbar">
-            <div class="card-header inferior">
-              <img class="card-img-top" src="../Imagens/Legume-Beringela.jpg" alt="Berinjela">
+          <div class="geralCard">
+            <div class="posicaoPreco">
+              <span id="precoProduto12" class="tagMoeda">5,32</span>
             </div>
-            <div class="posicaoFavorito superiorFavorito"><i class="bi bi-heart tamanhoFavorito"></i></div>
-            <div class="precoProduto superiorPreco"><span id="precoProduto12" class="tagMoeda">3,18</span></div>
-            <div class="card-body tamanhoCard"> 
-              <div id="nomeProduto">
-                <h5>Berinjela</h5>
-                <p> Verdura com baixo teor calórico e rica em fibras, vitaminas e minerais, como vitamina C, vitamina K, folato e potássio.</p>
-              </div>
+            <div class="posicaoFavorito">
+              <button><i class="bi bi-heart tamanhoFavorito"></i></button>
             </div>
-            <div class="card-footer">
-              <div class="input-group bordaInputCard" role="group" aria-label="Basic example">
-                <input class="inputBorda InputBordaEsquerdo" type="number" min="0" name="quantidadeProduto" id="quantidadeProduto12" placeholder="Qtd" onchange="calcularValorTotal(12)">
-                <span class="inputBorda InputBordaDireito" id="valorTotalProduto12"></span>
+            <div class="imagemVenda">
+              <img class="card-img-top tamanhoImgVenda" src="../Imagens/Fruta-Uva.jpg" alt="Uva">
+            </div>
+            <hr>
+            <div id="nomeProduto">
+              <h5>Uva</h5>
+              <p>Rica em antioxidantes, como resveratrol, além de vitaminas C e K, trazendo benefícios para a saúde cardiovascular, função cerebral e proteção contra danos causados pelos radicais livres.
+              </p>
+            </div>
+            <hr>
+            <div class="qtdTotalCompraCarrinho">
+              <div class="d-flex input-group grupoQtdTotal" role="group" aria-label="Basic example">
+                <input class="inputBorda quantidadeProduto" type="number" min="0" name="quantidadeProduto1" id="quantidadeProduto12" placeholder="Qtd" onchange="calcularValorTotal(12)">
+                <span class="inputBorda valorTotalProduto" id="valorTotalProduto12"></span>
               </div>
               <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btnComprar">Comprar</button>
-                <button type="button" class="btn btnComprar"><img class="sizeCarrinho" src="../Imagens/Icones/shopping-cart-add.svg" alt="Carrinho de compras">Adicionar</button>
+                <button type="button" class="btnComprar">Comprar</button>
+                <button type="button" class="btnCarrinho"><i class="bi bi-cart-plus tamanhoCarrinho"></i></button>
               </div>
             </div>          
           </div>
-          <div class="card geralCard desktopNavbar">
-            <div class="card-header inferior">
-              <img class="card-img-top" src="../Imagens/Legume-Cenoura.jpg" alt="Cenoura">
+          <div class="geralCard">
+            <div class="posicaoPreco">
+              <span id="precoProduto13" class="tagMoeda">2,28</span>
             </div>
-            <div class="posicaoFavorito superiorFavorito"><i class="bi bi-heart tamanhoFavorito"></i></div>
-            <div class="precoProduto superiorPreco"><span id="precoProduto13" class="tagMoeda">3,18</span></div>
-            <div class="card-body tamanhoCard"> 
-              <div id="nomeProduto">
-                <h5>Cenoura</h5>
-                <p> Verdura com baixo teor calórico e rica em fibras, vitaminas e minerais, como vitamina C, vitamina K, folato e potássio.</p>
-              </div>
+            <div class="posicaoFavorito">
+              <button><i class="bi bi-heart tamanhoFavorito"></i></button>
             </div>
-            <div class="card-footer">
-              <div class="input-group bordaInputCard" role="group" aria-label="Basic example">
-                <input class="inputBorda InputBordaEsquerdo" type="number" min="0" name="quantidadeProduto" id="quantidadeProduto13" placeholder="Qtd" onchange="calcularValorTotal(13)">
-                <span class="inputBorda InputBordaDireito" id="valorTotalProduto13"></span>
+            <div class="imagemVenda">
+              <img class="card-img-top tamanhoImgVenda" src="../Imagens/Legume-Abobrinha.jpg" alt="Uva">
+            </div>
+            <hr>
+            <div id="nomeProduto">
+              <h5>Abobrinha</h5>
+              <p>Vegetal de baixo teor calórico, rico em fibras, vitaminas A e C, além de minerais como potássio, trazendo benefícios para a digestão, saúde ocular e manutenção da pressão arterial.
+              </p>
+            </div>
+            <hr>
+            <div class="qtdTotalCompraCarrinho">
+              <div class="d-flex input-group grupoQtdTotal" role="group" aria-label="Basic example">
+                <input class="inputBorda quantidadeProduto" type="number" min="0" name="quantidadeProduto1" id="quantidadeProduto13" placeholder="Qtd" onchange="calcularValorTotal(13)">
+                <span class="inputBorda valorTotalProduto" id="valorTotalProduto13"></span>
               </div>
               <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btnComprar">Comprar</button>
-                <button type="button" class="btn btnComprar"><img class="sizeCarrinho" src="../Imagens/Icones/shopping-cart-add.svg" alt="Carrinho de compras">Adicionar</button>
+                <button type="button" class="btnComprar">Comprar</button>
+                <button type="button" class="btnCarrinho"><i class="bi bi-cart-plus tamanhoCarrinho"></i></button>
               </div>
             </div>          
           </div>
-          <div class="card geralCard desktopNavbar">
-            <div class="card-header inferior">
-              <img class="card-img-top" src="../Imagens/Legume-Pimentao.jpg" alt="Pimentão">
+          <div class="geralCard">
+            <div class="posicaoPreco">
+              <span id="precoProduto15" class="tagMoeda">2,15</span>
             </div>
-            <div class="posicaoFavorito superiorFavorito"><i class="bi bi-heart tamanhoFavorito"></i></div>
-            <div class="precoProduto superiorPreco"><span id="precoProduto14" class="tagMoeda">3,18</span></div>
-            <div class="card-body tamanhoCard"> 
-              <div id="nomeProduto">
-                <h5>Pimentão</h5>
-                <p> Verdura com baixo teor calórico e rica em fibras, vitaminas e minerais, como vitamina C, vitamina K, folato e potássio.</p>
-              </div>
+            <div class="posicaoFavorito">
+              <button><i class="bi bi-heart tamanhoFavorito"></i></button>
             </div>
-            <div class="card-footer">
-              <div class="input-group bordaInputCard" role="group" aria-label="Basic example">
-                <input class="inputBorda InputBordaEsquerdo" type="number" min="0" name="quantidadeProduto" id="quantidadeProduto14" placeholder="Qtd" onchange="calcularValorTotal(14)">
-                <span class="inputBorda InputBordaDireito" id="valorTotalProduto14"></span>
+            <div class="imagemVenda">
+              <img class="card-img-top tamanhoImgVenda" src="../Imagens/Legume-Beringela.jpg" alt="Berinjela">
+            </div>
+            <hr>
+            <div id="nomeProduto">
+              <h5>Berinjela</h5>
+              <p>Vegetal nutritivo, rico em fibras, antioxidantes e vitaminas B e K, auxiliando na saúde digestiva, controle do colesterol e promoção da saúde cerebral.
+              </p>
+            </div>
+            <hr>
+            <div class="qtdTotalCompraCarrinho">
+              <div class="d-flex input-group grupoQtdTotal" role="group" aria-label="Basic example">
+                <input class="inputBorda quantidadeProduto" type="number" min="0" name="quantidadeProduto1" id="quantidadeProduto15" placeholder="Qtd" onchange="calcularValorTotal(15)">
+                <span class="inputBorda valorTotalProduto" id="valorTotalProduto15"></span>
               </div>
               <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btnComprar">Comprar</button>
-                <button type="button" class="btn btnComprar"><img class="sizeCarrinho" src="../Imagens/Icones/shopping-cart-add.svg" alt="Carrinho de compras">Adicionar</button>
+                <button type="button" class="btnComprar">Comprar</button>
+                <button type="button" class="btnCarrinho"><i class="bi bi-cart-plus tamanhoCarrinho"></i></button>
               </div>
             </div>          
           </div>
-          <div class="card geralCard desktopNavbar">
-            <div class="card-header inferior">
-              <img class="card-img-top" src="../Imagens/Legume-Rabanete.jpg" alt="Pimentão">
+          <div class="geralCard">
+            <div class="posicaoPreco">
+              <span id="precoProduto16" class="tagMoeda">1,42</span>
             </div>
-            <div class="posicaoFavorito superiorFavorito"><i class="bi bi-heart tamanhoFavorito"></i></div>
-            <div class="precoProduto superiorPreco"><span id="precoProduto15" class="tagMoeda">2,50</span></div>
-            <div class="card-body tamanhoCard"> 
-              <div id="nomeProduto">
-                <h5>Rabanete</h5>
-                <p> Verdura com baixo teor calórico e rica em fibras, vitaminas e minerais, como vitamina C, vitamina K, folato e potássio.</p>
-              </div>
+            <div class="posicaoFavorito">
+              <button><i class="bi bi-heart tamanhoFavorito"></i></button>
             </div>
-            <div class="card-footer">
-              <div class="input-group bordaInputCard" role="group" aria-label="Basic example">
-                <input class="inputBorda InputBordaEsquerdo" type="number" min="0" name="quantidadeProduto" id="quantidadeProduto15" placeholder="Qtd" onchange="calcularValorTotal(15)">
-                <span class="inputBorda InputBordaDireito" id="valorTotalProduto15"></span>
+            <div class="imagemVenda">
+              <img class="card-img-top tamanhoImgVenda" src="../Imagens/Legume-Cenoura.jpg" alt="Cenoura">
+            </div>
+            <hr>
+            <div id="nomeProduto">
+              <h5>Cenoura</h5>
+              <p>Raiz nutritiva, rica em vitamina A, fibras e antioxidantes, beneficiando a saúde ocular, imunidade e saúde da pele.
+              </p>
+            </div>
+            <hr>
+            <div class="qtdTotalCompraCarrinho">
+              <div class="d-flex input-group grupoQtdTotal" role="group" aria-label="Basic example">
+                <input class="inputBorda quantidadeProduto" type="number" min="0" name="quantidadeProduto1" id="quantidadeProduto16" placeholder="Qtd" onchange="calcularValorTotal(16)">
+                <span class="inputBorda valorTotalProduto" id="valorTotalProduto16"></span>
               </div>
               <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btnComprar">Comprar</button>
-                <button type="button" class="btn btnComprar"><img class="sizeCarrinho" src="../Imagens/Icones/shopping-cart-add.svg" alt="Carrinho de compras">Adicionar</button>
+                <button type="button" class="btnComprar">Comprar</button>
+                <button type="button" class="btnCarrinho"><i class="bi bi-cart-plus tamanhoCarrinho"></i></button>
               </div>
             </div>          
           </div>
-          <div class="card geralCard desktopNavbar">
-            <div class="card-header inferior">
-              <img class="card-img-top" src="../Imagens/Fruta-Limao.jpg" alt="Limão">
+          <div class="geralCard">
+            <div class="posicaoPreco">
+              <span id="precoProduto17" class="tagMoeda">6,14</span>
             </div>
-            <div class="posicaoFavorito superiorFavorito"><i class="bi bi-heart tamanhoFavorito"></i></div>
-            <div class="precoProduto superiorPreco"><span id="precoProduto16" class="tagMoeda">1,70</span></div>
-            <div class="card-body tamanhoCard"> 
-              <div id="nomeProduto">
-                <h5>Limão</h5>
-                <p> Verdura com baixo teor calórico e rica em fibras, vitaminas e minerais, como vitamina C, vitamina K, folato e potássio.</p>
-              </div>
+            <div class="posicaoFavorito">
+              <button><i class="bi bi-heart tamanhoFavorito"></i></button>
             </div>
-            <div class="card-footer">
-              <div class="input-group bordaInputCard" role="group" aria-label="Basic example">
-                <input class="inputBorda InputBordaEsquerdo" type="number" min="0" name="quantidadeProduto" id="quantidadeProduto16" placeholder="Qtd" onchange="calcularValorTotal(16)">
-                <span class="inputBorda InputBordaDireito" id="valorTotalProduto16"></span>
+            <div class="imagemVenda">
+              <img class="card-img-top tamanhoImgVenda" src="../Imagens/Legume-Pimentao.jpg" alt="Pimentão">
+            </div>
+            <hr>
+            <div id="nomeProduto">
+              <h5>Primentão</h5>
+              <p>Raiz nutritiva, rica em vitamina A, fibras e antioxidantes, beneficiando a saúde ocular, imunidade e saúde da pele.
+              </p>
+            </div>
+            <hr>
+            <div class="qtdTotalCompraCarrinho">
+              <div class="d-flex input-group grupoQtdTotal" role="group" aria-label="Basic example">
+                <input class="inputBorda quantidadeProduto" type="number" min="0" name="quantidadeProduto1" id="quantidadeProduto17" placeholder="Qtd" onchange="calcularValorTotal(17)">
+                <span class="inputBorda valorTotalProduto" id="valorTotalProduto17"></span>
               </div>
               <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btnComprar">Comprar</button>
-                <button type="button" class="btn btnComprar"><img class="sizeCarrinho" src="../Imagens/Icones/shopping-cart-add.svg" alt="Carrinho de compras">Adicionar</button>
+                <button type="button" class="btnComprar">Comprar</button>
+                <button type="button" class="btnCarrinho"><i class="bi bi-cart-plus tamanhoCarrinho"></i></button>
               </div>
             </div>          
           </div>
-          <!---------------- Card de venda  - Mobile ------------->
-          <div class="cardMobile mobileNavbar d-md-none">
-            <img src="../Imagens/Verdura - Alface.jpg" alt="">
-            <span class="precoMobile" id="precoProduto13">Preço: 2,75</span>
-            <h5>Alface</h5>
-            <p>Verdura com baixo teor calórico e rica em fibras, vitaminas e minerais, como vitamina C, vitamina K, folato e potássio.</p>
-            <div class="input-group gridInputMobile" role="group" aria-label="Basic example">
-              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto13" placeholder="Qtd" onchange="calcularValorTotal(this)">
-              <input class="tamDireitoMobile" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Total">
+          <div class="geralCard">
+            <div class="posicaoPreco">
+              <span id="precoProduto18" class="tagMoeda">1,49</span>
             </div>
-            <div class="btn-group gridBtnMobile" role="group" aria-label="Basic example">
-              <button type="button btnMobile" class="btn btnComprar">Comprar</button>
-              <button type="button btnMobile" class="btn btnComprar">Adicionar</button>
+            <div class="posicaoFavorito">
+              <button><i class="bi bi-heart tamanhoFavorito"></i></button>
             </div>
-          </div>
-          <div class="cardMobile mobileNavbar d-md-none">
-            <img src="../Imagens/Verdura - Cebolinha.jpg" alt="">
-            <span class="precoMobile" id="precoProduto14">Preço: 2,75</span>
-            <h5>Cebolinha</h5>
-            <p>Erva aromática que contém vitaminas A, C e K, além de minerais como ferro, cálcio e potássio.</p>
-            <div class="input-group gridInputMobile" role="group" aria-label="Basic example">
-              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto14" placeholder="Qtd" onchange="calcularValorTotal(this)">
-              <input class="tamDireitoMobile" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Total">
+            <div class="imagemVenda">
+              <img class="card-img-top tamanhoImgVenda" src="../Imagens/Legume-Rabanete.jpg" alt="Rabanete">
             </div>
-            <div class="btn-group gridBtnMobile" role="group" aria-label="Basic example">
-              <button type="button btnMobile" class="btn btnComprar">Comprar</button>
-              <button type="button btnMobile" class="btn btnComprar">Adicionar</button>
+            <hr>
+            <div id="nomeProduto">
+              <h5>Rabanete</h5>
+              <p>raiz crocante e picante, rico em fibras, vitamina C e potássio, contribuindo para a saúde digestiva, fortalecimento do sistema imunológico e saúde cardiovascular.
+              </p>
             </div>
-          </div>
-          <div class="cardMobile mobileNavbar d-md-none">
-            <img src="../Imagens/Verdura - Repolho Roxo.jpg" alt="">
-            <span class="precoMobile" id="precoProduto15">Preço: 2,75</span>
-            <h5>Repolho Roxo</h5>
-            <p>Hortaliça rica em antioxidantes e vitaminas, incluindo vitamina C, vitamina K e ácido fólico.</p>
-            <div class="input-group gridInputMobile" role="group" aria-label="Basic example">
-              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto15" placeholder="Qtd" onchange="calcularValorTotal(this)">
-              <input class="tamDireitoMobile" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Total">
-            </div>
-            <div class="btn-group gridBtnMobile" role="group" aria-label="Basic example">
-              <button type="button btnMobile" class="btn btnComprar">Comprar</button>
-              <button type="button btnMobile" class="btn btnComprar">Adicionar</button>
-            </div>
-          </div>
-          <div class="cardMobile mobileNavbar d-md-none">
-            <img src="../Imagens/Fruta-Banana.jpg" alt="">
-            <span class="precoMobile" id="precoProduto16">Preço: 2,75</span>
-            <h5>Banana</h5>
-            <p>Fruta rica em fibras, potássio, vitaminas B6 e C, além de conter antioxidantes como carotenoides e flavonoides.</p>
-            <div class="input-group gridInputMobile" role="group" aria-label="Basic example">
-              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto16" placeholder="Qtd" onchange="calcularValorTotal(this)">
-              <input class="tamDireitoMobile" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Total">
-            </div>
-            <div class="btn-group gridBtnMobile" role="group" aria-label="Basic example">
-              <button type="button btnMobile" class="btn btnComprar">Comprar</button>
-              <button type="button btnMobile" class="btn btnComprar">Adicionar</button>
-            </div>
-          </div>
-          <div class="cardMobile mobileNavbar d-md-none">
-            <img src="../Imagens/Fruta-Maca.jpg" alt="">
-            <span class="precoMobile" id="precoProduto17">Preço: 2,75</span>
-            <h5>Maça</h5>
-            <p>Fruta com baixo teor calórico e rica em fibras solúveis, além de conter vitamina C, antioxidantes como flavonoides e ácido fenólico, e minerais como potássio e cálcio.</p>
-            <div class="input-group gridInputMobile" role="group" aria-label="Basic example">
-              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto17" placeholder="Qtd" onchange="calcularValorTotal(this)">
-              <input class="tamDireitoMobile" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Total">
-            </div>
-            <div class="btn-group gridBtnMobile" role="group" aria-label="Basic example">
-              <button type="button btnMobile" class="btn btnComprar">Comprar</button>
-              <button type="button btnMobile" class="btn btnComprar">Adicionar</button>
-            </div>
-          </div>
-          <div class="cardMobile mobileNavbar d-md-none">
-            <img src="../Imagens/Fruta-Uva.jpg" alt="">
-            <span class="precoMobile" id="precoProduto18">Preço: 2,75</span>
-            <h5>Uva</h5>
-            <p>Fruta com baixo teor calórico e rica em antioxidantes, como resveratrol e quercetina, além de conter vitaminas C e K e minerais como potássio e magnésio.</p>
-            <div class="input-group gridInputMobile" role="group" aria-label="Basic example">
-              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto18" placeholder="Qtd" onchange="calcularValorTotal(this)">
-              <input class="tamDireitoMobile" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Total">
-            </div>
-            <div class="btn-group gridBtnMobile" role="group" aria-label="Basic example">
-              <button type="button btnMobile" class="btn btnComprar">Comprar</button>
-              <button type="button btnMobile" class="btn btnComprar">Adicionar</button>
-            </div>
-          </div>
-          <div class="cardMobile mobileNavbar d-md-none">
-            <img src="../Imagens/Fruta-Melancia.jpg" alt="">
-            <span class="precoMobile" id="precoProduto19" >Preço: 2,75</span>
-            <h5>Melancia</h5>
-            <p>Fruta com alto teor de água e baixo teor calórico, além de conter antioxidantes como licopeno e vitamina C, e minerais como potássio e magnésio.</p>
-            <div class="input-group gridInputMobile" role="group" aria-label="Basic example">
-              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto19" placeholder="Qtd" onchange="calcularValorTotal(this)">
-              <input class="tamDireitoMobile" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Total">
-            </div>
-            <div class="btn-group gridBtnMobile" role="group" aria-label="Basic example">
-              <button type="button btnMobile" class="btn btnComprar">Comprar</button>
-              <button type="button btnMobile" class="btn btnComprar">Adicionar</button>
-            </div>
-          </div>
-          <div class="cardMobile mobileNavbar d-md-none">
-            <img src="../Imagens/Legume-Abobrinha.jpg" alt="">
-            <span class="precoMobile" id="precoProduto20">Preço: 2,75</span>
-            <h5>Abobrinha</h5>
-            <p>Vegetal com baixo teor calórico e rico em água, fibras e nutrientes, como vitamina C, vitamina B6, potássio e magnésio.</p>
-            <div class="input-group gridInputMobile" role="group" aria-label="Basic example">
-              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto20" placeholder="Qtd" onchange="calcularValorTotal(this)">
-              <input class="tamDireitoMobile" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Total">
-            </div>
-            <div class="btn-group gridBtnMobile" role="group" aria-label="Basic example">
-              <button type="button btnMobile" class="btn btnComprar">Comprar</button>
-              <button type="button btnMobile" class="btn btnComprar">Adicionar</button>
-            </div>
-          </div>
-          <div class="cardMobile mobileNavbar d-md-none">
-            <img src="../Imagens/Legume-Beringela.jpg" alt="">
-            <span class="precoMobile" id="precoProduto21">Preço: 2,75</span>
-            <h5>Berinjela</h5>
-            <p>Vegetal com baixo teor calórico e rico em fibras, além de conter antioxidantes como antocianinas e ácido clorogênico, vitaminas B6 e C, e minerais como potássio e magnésio.</p>
-            <div class="input-group gridInputMobile" role="group" aria-label="Basic example">
-              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto21" placeholder="Qtd" onchange="calcularValorTotal(this)">
-              <input class="tamDireitoMobile" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Total">
-            </div>
-            <div class="btn-group gridBtnMobile" role="group" aria-label="Basic example">
-              <button type="button btnMobile" class="btn btnComprar">Comprar</button>
-              <button type="button btnMobile" class="btn btnComprar">Adicionar</button>
-            </div>
-          </div>
-          <div class="cardMobile mobileNavbar d-md-none">
-            <img src="../Imagens/Legume-Rabanete.jpg" alt="">
-            <span class="precoMobile" id="precoProduto22">Preço: 2,75</span>
-            <h5>Rabanete</h5>
-            <p>Verdura com baixo teor calórico e rica em fibras, vitaminas e minerais, como vitamina C, vitamina K, folato e potássio.</p>
-            <div class="input-group gridInputMobile" role="group" aria-label="Basic example">
-              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto22" placeholder="Qtd" onchange="calcularValorTotal(this)">
-              <input class="tamDireitoMobile" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Total">
-            </div>
-            <div class="btn-group gridBtnMobile" role="group" aria-label="Basic example">
-              <button type="button btnMobile" class="btn btnComprar">Comprar</button>
-              <button type="button btnMobile" class="btn btnComprar">Adicionar</button>
-            </div>
-          </div>
-          <div class="cardMobile mobileNavbar d-md-none">
-            <img src="../Imagens/Legume-Cenoura.jpg" alt="">
-            <span class="precoMobile" id="precoProduto23">Preço: 2,75</span>
-            <h5>Cenoura</h5>
-            <p>Vegetal com baixo teor calórico e rico em fibras, além de conter vitamina A, vitamina K, vitamina C e potássio. Também é uma boa fonte de antioxidantes, como carotenoides, que podem ajudar a melhorar a saúde ocular e reduzir o risco de doenças crônicas.</p>
-            <div class="input-group gridInputMobile" role="group" aria-label="Basic example">
-              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto23" placeholder="Qtd" onchange="calcularValorTotal(this)">
-              <input class="tamDireitoMobile" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Total">
-            </div>
-            <div class="btn-group gridBtnMobile" role="group" aria-label="Basic example">
-              <button type="button btnMobile" class="btn btnComprar">Comprar</button>
-              <button type="button btnMobile" class="btn btnComprar">Adicionar</button>
-            </div>
-          </div>
-          <div class="cardMobile mobileNavbar d-md-none">
-            <img src="../Imagens/Legume-Pimentao.jpg" alt="">
-            <span class="precoMobile" id="precoProduto24">Preço: 2,75</span>
-            <h5>Pimentão</h5>
-            <p>Vegetal com baixo teor calórico e rico em fibras, além de conter vitamina C, vitamina B6, vitamina A e potássio. Também é uma boa fonte de antioxidantes, como carotenoides e flavonoides, que podem ajudar a reduzir o risco de doenças crônicas.</p>
-            <div class="input-group gridInputMobile" role="group" aria-label="Basic example">
-              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto24" placeholder="Qtd" onchange="calcularValorTotal(this)">
-              <input class="tamDireitoMobile" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Total">
-            </div>
-            <div class="btn-group gridBtnMobile" role="group" aria-label="Basic example">
-              <button type="button btnMobile" class="btn btnComprar">Comprar</button>
-              <button type="button btnMobile" class="btn btnComprar">Adicionar</button>
-            </div>
+            <hr>
+            <div class="qtdTotalCompraCarrinho">
+              <div class="d-flex input-group grupoQtdTotal" role="group" aria-label="Basic example">
+                <input class="inputBorda quantidadeProduto" type="number" min="0" name="quantidadeProduto1" id="quantidadeProduto18" placeholder="Qtd" onchange="calcularValorTotal(18)">
+                <span class="inputBorda valorTotalProduto" id="valorTotalProduto18"></span>
+              </div>
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btnComprar">Comprar</button>
+                <button type="button" class="btnCarrinho"><i class="bi bi-cart-plus tamanhoCarrinho"></i></button>
+              </div>
+            </div>          
           </div>
           
         </section>

@@ -12075,181 +12075,210 @@ body {
   margin: 0px 10px;
 }
 
-/* Personalização cartões de venda */
+/* ----------------------- Personalização cartões de venda ------------------- */
 .geralCard {
-  width: 18rem;
-}
-
-.inferior {
-  position: relative;
-  z-index: 1;
-}
-
-.superiorPreco {
-  position: absolute;
-  z-index: 2;
-}
-
-.superiorFavorito {
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  right: 0px;
-  margin: 1px;
-}
-
-.geralCard {
-  width: 15rem;
-}
-
-#nomeProduto {
-  margin: 0;
-  padding: 0;
-}
-
-#nomeProduto h5, #nomeProduto .h5 {
-  display: block;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  background: #7C8C03;
-  color: white;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-#nomeProduto p {
-  text-align: justify;
-}
-
-.tamanhoCard {
-  padding: 5px 10px 0px 10px;
-}
-
-.precoProduto {
-  background: #A83C01;
-  color: white;
-  display: inline;
-  padding: 5px;
-  margin: 1px;
-  border-radius: 5px 0px 5px 0px;
-}
-
-.tamanhoFavorito {
-  font-size: 1.6rem;
-  color: #A83C01;
-  font-weight: bolder;
-}
-
-.tamanhoFavorito:hover {
-  background: rgba(168, 59, 1, 0.2745098039);
-  border-radius: 50%;
-}
-
-.posicaoFavorito {
-  display: inline;
-  text-align: end;
-  cursor: pointer;
-}
-
-.btnComprar {
-  background: #7C8C03;
-  color: #f2f2f2;
-  border: 1px solid black;
-  border-radius: 0px 0px 5px 5px;
-}
-
-.btnComprar:hover {
-  background: rgba(124, 140, 3, 0.5);
-}
-
-.sizeCarrinho {
-  width: 1.4rem;
-}
-
-#quantidadeProduto {
-  width: 50%;
-}
-
-.inputBorda {
-  border: #7C8C03 1px solid;
-}
-
-.InputBordaEsquerdo {
-  border-radius: 5px 0px 0px 0px;
-  width: 50%;
-}
-
-.InputBordaDireito {
-  border-radius: 0px 5px 0px 0px;
-  width: 50%;
-}
-
-.tagMoeda::before {
-  content: "R$ ";
-}
-
-/*---------------- Card de venda  - Mobile -------------*/
-.cardMobile {
-  background: #f2f2f2;
-  display: grid;
-  grid-template-areas: "tit tit tit" "img val val" "img par par" "img par par" "img inp inp" "img btn btn";
-}
-
-.cardMobile h5, .cardMobile .h5 {
-  height: 4vh;
-  grid-area: tit;
-  text-align: center;
-  background: #7C8C03;
-  color: #f2f2f2;
-  display: block;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 5px 0px;
-}
-
-.cardMobile img {
-  width: 20vh;
-  grid-area: img;
+  background: #F2F2F2;
   border-radius: 10px;
+  padding: 10px;
 }
 
-.cardMobile span {
-  grid-area: val;
-  margin: 0px 5px;
-  font-weight: bold;
-  color: #A83C01;
+/* Estilos para dispositivos móveis */
+@media (max-width: 767px) {
+  .geralCard {
+    width: 100%;
+    box-shadow: 0px 0px 3px 3px #7C8C03;
+  }
+  .imagemVenda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tamanhoImgVenda {
+    width: 40vw;
+  }
+  .posicaoFavorito {
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    color: red;
+  }
+  .tamanhoFavorito {
+    font-size: 1.4rem;
+  }
+  .posicaoFavorito button {
+    border: none;
+    border-radius: 50%;
+    background: white;
+  }
+  .posicaoFavorito button:hover {
+    background: rgba(255, 0, 0, 0.322);
+  }
+  .posicaoPreco {
+    position: absolute;
+    background: #A83C01;
+    color: #F2F2F2;
+    font-size: 1.2rem;
+    left: 0;
+    margin-left: 15px;
+    padding: 2px 5px;
+    border-radius: 5px;
+  }
+  .posicaoPreco::before {
+    content: "R$ ";
+  }
+  #nomeProduto {
+    padding: 5px 0px;
+  }
+  #nomeProduto h5, #nomeProduto .h5 {
+    text-align: center;
+    background: #7C8C03;
+    color: white;
+    padding: 5px 0px;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+  #nomeProduto p {
+    text-align: justify;
+    padding: 0px 5px;
+  }
+  .grupoQtdTotal {
+    display: flex;
+    width: 100%;
+  }
+  .quantidadeProduto {
+    flex-grow: 1;
+  }
+  .valorTotalProduto {
+    flex-grow: 2;
+  }
+  .quantidadeProduto {
+    border-radius: 5px 0px 0px 0px;
+    border: 1px solid #7C8C03;
+    text-align: center;
+  }
+  .valorTotalProduto {
+    border: 1px solid #7C8C03;
+    border-radius: 0px 5px 0px 0px;
+    text-align: center;
+  }
+  .valorTotalProduto::before {
+    content: "Total: R$ ";
+  }
+  .btn-group {
+    display: flex;
+    width: 100%;
+  }
+  .btnComprar, .btnCarrinho {
+    flex-grow: 1;
+  }
+  .btnComprar {
+    background: #7C8C03;
+    border: 1px solid black;
+    border-radius: 0px 0px 0px 5px;
+    color: #f2f2f2;
+  }
+  .btnCarrinho {
+    background: #7C8C03;
+    border: 1px solid black;
+    border-radius: 0px 0px 5px 0px;
+  }
+  .tamanhoCarrinho {
+    color: #f2f2f2;
+  }
+  .tamanhoCarrinho::after {
+    content: " Carrinho";
+  }
 }
-
-.cardMobile p {
-  grid-area: par;
-  margin: 0px 5px;
+/* Estilos para desktop */
+@media (min-width: 768px) {
+  .geralCard {
+    width: 300px;
+    box-shadow: 0px 0px 3px 3px #7C8C03;
+  }
+  .posicaoFavorito {
+    position: absolute;
+    margin-left: 245px;
+    color: red;
+  }
+  .posicaoFavorito button {
+    border: none;
+    border-radius: 50%;
+    background: white;
+  }
+  .posicaoFavorito button:hover {
+    background: rgba(255, 0, 0, 0.322);
+  }
+  .tamanhoFavorito {
+    font-size: 1.5rem;
+  }
+  .posicaoPreco {
+    position: absolute;
+    background: #A83C01;
+    color: #F2F2F2;
+    margin-right: 223px;
+    padding: 5px 15px;
+    border-radius: 10px 0px 10px 0px;
+  }
+  .posicaoPreco::before {
+    content: "R$ ";
+  }
+  #nomeProduto {
+    padding: 5px 0px;
+  }
+  #nomeProduto h5, #nomeProduto .h5 {
+    text-align: center;
+    background: #7C8C03;
+    color: white;
+    padding: 5px 0px;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+  #nomeProduto p {
+    text-align: justify;
+    padding: 0px 5px;
+    height: 110px;
+  }
+  .quantidadeProduto {
+    width: 50%;
+    border-radius: 5px 0px 0px 0px;
+    border: 1px solid #7C8C03;
+    text-align: center;
+  }
+  .valorTotalProduto {
+    border: 1px solid #7C8C03;
+    border-radius: 0px 5px 0px 0px;
+    width: 50%;
+    text-align: center;
+  }
+  .valorTotalProduto::before {
+    content: "Total: R$ ";
+  }
+  .btnComprar {
+    background: #7C8C03;
+    border: 1px solid black;
+    border-radius: 0px 0px 0px 5px;
+    width: 139.25px;
+    color: #f2f2f2;
+  }
+  .btnCarrinho {
+    background: #7C8C03;
+    border: 1px solid black;
+    border-radius: 0px 0px 5px 0px;
+    width: 139.25px;
+  }
+  .tamanhoCarrinho {
+    color: #f2f2f2;
+  }
+  .tamanhoCarrinho::after {
+    content: " Carrinho";
+  }
 }
-
-.gridInputMobile {
-  grid-area: inp;
-  margin: 0px 5px;
-  height: 6vh;
-}
-
-.gridBtnMobile {
-  grid-area: btn;
-  margin: 0px 5px;
-  height: 6vh;
-  margin-bottom: 5px;
-}
-
-.tamEsquerdoMobile {
-  width: 48.5%;
-}
-
-.tamDireitoMobile {
-  width: 48.5%;
-}
-
 /*--------Footer------*/
 #footer {
-  background: #f2f2f2;
+  background: #7C8C03;
+  color: #f2f2f2;
+  font-size: 0.8rem;
+  border-radius: 10px 10px 0px 0px;
   box-shadow: 0px 0px 5px 5px #2f2f2f;
 }
 
