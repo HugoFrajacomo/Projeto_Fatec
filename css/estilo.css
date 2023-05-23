@@ -12185,6 +12185,10 @@ body {
   width: 50%;
 }
 
+.tagMoeda::before {
+  content: "R$ ";
+}
+
 /*---------------- Card de venda  - Mobile -------------*/
 .cardMobile {
   background: #f2f2f2;
