@@ -17,6 +17,7 @@
 
     <body>
        <header>
+        <!-- Banner -->
         <div>
           <div class="row g-0 bgBanner">
             <div class="col-md-12 d-flex justify-content-center">
@@ -56,10 +57,10 @@
                     <a class="nav-link linkNavLat" href="CarrinhoCompras.html"><img class="configImgMobile" src="../Imagens/Icones/shopping-cart.svg" alt="carrinho de compra"> Meu Carrinho</a>
                   </li>
                   <li class="nav-item my-1 efeitoMouse">
-                    <a class="nav-link linkNavLat active2" href="Sobre.html"><img class="configImgMobile" src="../Imagens/Icones/home.svg" alt="Empresa"> Sobre a Empresa</a>
+                    <a class="nav-link linkNavLat active2" href="Sobre.html"><img class="configImgMobile" src="../Imagens/Icones/home.svg" alt=""> Sobre a Empresa</a>
                   </li>
                   <li class="nav-item my-1 efeitoMouse">
-                    <a class="nav-link linkNavLat" href="AreaDoUsuario.html"><img class="configImgMobile" src="../Imagens/Icones/settings.svg" alt="Usuário"> Área do Usuário</a>
+                    <a class="nav-link linkNavLat" href="AreaDoUsuario.html"><img class="configImgMobile" src="../Imagens/Icones/settings.svg" alt=""> Área do Usuário</a>
                   </li>
                   <!--
                   <li class="nav-item dropdown efeitoMouse">
@@ -108,7 +109,7 @@
                   <a class="nav-link active" aria-current="page" href="CarrinhoCompras.html">Meu Carrinho</a>
                 </li>
                 <li class="nav-item mx-1 efeitoMouseDesktop">
-                  <a class="nav-link activeDesktop" aria-current="page" href="Sobre.html">Sobre a Empresa</a>
+                  <a class="nav-link active activeDesktop" aria-current="page" href="Sobre.html">Sobre a Empresa</a>
                 </li>
                 <li class="nav-item mx-1 efeitoMouseDesktop">
                   <a class="nav-link" aria-current="page" href="AreaDoUsuario.html">Área do Usuário</a>
@@ -139,63 +140,147 @@
         </nav>
        </header>
 
-       <main>
-        <!-- Apresentação desktop -->
-        <div class=tituloSobreEmpresa><h2>História</h2></div>
+       <div id="containerCadastro" class="d-flex justify-content-center align-items-center">
+        <main class="mainCadastro">
+            <form class="row g-3 mx-2 needs-validation" novalidate>
+                <h4>Cadastro de acesso</h4>
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">Nome Completo</label>
+                  <input type="text" class="form-control" id="validationCustom01" required>
+                  <div class="valid-feedback">
+                    Nome disponível
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">CPF / CNPJ</label>
+                  <input type="text" class="form-control" id="validationCustom01" required>
+                  <div class="valid-feedback">
+                    Nome disponível
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Telefone</label>
+                  <input type="tel" class="form-control" id="validationCustom02" placeholder="(XX) XXXXX-XXXX" required>
+                  <div class="valid-feedback">
+                    Telefone valido
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">Data Nascimento</label>
+                  <input type="date" class="form-control" id="validationCustom01" required>
+                  <div class="valid-feedback">
+                    Nome disponível
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">E-mail</label>
+                  <input type="email" class="form-control" id="validationCustom01" required>
+                  <div class="valid-feedback">
+                    Nome disponível
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Confirmação E-mail</label>
+                  <input type="tel" class="form-control" id="validationCustom02" required>
+                  <div class="valid-feedback">
+                    Telefone valido
+                  </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom05" class="form-label">CEP</label>
+                    <input type="text" class="form-control" id="validationCustom05" required>
+                    <div class="invalid-feedback">
+                      Informe um CEP valido
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationCustom04" class="form-label">Estado</label>
+                    <select class="form-select" id="validationCustom04" required>
+                      <option selected disabled value="">Estado</option>
+                      <option>Acre</option>
+                      <option>Alagoas</option>
+                      <option>Amapá</option>
+                      <option>Amazonas</option>
+                      <option>Bahia</option>
+                      <option>Ceará</option>
+                      <option>Distrito Federal</option>
+                      <option>Espirito Santo</option>
+                      <option>Goiás</option>
+                      <option>Maranhão</option>
+                      <option>Mato Grosso</option>
+                      <option>Mato Grosso do sul</option>
+                      <option>Minas Gerais</option>
+                      <option>Pará</option>
+                      <option>Paraíba</option>
+                      <option>Paraná</option>
+                      <option>Pernambuco</option>
+                      <option>Piaúi</option>
+                      <option>Rio de Janeiro</option>
+                      <option>Rio Grande do Norte</option>
+                      <option>Rio Grande do Sul</option>
+                      <option>Rondônia</option>
+                      <option>Roraima</option>
+                      <option>Santa Catarina</option>
+                      <option>São Paulo</option>
+                      <option>Sergipe</option>
+                      <option>Tocantins</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Selecione um estado
+                    </div>
+                  </div>
+                <div class="col-md-4">
+                  <label for="validationCustom03" class="form-label">Endereço de entrega</label>
+                  <input type="text" class="form-control" id="validationCustom03" required>
+                  <div class="invalid-feedback">
+                    Escreva o nome da sua cidade
+                  </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom05" class="form-label">Senha</label>
+                    <input type="text" class="form-control" id="validationCustom05" required>
+                    <div class="invalid-feedback">
+                    Senha deve contar no mínimo 8 caracteres. Sendo ao menos: 1 Letra maiúscula, 1 Letra Minúscula, 1 número e 1 caracteres especial
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="validationCustom05" class="form-label">Confirmação de Senha</label>
+                    <input type="text" class="form-control" id="validationCustom05" required>
+                    <div class="invalid-feedback">
+                      Senhas não correspondentes nos campos de "Senha" e "Confirmação de senha"
+                    </div>
+                  </div>
+                  <hr>
+                  <p>Aceito receber notificações e ofertas por:</p>
+                  <div class="d-flex">
+                    <div class="form-check mx-3">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Whatsapp
+                        </label>
+                      </div>
+                      <div class="form-check mx-3">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                          SMS
+                        </label>
+                      </div>
+                      <div class="form-check mx-3">
+                        <input class="form-check-input " type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                          E-mail
+                        </label>
+                      </div>
+                  </div>
+                <hr>
+                <div class="col-12">
+                  <a href="Login.html" class="btnCadastro" type="submit">Cadastrar</a>
+                </div>
+              </form>
+        </main>
+       </div>
 
-          <Section class="d-flex flex-wrap align-content-around justify-content-around containerApresentacao desktopNavbar" id="Apresentação ">
-            <img class="img-fluid FormatImgApresentacao" src="../Imagens/hist-Desenvolvemento.jpg" alt="">
-            <div class="text-end FormatTextoApresentacao">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit vel urna sit amet lobortis. Etiam varius consequat augue eget rhoncus. Ut sed varius risus, sit amet pulvinar tellus. Aliquam eu eros eu erat gravida pellentesque at at mi. Suspendisse venenatis tellus quis blandit tincidunt. Proin eleifend justo nulla, quis blandit arcu porttitor at. Curabitur iaculis est nisl, vitae blandit justo pulvinar ut. Vestibulum tempus hendrerit ultrices. Quisque ut diam non lorem aliquet sodales. Ut iaculis ultricies enim non scelerisque. Donec ut fringilla risus.</p>
-            </div>
-          </Section>
 
-          <div class=tituloSobreEmpresa><h2>Colaboradores</h2></div>
-
-          <section id="equipePedeRoca" class="d-flex flex-wrap align-content-around justify-content-around gap-1 containerApresentacao ">
-            <div class="w-25 caixaFundador">
-              <img src="../Imagens/Pessoa1.svg" alt="Foto fundador 1">
-              <h6 class="nomesFundador">Fundador 1</h6>
-              <p class="descricaoFundador">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis magna ac est consectetur pretium. Curabitur vestibulum diam a turpis varius.</p>
-            </div>
-            <div class="w-25 caixaFundador">
-              <img src="../Imagens/Pessoa2.svg" alt="Foto fundador 2">
-              <h6 class="nomesFundador">Fundador 2</h6>
-              <p class="descricaoFundador">Sed euismod augue tristique. Ut tincidunt, lacus quis luctus venenatis, urna urna interdum nunc, non hendrerit velit lorem eu risus. Donec luctus diam in eros vehicula egestas.</p>
-            </div>
-            <div class="w-25 caixaFundador">
-              <img src="../Imagens/Pessoa3.svg" alt="Foto fundador 3">
-              <h6 class="nomesFundador">Fundador 3</h6>
-              <p class="descricaoFundador">Donec placerat arcu quis pulvinar auctor. Nunc vel scelerisque mauris, vitae vulputate risus. Fusce ac tristique massa, eu tempus ante</p>
-            </div>
-          </section>
-
-          <div class=tituloSobreEmpresa><h2>Contato</h2></div>
-
-          <section id="contato" class="d-flex align-content-around justify-content-evenly gap-1 flex-wrap containerApresentacao mb-2">
-            <div class="linha">
-              <h6>Redes Sociais</h6>
-              <a class="linkNavMobile" href=""><img src="../Imagens/Icones/circle/facebook.svg" alt="Facebook">Facebook</a>
-              <a class="linkNavMobile" href=""><img src="../Imagens/Icones/circle/instagram.svg" alt="instagram">Instagram</a>
-              <a class="linkNavMobile" href=""><img class="ajusteGmail" src="../Imagens/Icones/mail4.svg" alt="Gmail">Gmail</a>
-              <h6>Email</h6>
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Remetente</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu email">
-              </div>
-              <div class="mb-3 ">
-                <label for="exampleFormControlTextarea1" class="form-label">Conteúdo</label>
-                <textarea class="form-control formBorda" id="exampleFormControlTextarea1" rows="3"></textarea>
-                <button class="btnEnviar">Enviar</button>
-              </div>
-            </div>
-            <div class="limiteQuebra">
-              <h6>Localização</h6>
-              <p>Endereço: Av. Habib Gabriel, 1360 - Jardim Buscardi, Matão - SP, 15990-539</p>
-              <iframe class="mapaLocalizacao" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3709.1854623734766!2d-48.362309285057385!3d-21.617695585682327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b8e159d287a237%3A0x70df7e81597e2d08!2sFatec%20Mat%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1683990342691!5m2!1spt-BR!2sbr" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-          </section>
-       </main>
 
        <footer id="footer">
         <p class="footerText"><i class="bi bi-c-circle"></i> Todos os direitos reservados aos alunos Hugo, Gabriel e Daniel - Fatec Matão</p>

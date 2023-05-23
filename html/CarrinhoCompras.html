@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pede Roça-Carrinho de compras</title>
+  <title>Pede Roça - Carrinho de compras</title>
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="../css/estilo.css">
@@ -57,10 +57,10 @@
             <h5 class="tituloNav">Páginas</h5>
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item my-1 efeitoMouse">
-                <a class="nav-link linkNavLat active2" aria-current="page" href="index.html"><img
+                <a class="nav-link linkNavLat" aria-current="page" href="index.html"><img
                     class="configImgMobile" src="../Imagens/Icones/layout.svg" alt="Login"> Home</a>
               </li>
-              <li class="nav-item my-1 efeitoMouse">
+              <li class="nav-item my-1 active2 efeitoMouse">
                 <a class="nav-link linkNavLat" href="carrinho.html"><img class="configImgMobile"
                     src="../Imagens/Icones/shopping-cart.svg" alt="carrinho de compra"> Meu Carrinho</a>
               </li>
@@ -69,7 +69,7 @@
                     alt=""> Sobre a Empresa</a>
               </li>
               <li class="nav-item my-1 efeitoMouse">
-                <a class="nav-link linkNavLat" href=""><img class="configImgMobile" src="../Imagens/Icones/settings.svg" alt=""> Área do Usuário</a>
+                <a class="nav-link linkNavLat" href="AreaDoUsuario.html"><img class="configImgMobile" src="../Imagens/Icones/settings.svg" alt=""> Área do Usuário</a>
               </li>
               <!--
               <li class="nav-item dropdown efeitoMouse">
@@ -125,7 +125,7 @@
               <a class="nav-link" aria-current="page" href="Sobre.html">Sobre a Empresa</a>
             </li>
             <li class="nav-item mx-1 mx-1 efeitoMouseDesktop">
-              <a class="nav-link" aria-current="page" href="">Área do Usuário</a>
+              <a class="nav-link" aria-current="page" href="AreaDoUsuario.html">Área do Usuário</a>
             </li>
             <!--
             <li class="nav-item dropdown efeitoMouseDesktop">
@@ -554,10 +554,10 @@
                       <span><strong>R$21,50</strong></span>
                     </li>
                   </ul>
-
-                  <button type="button" class="btn btn-primary btn-lg btn-block finalizarCompra">
+                  <a href="finalizarCompra.html"><button type="button" class="btn btn-primary btn-lg btn-block finalizarCompra">
                     Finalizar compra
-                  </button>
+                  </button></a>
+                  
                 </div>
               </div>
               <div class="card-body comecoCard freteCarrinho">
@@ -586,6 +586,9 @@
         </div>
       </section>
   </main>
+  <footer id="footer">
+    <p class="footerText"><i class="bi bi-c-circle"></i> Todos os direitos reservados aos alunos Hugo, Gabriel e Daniel - Fatec Matão</p>
+   </footer>
 </body>
 
 </html>

@@ -1,0 +1,27 @@
+ .mainCadastro {
+  background: #f2f2f2;
+  width: 100%;
+  margin: 0px 0px 10px 0px;
+  padding: 10px;
+ }
+
+ .mainCadastro form h4 {
+  background: #7C8C03;
+  display: inline-block;
+  border-radius: 10px;
+  color: #F2F2F2;
+  padding: 5px 10px;
+ }
+
+ .btnCadastro {
+  border: none;
+  border-radius: 10px;
+  background: #7C8C03;
+  color: #f2f2f2;
+  padding: 5px 10px;
+  text-decoration: none;
+ }
+
+ .btnCadastro:hover {
+  background: rgba(124, 140, 3, 0.5);
+ }

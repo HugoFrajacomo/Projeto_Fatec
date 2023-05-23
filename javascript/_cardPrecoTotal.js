@@ -1,5 +1,7 @@
-function calcularValorTotal() {
+function calcularValorTotal(elemento) {
   // Obter o valor do campo de quantidade
+  console.log(elemento.value);
+  /*
   var quantidade = document.getElementById("quantidadeProduto").value;
 
   // Definir o preço unitário do produto (exemplo: R$ 10,00)
@@ -10,4 +12,6 @@ function calcularValorTotal() {
 
   // Atualizar o campo de valor total com o resultado do cálculo
   document.getElementById("valorTotal").value = valorTotal;
+  */
 }
+

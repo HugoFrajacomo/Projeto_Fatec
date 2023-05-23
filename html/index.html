@@ -47,7 +47,7 @@
                 <h5 class="tituloNav">Páginas</h5>
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                   <li class="nav-item my-1 efeitoMouse">
-                    <a class="nav-link linkNavLat active2" aria-current="page" href="index.html"><img class="configImgMobile" src="../Imagens/Icones/layout.svg" alt="Login"> Home</a>
+                    <a class="nav-link linkNavLat" aria-current="page" href="index.html"><img class="configImgMobile" src="../Imagens/Icones/layout.svg" alt="Login"> Home</a>
                   </li>
                   <li class="nav-item my-1 efeitoMouse">
                     <a class="nav-link linkNavLat" href="CarrinhoCompras.html"><img class="configImgMobile" src="../Imagens/Icones/shopping-cart.svg" alt="carrinho de compra"> Meu Carrinho</a>
@@ -56,7 +56,7 @@
                     <a class="nav-link linkNavLat" href="Sobre.html"><img class="configImgMobile" src="../Imagens/Icones/home.svg" alt=""> Sobre a Empresa</a>
                   </li>
                   <li class="nav-item my-1 efeitoMouse">
-                    <a class="nav-link linkNavLat" href=""><img class="configImgMobile" src="../Imagens/Icones/settings.svg" alt=""> Área do Usuário</a>
+                    <a class="nav-link linkNavLat activeDesktop" href="AreaDoUsuario.html"><img class="configImgMobile" src="../Imagens/Icones/settings.svg" alt=""> Área do Usuário</a>
                   </li>
                   <!--
                   <li class="nav-item dropdown efeitoMouse">
@@ -108,7 +108,7 @@
                   <a class="nav-link" aria-current="page" href="Sobre.html">Sobre a Empresa</a>
                 </li>
                 <li class="nav-item mx-1 efeitoMouseDesktop">
-                  <a class="nav-link" aria-current="page" href="">Área do Usuário</a>
+                  <a class="nav-link" aria-current="page" href="AreaDoUsuario.html">Área do Usuário</a>
                 </li>
                 <!--
                 <li class="nav-item dropdown efeitoMouseDesktop">
@@ -213,7 +213,7 @@
               <img class="card-img-top" src="../Imagens/Verdura - Alface.jpg" alt="alface">
             </div>
             <div class="posicaoFavorito superiorFavorito"><i class="bi bi-heart tamanhoFavorito"></i></div>
-            <div class="precoProduto superiorPreco"><b>R$ 2,75</b></div>
+            <div class="precoProduto superiorPreco"><span id="precoproduto1"></span><b>R$ 2,75</b></div>
             <div class="card-body tamanhoCard"> 
               <div id="nomeProduto">
                 <h5>Alface</h5>
@@ -222,7 +222,7 @@
             </div>
             <div class="card-footer">
               <div class="input-group bordaInputCard" role="group" aria-label="Basic example">
-                <input class="inputBorda InputBordaEsquerdo" type="number" name="quantidadeProduto" id="quantidadeProduto" placeholder="Qtd" onchange="calcularValorTotal()">
+                <input class="inputBorda InputBordaEsquerdo" type="number" name="quantidadeProduto" id="quantidadeProduto1" placeholder="Qtd" onchange="calcularValorTotal(this)">
                 <input class="inputBorda InputBordaDireito" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Valor Total">
               </div>
               <div class="btn-group" role="group" aria-label="Basic example">
@@ -236,7 +236,7 @@
               <img class="card-img-top" src="../Imagens/Verdura - Cebolinha.jpg" alt="alface">
             </div>
             <div class="posicaoFavorito superiorFavorito"><i class="bi bi-heart tamanhoFavorito"></i></div>
-            <div class="precoProduto superiorPreco"><b>R$ 2,75</b></div>
+            <div class="precoProduto superiorPreco"><span id="precoproduto2"><b>R$ 2,75</b></span></div>
             <div class="card-body tamanhoCard">
               <div id="nomeProduto">
                 <h5>Cebolinha</h5>
@@ -245,7 +245,7 @@
             </div>
             <div class="card-footer">
               <div class="input-group bordaInputCard" role="group" aria-label="Basic example">
-                <input class="inputBorda InputBordaEsquerdo" type="number" name="quantidadeProduto" id="quantidadeProduto" placeholder="Qtd" onchange="calcularValorTotal()">
+                <input class="inputBorda InputBordaEsquerdo" type="number" name="quantidadeProduto" id="quantidadeProduto2" placeholder="Qtd" onchange="calcularValorTotal(this)">
                 <input class="inputBorda InputBordaDireito" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Valor Total">
               </div>
               <div class="btn-group" role="group" aria-label="Basic example">
@@ -259,7 +259,7 @@
               <img class="card-img-top" src="../Imagens/Verdura - Repolho Roxo.jpg" alt="alface">
             </div>
             <div class="posicaoFavorito superiorFavorito"><i class="bi bi-heart tamanhoFavorito"></i></div>
-            <div class="precoProduto superiorPreco"><b>R$ 2,75</b></div>
+            <div class="precoProduto superiorPreco"><span id="precoproduto3"><b>R$ 2,75</b></span><b>R$ 2,75</b></div>
             <div class="card-body tamanhoCard">
               <div id="nomeProduto">
                 <h5>Repolho Roxo</h5>
@@ -268,7 +268,7 @@
             </div>
             <div class="card-footer">
               <div class="input-group bordaInputCard" role="group" aria-label="Basic example">
-                <input class="inputBorda InputBordaEsquerdo" type="number" name="quantidadeProduto" id="quantidadeProduto" placeholder="Qtd" onchange="calcularValorTotal()">
+                <input class="inputBorda InputBordaEsquerdo" type="number" name="quantidadeProduto" id="quantidadeProduto3" placeholder="Qtd" onchange="calcularValorTotal(this)">
                 <input class="inputBorda InputBordaDireito" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Valor Total">
               </div>
               <div class="btn-group" role="group" aria-label="Basic example">
@@ -282,7 +282,7 @@
               <img class="card-img-top" src="../Imagens/Fruta-Banana.jpg" alt="alface">
             </div>
             <div class="posicaoFavorito superiorFavorito"><i class="bi bi-heart tamanhoFavorito"></i></div>
-            <div class="precoProduto superiorPreco"><b>R$ 2,75</b></div>
+            <div class="precoProduto superiorPreco"><span id="precoproduto4"><b>R$ 2,75</b></span></div>
             <div class="card-body tamanhoCard">
               <div id="nomeProduto">
                 <h5>Banana</h5>
@@ -291,7 +291,7 @@
             </div>
             <div class="card-footer">
               <div class="input-group bordaInputCard" role="group" aria-label="Basic example">
-                <input class="inputBorda InputBordaEsquerdo" type="number" name="quantidadeProduto" id="quantidadeProduto" placeholder="Qtd" onchange="calcularValorTotal()">
+                <input class="inputBorda InputBordaEsquerdo" type="number" name="quantidadeProduto" id="quantidadeProduto4" placeholder="Qtd" onchange="calcularValorTotal(this)">
                 <input class="inputBorda InputBordaDireito" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Valor Total">
               </div>
               <div class="btn-group" role="group" aria-label="Basic example">
@@ -305,7 +305,7 @@
               <img class="card-img-top" src="../Imagens/Fruta-Maca.jpg" alt="alface">
             </div>
             <div class="posicaoFavorito superiorFavorito"><i class="bi bi-heart tamanhoFavorito"></i></div>
-            <div class="precoProduto superiorPreco"><b>R$ 2,75</b></div>
+            <div class="precoProduto superiorPreco"><span id="precoproduto5"><b>R$ 2,75</b></span></div>
             <div class="card-body tamanhoCard">
               <div id="nomeProduto">
                 <h5>Maça</h5>
@@ -314,7 +314,7 @@
             </div>
             <div class="card-footer">
               <div class="input-group bordaInputCard" role="group" aria-label="Basic example">
-                <input class="inputBorda InputBordaEsquerdo" type="number" name="quantidadeProduto" id="quantidadeProduto" placeholder="Qtd" onchange="calcularValorTotal()">
+                <input class="inputBorda InputBordaEsquerdo" type="number" name="quantidadeProduto" id="quantidadeProduto5" placeholder="Qtd" onchange="calcularValorTotal(this)">
                 <input class="inputBorda InputBordaDireito" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Valor Total">
               </div>
               <div class="btn-group" role="group" aria-label="Basic example">
@@ -328,7 +328,7 @@
               <img class="card-img-top" src="../Imagens/Fruta-Uva.jpg" alt="alface">
             </div>
             <div class="posicaoFavorito superiorFavorito"><i class="bi bi-heart tamanhoFavorito"></i></div>
-            <div class="precoProduto superiorPreco"><b>R$ 2,75</b></div>
+            <div class="precoProduto superiorPreco"><span id="precoproduto6"><b>R$ 2,75</b></span></div>
             <div class="card-body tamanhoCard">
               <div id="nomeProduto">
                 <h5>Uva</h5>
@@ -337,7 +337,7 @@
             </div>
             <div class="card-footer">
               <div class="input-group bordaInputCard" role="group" aria-label="Basic example">
-                <input class="inputBorda InputBordaEsquerdo" type="number" name="quantidadeProduto" id="quantidadeProduto" placeholder="Qtd" onchange="calcularValorTotal()">
+                <input class="inputBorda InputBordaEsquerdo" type="number" name="quantidadeProduto" id="quantidadeProduto6" placeholder="Qtd" onchange="calcularValorTotal(this)">
                 <input class="inputBorda InputBordaDireito" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Valor Total">
               </div>
               <div class="btn-group" role="group" aria-label="Basic example">
@@ -351,7 +351,7 @@
               <img class="card-img-top" src="../Imagens/Fruta-Melancia.jpg" alt="alface">
             </div>
             <div class="posicaoFavorito superiorFavorito"><i class="bi bi-heart tamanhoFavorito"></i></div>
-            <div class="precoProduto superiorPreco"><b>R$ 2,75</b></div>
+            <div class="precoProduto superiorPreco"><span id="precoproduto7"><b>R$ 2,75</b></span></div>
             <div class="card-body tamanhoCard">
               <div id="nomeProduto">
                 <h5>Melancia</h5>
@@ -360,7 +360,7 @@
             </div>
             <div class="card-footer">
               <div class="input-group bordaInputCard" role="group" aria-label="Basic example">
-                <input class="inputBorda InputBordaEsquerdo" type="number" name="quantidadeProduto" id="quantidadeProduto" placeholder="Qtd" onchange="calcularValorTotal()">
+                <input class="inputBorda InputBordaEsquerdo" type="number" name="quantidadeProduto" id="quantidadeProduto7" placeholder="Qtd" onchange="calcularValorTotal(this)">
                 <input class="inputBorda InputBordaDireito" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Valor Total">
               </div>
               <div class="btn-group" role="group" aria-label="Basic example">
@@ -374,7 +374,7 @@
               <img class="card-img-top" src="../Imagens/Legume-Abobrinha.jpg" alt="alface">
             </div>
             <div class="posicaoFavorito superiorFavorito"><i class="bi bi-heart tamanhoFavorito"></i></div>
-            <div class="precoProduto superiorPreco"><b>R$ 2,75</b></div>
+            <div class="precoProduto superiorPreco"><span id="precoproduto8"><b>R$ 2,75</b></span></div>
             <div class="card-body tamanhoCard">
               <div id="nomeProduto">
                 <h5>Abobrinha</h5>
@@ -383,7 +383,7 @@
             </div>
             <div class="card-footer">
               <div class="input-group bordaInputCard" role="group" aria-label="Basic example">
-                <input class="inputBorda InputBordaEsquerdo" type="number" name="quantidadeProduto" id="quantidadeProduto" placeholder="Qtd" onchange="calcularValorTotal()">
+                <input class="inputBorda InputBordaEsquerdo" type="number" name="quantidadeProduto" id="quantidadeProduto8" placeholder="Qtd" onchange="calcularValorTotal(this)">
                 <input class="inputBorda InputBordaDireito" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Valor Total">
               </div>
               <div class="btn-group" role="group" aria-label="Basic example">
@@ -397,7 +397,7 @@
               <img class="card-img-top" src="../Imagens/Legume-Beringela.jpg" alt="alface">
             </div>
             <div class="posicaoFavorito superiorFavorito"><i class="bi bi-heart tamanhoFavorito"></i></div>
-            <div class="precoProduto superiorPreco"><b>R$ 2,75</b></div>
+            <div class="precoProduto superiorPreco"><span id="precoproduto9"><b>R$ 2,75</b></span></div>
             <div class="card-body tamanhoCard">
               <div id="nomeProduto">
                 <h5>Alface</h5>
@@ -406,7 +406,7 @@
             </div>
             <div class="card-footer">
               <div class="input-group bordaInputCard" role="group" aria-label="Basic example">
-                <input class="inputBorda InputBordaEsquerdo" type="number" name="quantidadeProduto" id="quantidadeProduto" placeholder="Qtd" onchange="calcularValorTotal()">
+                <input class="inputBorda InputBordaEsquerdo" type="number" name="quantidadeProduto" id="quantidadeProduto9" placeholder="Qtd" onchange="calcularValorTotal(this)">
                 <input class="inputBorda InputBordaDireito" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Valor Total">
               </div>
               <div class="btn-group" role="group" aria-label="Basic example">
@@ -420,7 +420,7 @@
               <img class="card-img-top" src="../Imagens/Legume-Rabanete.jpg" alt="alface">
             </div>
             <div class="posicaoFavorito superiorFavorito"><i class="bi bi-heart tamanhoFavorito"></i></div>
-            <div class="precoProduto superiorPreco"><b>R$ 2,75</b></div>
+            <div class="precoProduto superiorPreco"><span id="precoproduto10"><b>R$ 2,75</b></span></div>
             <div class="card-body tamanhoCard">
               <div id="nomeProduto">
                 <h5>Rabanete</h5>
@@ -429,7 +429,7 @@
             </div>
             <div class="card-footer">
               <div class="input-group bordaInputCard" role="group" aria-label="Basic example">
-                <input class="inputBorda InputBordaEsquerdo" type="number" name="quantidadeProduto" id="quantidadeProduto" placeholder="Qtd" onchange="calcularValorTotal()">
+                <input class="inputBorda InputBordaEsquerdo" type="number" name="quantidadeProduto" id="quantidadeProduto10" placeholder="Qtd" onchange="calcularValorTotal(this)">
                 <input class="inputBorda InputBordaDireito" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Valor Total">
               </div>
               <div class="btn-group" role="group" aria-label="Basic example">
@@ -443,7 +443,7 @@
               <img class="card-img-top" src="../Imagens/Legume-Pimentao.jpg" alt="alface">
             </div>
             <div class="posicaoFavorito superiorFavorito"><i class="bi bi-heart tamanhoFavorito"></i></div>
-            <div class="precoProduto superiorPreco"><b>R$ 2,75</b></div>
+            <div class="precoProduto superiorPreco"><span id="precoproduto11"><b>R$ 2,75</b></span></div>
             <div class="card-body tamanhoCard">
               <div id="nomeProduto">
                 <h5>Pimentão</h5>
@@ -452,7 +452,7 @@
             </div>
             <div class="card-footer">
               <div class="input-group bordaInputCard" role="group" aria-label="Basic example">
-                <input class="inputBorda InputBordaEsquerdo" type="number" name="quantidadeProduto" id="quantidadeProduto" placeholder="Qtd" onchange="calcularValorTotal()">
+                <input class="inputBorda InputBordaEsquerdo" type="number" name="quantidadeProduto" id="quantidadeProduto11" placeholder="Qtd" onchange="calcularValorTotal(this)">
                 <input class="inputBorda InputBordaDireito" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Valor Total">
               </div>
               <div class="btn-group" role="group" aria-label="Basic example">
@@ -466,7 +466,7 @@
               <img class="card-img-top" src="../Imagens/Legume-Cenoura.jpg" alt="alface">
             </div>
             <div class="posicaoFavorito superiorFavorito"><i class="bi bi-heart tamanhoFavorito"></i></div>
-            <div class="precoProduto superiorPreco"><b>R$ 2,75</b></div>
+            <div class="precoProduto superiorPreco"><span id="precoproduto12"><b>R$ 2,75</b></span></div>
             <div class="card-body tamanhoCard">
               <div id="nomeProduto">
                 <h5>Cenoura</h5>
@@ -475,7 +475,7 @@
             </div>
             <div class="card-footer">
               <div class="input-group bordaInputCard" role="group" aria-label="Basic example">
-                <input class="inputBorda InputBordaEsquerdo" type="number" name="quantidadeProduto" id="quantidadeProduto" placeholder="Qtd" onchange="calcularValorTotal()">
+                <input class="inputBorda InputBordaEsquerdo" type="number" name="quantidadeProduto" id="quantidadeProduto12" placeholder="Qtd" onchange="calcularValorTotal(this)">
                 <input class="inputBorda InputBordaDireito" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Valor Total">
               </div>
               <div class="btn-group" role="group" aria-label="Basic example">
@@ -487,11 +487,11 @@
           <!---------------- Card de venda  - Mobile ------------->
           <div class="cardMobile mobileNavbar d-md-none">
             <img src="../Imagens/Verdura - Alface.jpg" alt="">
-            <span class="precoMobile">Preço: 2,75</span>
+            <span class="precoMobile" id="precoProduto13">Preço: 2,75</span>
             <h5>Alface</h5>
             <p>Verdura com baixo teor calórico e rica em fibras, vitaminas e minerais, como vitamina C, vitamina K, folato e potássio.</p>
             <div class="input-group gridInputMobile" role="group" aria-label="Basic example">
-              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto" placeholder="Qtd" onchange="calcularValorTotal()">
+              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto13" placeholder="Qtd" onchange="calcularValorTotal(this)">
               <input class="tamDireitoMobile" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Total">
             </div>
             <div class="btn-group gridBtnMobile" role="group" aria-label="Basic example">
@@ -501,11 +501,11 @@
           </div>
           <div class="cardMobile mobileNavbar d-md-none">
             <img src="../Imagens/Verdura - Cebolinha.jpg" alt="">
-            <span class="precoMobile">Preço: 2,75</span>
+            <span class="precoMobile" id="precoProduto14">Preço: 2,75</span>
             <h5>Cebolinha</h5>
             <p>Erva aromática que contém vitaminas A, C e K, além de minerais como ferro, cálcio e potássio.</p>
             <div class="input-group gridInputMobile" role="group" aria-label="Basic example">
-              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto" placeholder="Qtd" onchange="calcularValorTotal()">
+              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto14" placeholder="Qtd" onchange="calcularValorTotal(this)">
               <input class="tamDireitoMobile" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Total">
             </div>
             <div class="btn-group gridBtnMobile" role="group" aria-label="Basic example">
@@ -515,11 +515,11 @@
           </div>
           <div class="cardMobile mobileNavbar d-md-none">
             <img src="../Imagens/Verdura - Repolho Roxo.jpg" alt="">
-            <span class="precoMobile">Preço: 2,75</span>
+            <span class="precoMobile" id="precoProduto15">Preço: 2,75</span>
             <h5>Repolho Roxo</h5>
             <p>Hortaliça rica em antioxidantes e vitaminas, incluindo vitamina C, vitamina K e ácido fólico.</p>
             <div class="input-group gridInputMobile" role="group" aria-label="Basic example">
-              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto" placeholder="Qtd" onchange="calcularValorTotal()">
+              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto15" placeholder="Qtd" onchange="calcularValorTotal(this)">
               <input class="tamDireitoMobile" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Total">
             </div>
             <div class="btn-group gridBtnMobile" role="group" aria-label="Basic example">
@@ -529,11 +529,11 @@
           </div>
           <div class="cardMobile mobileNavbar d-md-none">
             <img src="../Imagens/Fruta-Banana.jpg" alt="">
-            <span class="precoMobile">Preço: 2,75</span>
+            <span class="precoMobile" id="precoProduto16">Preço: 2,75</span>
             <h5>Banana</h5>
             <p>Fruta rica em fibras, potássio, vitaminas B6 e C, além de conter antioxidantes como carotenoides e flavonoides.</p>
             <div class="input-group gridInputMobile" role="group" aria-label="Basic example">
-              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto" placeholder="Qtd" onchange="calcularValorTotal()">
+              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto16" placeholder="Qtd" onchange="calcularValorTotal(this)">
               <input class="tamDireitoMobile" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Total">
             </div>
             <div class="btn-group gridBtnMobile" role="group" aria-label="Basic example">
@@ -543,11 +543,11 @@
           </div>
           <div class="cardMobile mobileNavbar d-md-none">
             <img src="../Imagens/Fruta-Maca.jpg" alt="">
-            <span class="precoMobile">Preço: 2,75</span>
+            <span class="precoMobile" id="precoProduto17">Preço: 2,75</span>
             <h5>Maça</h5>
             <p>Fruta com baixo teor calórico e rica em fibras solúveis, além de conter vitamina C, antioxidantes como flavonoides e ácido fenólico, e minerais como potássio e cálcio.</p>
             <div class="input-group gridInputMobile" role="group" aria-label="Basic example">
-              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto" placeholder="Qtd" onchange="calcularValorTotal()">
+              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto17" placeholder="Qtd" onchange="calcularValorTotal(this)">
               <input class="tamDireitoMobile" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Total">
             </div>
             <div class="btn-group gridBtnMobile" role="group" aria-label="Basic example">
@@ -557,11 +557,11 @@
           </div>
           <div class="cardMobile mobileNavbar d-md-none">
             <img src="../Imagens/Fruta-Uva.jpg" alt="">
-            <span class="precoMobile">Preço: 2,75</span>
+            <span class="precoMobile" id="precoProduto18">Preço: 2,75</span>
             <h5>Uva</h5>
             <p>Fruta com baixo teor calórico e rica em antioxidantes, como resveratrol e quercetina, além de conter vitaminas C e K e minerais como potássio e magnésio.</p>
             <div class="input-group gridInputMobile" role="group" aria-label="Basic example">
-              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto" placeholder="Qtd" onchange="calcularValorTotal()">
+              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto18" placeholder="Qtd" onchange="calcularValorTotal(this)">
               <input class="tamDireitoMobile" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Total">
             </div>
             <div class="btn-group gridBtnMobile" role="group" aria-label="Basic example">
@@ -571,11 +571,11 @@
           </div>
           <div class="cardMobile mobileNavbar d-md-none">
             <img src="../Imagens/Fruta-Melancia.jpg" alt="">
-            <span class="precoMobile">Preço: 2,75</span>
+            <span class="precoMobile" id="precoProduto19" >Preço: 2,75</span>
             <h5>Melancia</h5>
             <p>Fruta com alto teor de água e baixo teor calórico, além de conter antioxidantes como licopeno e vitamina C, e minerais como potássio e magnésio.</p>
             <div class="input-group gridInputMobile" role="group" aria-label="Basic example">
-              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto" placeholder="Qtd" onchange="calcularValorTotal()">
+              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto19" placeholder="Qtd" onchange="calcularValorTotal(this)">
               <input class="tamDireitoMobile" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Total">
             </div>
             <div class="btn-group gridBtnMobile" role="group" aria-label="Basic example">
@@ -585,11 +585,11 @@
           </div>
           <div class="cardMobile mobileNavbar d-md-none">
             <img src="../Imagens/Legume-Abobrinha.jpg" alt="">
-            <span class="precoMobile">Preço: 2,75</span>
+            <span class="precoMobile" id="precoProduto20">Preço: 2,75</span>
             <h5>Abobrinha</h5>
             <p>Vegetal com baixo teor calórico e rico em água, fibras e nutrientes, como vitamina C, vitamina B6, potássio e magnésio.</p>
             <div class="input-group gridInputMobile" role="group" aria-label="Basic example">
-              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto" placeholder="Qtd" onchange="calcularValorTotal()">
+              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto20" placeholder="Qtd" onchange="calcularValorTotal(this)">
               <input class="tamDireitoMobile" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Total">
             </div>
             <div class="btn-group gridBtnMobile" role="group" aria-label="Basic example">
@@ -599,11 +599,11 @@
           </div>
           <div class="cardMobile mobileNavbar d-md-none">
             <img src="../Imagens/Legume-Beringela.jpg" alt="">
-            <span class="precoMobile">Preço: 2,75</span>
+            <span class="precoMobile" id="precoProduto21">Preço: 2,75</span>
             <h5>Berinjela</h5>
             <p>Vegetal com baixo teor calórico e rico em fibras, além de conter antioxidantes como antocianinas e ácido clorogênico, vitaminas B6 e C, e minerais como potássio e magnésio.</p>
             <div class="input-group gridInputMobile" role="group" aria-label="Basic example">
-              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto" placeholder="Qtd" onchange="calcularValorTotal()">
+              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto21" placeholder="Qtd" onchange="calcularValorTotal(this)">
               <input class="tamDireitoMobile" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Total">
             </div>
             <div class="btn-group gridBtnMobile" role="group" aria-label="Basic example">
@@ -613,11 +613,11 @@
           </div>
           <div class="cardMobile mobileNavbar d-md-none">
             <img src="../Imagens/Legume-Rabanete.jpg" alt="">
-            <span class="precoMobile">Preço: 2,75</span>
+            <span class="precoMobile" id="precoProduto22">Preço: 2,75</span>
             <h5>Rabanete</h5>
             <p>Verdura com baixo teor calórico e rica em fibras, vitaminas e minerais, como vitamina C, vitamina K, folato e potássio.</p>
             <div class="input-group gridInputMobile" role="group" aria-label="Basic example">
-              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto" placeholder="Qtd" onchange="calcularValorTotal()">
+              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto22" placeholder="Qtd" onchange="calcularValorTotal(this)">
               <input class="tamDireitoMobile" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Total">
             </div>
             <div class="btn-group gridBtnMobile" role="group" aria-label="Basic example">
@@ -626,12 +626,12 @@
             </div>
           </div>
           <div class="cardMobile mobileNavbar d-md-none">
-            <img src="../Imagens/Verdura - Alface.jpg" alt="">
-            <span class="precoMobile">Preço: 2,75</span>
-            <h5>Alface</h5>
-            <p>Verdura com baixo teor calórico e rica em fibras, vitaminas e minerais, como vitamina C, vitamina K, folato e potássio.</p>
+            <img src="../Imagens/Legume-Cenoura.jpg" alt="">
+            <span class="precoMobile" id="precoProduto23">Preço: 2,75</span>
+            <h5>Cenoura</h5>
+            <p>Vegetal com baixo teor calórico e rico em fibras, além de conter vitamina A, vitamina K, vitamina C e potássio. Também é uma boa fonte de antioxidantes, como carotenoides, que podem ajudar a melhorar a saúde ocular e reduzir o risco de doenças crônicas.</p>
             <div class="input-group gridInputMobile" role="group" aria-label="Basic example">
-              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto" placeholder="Qtd" onchange="calcularValorTotal()">
+              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto23" placeholder="Qtd" onchange="calcularValorTotal(this)">
               <input class="tamDireitoMobile" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Total">
             </div>
             <div class="btn-group gridBtnMobile" role="group" aria-label="Basic example">
@@ -640,26 +640,12 @@
             </div>
           </div>
           <div class="cardMobile mobileNavbar d-md-none">
-            <img src="../Imagens/Verdura - Alface.jpg" alt="">
-            <span class="precoMobile">Preço: 2,75</span>
-            <h5>Alface</h5>
-            <p>Verdura com baixo teor calórico e rica em fibras, vitaminas e minerais, como vitamina C, vitamina K, folato e potássio.</p>
+            <img src="../Imagens/Legume-Pimentao.jpg" alt="">
+            <span class="precoMobile" id="precoProduto24">Preço: 2,75</span>
+            <h5>Pimentão</h5>
+            <p>Vegetal com baixo teor calórico e rico em fibras, além de conter vitamina C, vitamina B6, vitamina A e potássio. Também é uma boa fonte de antioxidantes, como carotenoides e flavonoides, que podem ajudar a reduzir o risco de doenças crônicas.</p>
             <div class="input-group gridInputMobile" role="group" aria-label="Basic example">
-              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto" placeholder="Qtd" onchange="calcularValorTotal()">
-              <input class="tamDireitoMobile" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Total">
-            </div>
-            <div class="btn-group gridBtnMobile" role="group" aria-label="Basic example">
-              <button type="button btnMobile" class="btn btnComprar">Comprar</button>
-              <button type="button btnMobile" class="btn btnComprar">Adicionar</button>
-            </div>
-          </div>
-          <div class="cardMobile mobileNavbar d-md-none">
-            <img src="../Imagens/Verdura - Alface.jpg" alt="">
-            <span class="precoMobile">Preço: 2,75</span>
-            <h5>Alface</h5>
-            <p>Verdura com baixo teor calórico e rica em fibras, vitaminas e minerais, como vitamina C, vitamina K, folato e potássio.</p>
-            <div class="input-group gridInputMobile" role="group" aria-label="Basic example">
-              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto" placeholder="Qtd" onchange="calcularValorTotal()">
+              <input class="tamEsquerdoMobile" type="number" name="quantidadeProduto" id="quantidadeProduto24" placeholder="Qtd" onchange="calcularValorTotal(this)">
               <input class="tamDireitoMobile" type="number" name="valorTotal" id="valorTotal" readonly placeholder="Total">
             </div>
             <div class="btn-group gridBtnMobile" role="group" aria-label="Basic example">
