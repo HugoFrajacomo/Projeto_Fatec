@@ -5,6 +5,6 @@ function calcularValorTotal(id) {
 
   let precoProduto = Number(document.getElementById(idElementoPreco).innerHTML.replace(',','.'));
   let quantidadeProduto = Number(document.getElementById(idElementoQuantidade).value);
-  document.getElementById(idElementoValorTotal).innerHTML = String(precoProduto * quantidadeProduto).replace('.',',');
+  document.getElementById(idElementoValorTotal).innerHTML = String((precoProduto * quantidadeProduto).toFixed(2)).replace('.',',');
 }
 
