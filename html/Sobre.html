@@ -16,80 +16,34 @@
     </head>
 
     <body>
-       <header>
-        <div>
-          <div class="row g-0 bgBanner">
-            <div class="col-md-12 d-flex justify-content-center">
-              <a href="index.html"> <img src="../Imagens/Logo - Pede Roça.svg" class="img-fluid rounded-start ajusteLogo" alt="Pede Roça"></a>
-             
-            </div>
-          </div>
+      <!--Banner-->
+      <div class="row bgBanner">
+        <div class="d-flex justify-content-center">
+          <a href="index.html"> <img src="../Imagens/Logo - Pede Roça.svg" class="img-fluid rounded-start ajusteLogo" alt="Pede Roça"></a>
         </div>
+        <span class="mobileNavbar ajusteteste"></span>
+      </div>
         <!-- BARRA DE NAVEGAÇÃO MOBILE DO SITE -->
-        <nav class="navbar bg-body-tertiary nav-mobile mobileNavbar bgNav">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <li class="efeitoMouse editListaMobile">
-              <a class="LinkBarraMobile" aria-current="page" href="Login.html"><img class="configImgMobile" src="../Imagens/Icones/user.svg" alt="Login"> Login</a>
-            </li>
-            <div class="offcanvas offcanvas-start NavLat detalheNav" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title tituloNav" id="offcanvasNavbarLabel">Navegação</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                <div class="input-group">
-                  <input class="form-control" type="text" placeholder="Digite sua busca" >
-                  <div class="input-group-append">
-                      <button class="btn btnPesquisaMobile" type="button">Pesquisar</button>
-                  </div>
-                </div>
-                <hr>
-                <h5 class="tituloNav">Páginas</h5>
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                  <li class="nav-item my-1 efeitoMouse">
-                    <a class="nav-link linkNavLat" aria-current="page" href="index.html"><img class="configImgMobile" src="../Imagens/Icones/layout.svg" alt="Login"> Home</a>
-                  </li>
-                  <li class="nav-item my-1 efeitoMouse">
-                    <a class="nav-link linkNavLat" href="CarrinhoCompras.html"><img class="configImgMobile" src="../Imagens/Icones/shopping-cart.svg" alt="carrinho de compra"> Meu Carrinho</a>
-                  </li>
-                  <li class="nav-item my-1 efeitoMouse">
-                    <a class="nav-link linkNavLat active2" href="Sobre.html"><img class="configImgMobile" src="../Imagens/Icones/home.svg" alt="Empresa"> Sobre a Empresa</a>
-                  </li>
-                  <li class="nav-item my-1 efeitoMouse">
-                    <a class="nav-link linkNavLat" href="AreaDoUsuario.html"><img class="configImgMobile" src="../Imagens/Icones/settings.svg" alt="Usuário"> Área do Usuário</a>
-                  </li>
-                  <!--
-                  <li class="nav-item dropdown efeitoMouse">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <img class="configImgMobile" src="../Imagens/Icones/settings.svg" alt="">
-                      Minha Conta
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Área do usuário</a></li>
-                      <li><a class="dropdown-item disabled" href="#">Informações pessoais</a></li>
-                      <li><a class="dropdown-item disabled" href="#">Privacidade</a></li>
-                      <li><a class="dropdown-item disabled" href="#">Segurança</a></li>
-                      <li><a class="dropdown-item disabled" href="#">Notificações</a></li>
-                      <li><a class="dropdown-item disabled" href="#">Assinatura</a></li>
-                      <li><a class="dropdown-item disabled" href="#">Dúvidas Frequentes</a></li>
-                      <li><a class="dropdown-item disabled" href="#">Configurações</a></li>
-                    </ul>
-                  </li>
-                  -->
-                </ul>
-                <hr>
-                <h5 class="tituloNav">Redes sociais</h5>
-                <div class="offcanvas-end text-center end-100 bg-light p-3 rounded-3">
-                  <a class="linkNavMobile mx-2" href=""><img src="../Imagens/Icones/circle/facebook.svg" alt="Facebook">Facebook</a>
-                  <a class="linkNavMobile mx-2" href=""><img src="../Imagens/Icones/circle/instagram.svg" alt="instagram">Instagram</a>
-                  <a class="linkNavMobile mx-2" href=""><img class="ajusteGmail" src="../Imagens/Icones/mail4.svg" alt="Gmail">Gmail</a>
-                </div>
-
-              </div>
-            </div>
+        <nav class="d-flex justify-content-around align-items-center fixed-bottom navMobile d-md-none">
+          <div class="ativoNavDeskop">
+            <a class="ajusteLinkNavMobile" href="Sobre.html"><i class="bi bi-buildings navImgDesktop"></i></a>
+            <p class="nomeLinkMobile">Sobre</p>
+          </div>
+          <div>
+            <a class="ajusteLinkNavMobile" href="CarrinhoCompras.html"><i class="bi bi-cart-check navImgDesktop"></i></a>
+            <p class="nomeLinkMobile">Carrinho</p>
+          </div>
+          <div>
+            <a class="ajusteLinkNavMobile" href="index.html"><i class="bi bi-house navImgDesktop"></i></a>
+            <p class="nomeLinkMobile">Home</p>
+          </div>
+          <div>
+            <a class="ajusteLinkNavMobile" href="AreaDoUsuario.html"><i class="bi bi-file-person navImgDesktop"></i></a>
+            <p class="nomeLinkMobile">Usuário</p>
+          </div>
+          <div>
+            <a class="ajusteLinkNavMobile" href="Login.html"><i class="bi bi-person-circle navImgDesktop"></i></a>
+            <p class="nomeLinkMobile">Login</p>
           </div>
         </nav>
 
@@ -113,27 +67,10 @@
                 <li class="nav-item mx-1 efeitoMouseDesktop">
                   <a class="nav-link" aria-current="page" href="AreaDoUsuario.html">Área do Usuário</a>
                 </li>
-                <!--
-                <li class="nav-item dropdown efeitoMouseDesktop">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Minha conta
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Área do usuário</a></li>
-                    <li><a class="dropdown-item disabled" href="#">Informações pessoais</a></li>
-                    <li><a class="dropdown-item disabled" href="#">Privacidade</a></li>
-                    <li><a class="dropdown-item disabled" href="#">Segurança</a></li>
-                    <li><a class="dropdown-item disabled" href="#">Notificações</a></li>
-                    <li><a class="dropdown-item disabled" href="#">Assinatura</a></li>
-                    <li><a class="dropdown-item disabled" href="#">Dúvidas Frequentes</a></li>
-                    <li><a class="dropdown-item disabled" href="#">Configurações</a></li>
-                  </ul>
-                </li>
-                -->
               </ul>
-              <li class="efeitoMouse editListaMobile">
-                <a class="LinkBarraMobile" aria-current="page" href="Login.html"><img class="configImgMobile" src="../Imagens/Icones/user.svg" alt="Login"> Login</a>
-              </li>
+              <button class="botaoPadrao my-1">
+                <a aria-current="page" href="Login.html"><i class="bi bi-person-circle mx-2 my-1"></i>Login</a>
+              </button>
             </div>
           </div>
         </nav>
@@ -141,7 +78,7 @@
 
        <main>
         <!-- Apresentação desktop -->
-        <div class=tituloSobreEmpresa><h2>História</h2></div>
+        <div class="tituloSobreEmpresa my-2"><h2>História</h2></div>
 
           <Section class="d-flex flex-wrap align-content-around justify-content-around containerApresentacao desktopNavbar" id="Apresentação ">
             <img class="img-fluid FormatImgApresentacao" src="../Imagens/hist-Desenvolvemento.jpg" alt="">
@@ -150,7 +87,7 @@
             </div>
           </Section>
 
-          <div class=tituloSobreEmpresa><h2>Colaboradores</h2></div>
+          <div class="tituloSobreEmpresa my-2"><h2>Colaboradores</h2></div>
 
           <section id="equipePedeRoca" class="d-flex flex-wrap align-content-around justify-content-around gap-1 containerApresentacao ">
             <div class="w-25 caixaFundador">
@@ -170,7 +107,7 @@
             </div>
           </section>
 
-          <div class=tituloSobreEmpresa><h2>Contato</h2></div>
+          <div class="tituloSobreEmpresa my-2"><h2>Contato</h2></div>
 
           <section id="contato" class="d-flex align-content-around justify-content-evenly gap-1 flex-wrap containerApresentacao mb-2">
             <div class="linha">

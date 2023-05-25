@@ -11937,67 +11937,39 @@ body {
     display: none;
   }
 }
+.ajusteteste {
+  height: 10px;
+  box-shadow: 0px 0px 5px 1px;
+  background: #f2f2f2;
+  display: block;
+}
+
 /*------------- HEADER - BARRA NAVEGAÇÃO MOBILE --------------- */
-.detalheNav {
-  border-radius: 0px 10px 10px 0px;
+.navMobile {
   background: #F2F2F2;
+  height: 8vh;
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: 0px 0px 1px 1px #2f2f2f;
 }
 
-.tituloNav {
-  font-family: "Merienda", Times, serif;
-  color: #A83C01;
+.navImgDesktop {
+  font-size: 1.5rem;
+  padding: 0px 12px;
+  color: #2f2f2f;
+  text-align: center;
 }
 
-.btnPesquisaMobile {
-  background: #7C8C03;
-  border-radius: 0px 5px 5px 0px;
+.nomeLinkMobile {
+  color: #2f2f2f;
+  font-size: 0.7rem;
+  margin: 0px 0px 4px 0px;
+  text-align: center;
+  width: 50px;
 }
 
-.btnPesquisaMobile:hover, .active2 {
-  background: rgba(124, 140, 3, 0.5);
-  border-radius: 0px 5px 5px 0px;
-  border-radius: 5px;
-}
-
-.linkNavMobile {
-  text-decoration: none;
-  color: black;
-}
-
-.efeitoMouse:hover {
-  background: #7C8C03;
-  padding-left: 5px;
-  border-radius: 5px;
-  transition: 0.5s;
-}
-
-.efeitoMouse:active {
-  background: #7C8C03;
-  padding-left: 5px;
-  border-radius: 5px;
-  transition: 0.5s;
-}
-
-.ajusteGmail, .configImgMobile {
-  width: 30px;
-}
-
-.bgNav {
-  margin-bottom: 8px;
-  box-shadow: 0px 0px 5px 5px rgba(47, 47, 47, 0.4392156863);
-}
-
-.LinkBarraMobile {
-  color: #f2f2f2;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.editListaMobile {
-  list-style: none;
-  background: #7C8C03;
-  padding: 5px;
-  border-radius: 5px;
+.ativoNavDeskop {
+  background: rgba(124, 140, 3, 0.2745098039);
+  border-radius: 5px 5px 0px 0px;
 }
 
 /*---------- NAVEGAÇÃO DESKTOP -----------*/
@@ -12020,6 +11992,19 @@ body {
   color: #f2f2f2;
 }
 
+.botaoPadrao {
+  border: none;
+  background: #7C8C03;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+
+.botaoPadrao a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f2f2f2;
+}
+
 /*-------Main--------*/
 .imagemCarrossel {
   width: 200px;
@@ -12031,52 +12016,29 @@ body {
   overflow: hidden;
 }
 
-.filtroNav {
-  background: #f2f2f2;
-  color: #7C8C03;
-  max-width: 100%;
-  margin: 0 auto;
-  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+/*-- Filtro pesquisa ---*/
+.filtroPesquisa {
+  margin: 8px 10px 5px 10px;
+  border-radius: 10px;
 }
 
-.filtroNav h5, .filtroNav .h5 {
-  margin: 10px;
-  text-align: center;
-  padding-top: 15px;
-  text-transform: uppercase;
+.corPesquisa {
+  color: #f2f2f2;
+  font-weight: bold;
 }
 
-.btnFiltro {
+.corFiltro {
+  font-size: 1.5rem;
+  color: #f2f2f2;
+}
+
+.bgFiltro {
   background: #7C8C03;
-  border-radius: 5px;
-  color: #f2f2f2;
+  border: none;
 }
 
-.form-check-label {
-  width: 100px;
-}
-
-.btnFiltro:hover {
-  background: rgba(124, 140, 3, 0.7);
-  color: #f2f2f2;
-}
-
-.procuraFiltro {
-  margin: 10px;
-  text-align: center;
-  padding-top: 15px;
-}
-
-.coluna {
-  column-count: 3;
-  column-gap: 10px;
-  -ms-grid-column-align: center;
-  text-transform: uppercase;
-  padding-bottom: 10px;
-}
-
-.colunaItem {
-  margin: 0px 10px;
+.bgFiltro:hover {
+  background: rgba(124, 140, 3, 0.5);
 }
 
 /* ----------------------- Personalização cartões de venda ------------------- */
@@ -12198,7 +12160,7 @@ body {
 /* Estilos para desktop */
 @media (min-width: 768px) {
   .geralCard {
-    width: 300px;
+    width: 18rem;
     box-shadow: 0px 0px 3px 3px #7C8C03;
   }
   .tamanhoImgVenda {
@@ -12207,7 +12169,7 @@ body {
   }
   .posicaoFavorito {
     position: absolute;
-    margin-left: 243px;
+    margin-left: 230px;
     margin-top: 2px;
     color: red;
   }
@@ -12268,14 +12230,14 @@ body {
     background: #7C8C03;
     border: 1px solid black;
     border-radius: 0px 0px 0px 5px;
-    width: 139.25px;
+    width: 133.5px;
     color: #f2f2f2;
   }
   .btnCarrinho {
     background: #7C8C03;
     border: 1px solid black;
     border-radius: 0px 0px 5px 0px;
-    width: 139.25px;
+    width: 133.5px;
   }
   .tamanhoCarrinho {
     color: #f2f2f2;
@@ -12293,18 +12255,29 @@ body {
   box-shadow: 0px 0px 5px 5px #2f2f2f;
 }
 
-.footerText {
-  padding: 10px;
-  margin-bottom: 0px;
-  text-align: center;
+@media (max-width: 767px) {
+  .footerText {
+    padding: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
 }
-
+@media (min-width: 768px) {
+  .footerText {
+    padding: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+}
 #Apresentação {
   border-radius: 10px 10px 0px 0px;
 }
 
 .containerApresentacao {
   background: #f2f2f2;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
 }
 
 .FormatTextoApresentacao {
@@ -12326,6 +12299,9 @@ body {
 
 .tituloSobreEmpresa {
   background: #7C8C03;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
 }
 
 .tituloSobreEmpresa h2, .tituloSobreEmpresa .h2 {
@@ -12419,8 +12395,8 @@ body {
 .precoCarrinho {
   background-color: #A83C01;
   color: #f2f2f2;
-  padding: 10px;
-  font-size: 1.2rem;
+  padding: 0px 5px;
+  font-size: 1rem;
   display: inline;
   border-radius: 5px;
 }
@@ -12618,25 +12594,14 @@ body {
   }
   #formulario-mobile {
     background-color: #f2f2f2;
-    border-radius: 10px;
-    padding: 5%;
-    margin: 6%;
+    margin: 10px 0px;
+    padding: 10px;
   }
   .input-perguntas-1 {
     margin-bottom: 10px;
     border-radius: 5px;
     font-size: 14px;
     border: solid 0.5px #a7acb1;
-  }
-  .form-label {
-    color: #f2f2f2;
-    background: #A83C01;
-    border-radius: 5px;
-    box-shadow: 0px 2px 3px 2px rgba(47, 47, 47, 0.4392156863);
-    padding: 7px;
-    font-size: 2.8vw;
-    max-width: max-content;
-    min-width: max-content;
   }
   #form-label-titulo {
     background-color: #7C8C03;
@@ -12674,11 +12639,10 @@ body {
   }
   #formulario-desktop {
     background-color: #f2f2f2;
-    border-radius: 20px;
-    padding: 2%;
-    margin-left: 10%;
-    margin-bottom: 2%;
-    width: 80%;
+    padding: 10px;
+    margin: 10px auto;
+    width: 95%;
+    border-radius: 10px;
   }
   .input-perguntas-2 {
     margin-bottom: 10px;
@@ -12687,16 +12651,6 @@ body {
     border: solid 0.5px #a7acb1;
     min-width: 10vw;
     max-width: 60vw;
-  }
-  .form-label {
-    color: #f2f2f2;
-    background: #A83C01;
-    border-radius: 5px;
-    box-shadow: 0px 2px 3px 2px rgba(47, 47, 47, 0.4392156863);
-    padding: 10px;
-    max-width: max-content;
-    min-width: max-content;
-    font-size: 19px;
   }
   #form-label-titulo {
     background-color: #7C8C03;
