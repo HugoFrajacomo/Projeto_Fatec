@@ -1,109 +1,136 @@
 #Apresentação {
-    border-radius: 10px 10px 0px 0px;
-  }
-  
-  .containerApresentacao {
-    background: #f2f2f2;
-    width: 96%;
-    margin: 0 auto;
-    border-radius: 10px;
-  }
-  
-  .FormatTextoApresentacao {
-    margin: 10px;
-    border-radius: 10px;
-  }
-  
-  .FormatImgApresentacao {
-    border-radius: 10px;
-    margin: 10px;
-    margin: 0px 30px;
-    max-height: 40vh;
-  }
-  
-  .FormatTextoApresentacao p {
-    margin: 10px;
-    text-align: justify;
-    text-indent: 20px;
-  }
-  
-  .tituloSobreEmpresa {
-    background: #7C8C03;
-    width: 96%;
-    margin: 0 auto;
-    border-radius: 10px;
-  }
-    
-  .tituloSobreEmpresa h2 {
-    color: #f2f2f2;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 10px 0px;
-    margin: 0px;
-    font-family: 'Merienda', Times, serif;
-    font-size: 1.4rem;
-  }
-  
-  #equipePedeRoca {
-    padding: 20px 0px;
-  }
+  border-radius: 10px 10px 0px 0px;
+}
 
-  .imgEquipe {
-    width: 250px;
-    border-radius: 10px;
-    margin: 0 25px;
-    aspect-ratio: 3/4;
-    object-fit: contain;
-    box-shadow: 0px 0px 5px 3px #7c8c036b;
-  }
-  
-  .nomesFundador {
-    text-align: center;
-    font-weight: bold;
-    margin-top: 10px;
-  }
-  
-  .descricaoFundador {
-    text-align: justify;
-    text-indent: 20px;
-  }
-  
-  #contato h6 {
-    margin: 15px;
-    background: #7C8C03;
-    color: #f2f2f2;
-    border-radius: 20px;
-    text-align: center;
-    font-size: 1.3rem;
-  }
-  
-  #contato a {
-    margin-left: 10px;
-  }
-  
-  #contato p {
-    margin: 5px 0px;
-  }
-  
-  #contato iframe {
-    border-radius: 10px;
-    height: 280px;
-    width: 100%;
-  }
-  
-  .btnEnviar {
-    border: none;
-    background: #7C8C03;
-    color: #f2f2f2;
-    width: 100%;
-    border-radius: 0px 0px 5px 5px;
-  }
-  
-  .btnEnviar:hover {
-    background: rgba(124, 140, 3, 0.5);
-  }
-  
-  .caixaFundador {
-    min-width: 300px;
-  }
+.containerApresentacao {
+  background: #f2f2f2;
+  width: 96%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
 
+.FormatTextoApresentacao {
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.FormatImgApresentacao {
+  border-radius: 10px;
+  max-height: 55vh;
+  aspect-ratio: 2.4974/1;
+  object-fit: cover;
+}
+
+.FormatTextoApresentacao p {
+  margin: 10px;
+  text-align: justify;
+  text-indent: 20px;
+}
+
+.colunaTexto h3 {
+  margin: 10px 0px;
+  display: block;
+  background: #7C8C03;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.colunaTexto p, .colunaTexto li {
+  text-align: justify;
+  text-indent: 20px;
+}
+
+.imgSobreApp {
+  margin: 10px 0px;
+}
+
+.tituloSobreEmpresa {
+  background: #7C8C03;
+  width: 96%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.tituloSobreEmpresa h2 {
+  color: #f2f2f2;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 0px;
+  margin: 0px;
+  font-family: 'Merienda', Times, serif;
+  font-size: 1.4rem;
+}
+
+#equipePedeRoca {
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.imgEquipe {
+  width: 250px;
+  border-radius: 10px;
+  margin: 0 25px;
+  aspect-ratio: 3/4;
+  -o-object-fit: contain;
+  object-fit: contain;
+  box-shadow: 0px 0px 5px 3px #7c8c036b;
+}
+
+.nomesFundador {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.descricaoFundador {
+  text-align: justify;
+  text-indent: 20px;
+}
+
+#contato h6 {
+  margin: 15px;
+  background: #7C8C03;
+  color: #f2f2f2;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+#contato a {
+  margin-left: 10px;
+}
+
+#contato p {
+  margin: 5px 0px;
+}
+
+#contato iframe {
+  border-radius: 10px;
+  height: 280px;
+  width: 100%;
+}
+
+.btnEnviar {
+  border: none;
+  background: #7C8C03;
+  color: #f2f2f2;
+  width: 100%;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.btnEnviar:hover {
+  background: rgba(124, 140, 3, 0.5);
+}
+
+.caixaFundador {
+  min-width: 300px;
+}
+
+.tamanhoArcordeon {
+  width: 100%;
+}
+
+.accordionTitulo {
+  background: #7C8C03;
+}

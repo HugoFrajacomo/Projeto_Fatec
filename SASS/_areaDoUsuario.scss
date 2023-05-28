@@ -1,110 +1,110 @@
 /*! ---------------------MAIN-MOBILE-AREA-DE-USUARIO---------------------- !*/
 @media only screen and (max-width: 767px) {
-    .desktopNavbar {
-      display: none;
-    }
-  
-    .main-desktop {
-      display: none;
-      visibility: hidden;
-    }
-  
-    
-    #formulario-mobile {
-      background-color: #f2f2f2;
-      margin: 10px 0px;
-      padding: 10px;
-    }
-    
-    
-    .input-perguntas-1 {
-      margin-bottom: 10px;
-      border-radius: 5px;
-      font-size: 14px;
-      border: solid 0.5px #a7acb1;
-    }
-        
-    #form-label-titulo{
-     background-color: #7C8C03;
-      border-radius: 5px;
-      color: #f2f2f2;
-      text-align: center;
-      min-width: 100px;
-    }
-    
-    .input-label-uf {
-      margin-bottom: 20px;
-      border-radius: 5px;
-      font-size: 14px;
-      height: 60%;
-      border: solid 0.5px #a7acb1;
-    }
-    
-    #ajustar-form {
-      height: 100%;
-      width: 100%;
-    }
-  
-    #mensagem1 {
-      text-align: center;
-    }
-  
-    .col {
-      flex-wrap: wrap;
-    }
-    
+  .desktopNavbar {
+    display: none;
   }
-  
-  /*! ---------------------MAIN-DESKTOP-AREA-DE-USUARIO---------------------- !*/
-  @media only screen and (min-width: 768px) {
-    .mobileNavbar {
-      display: none;
-    }
-  
-    .main-mobile {
-      display: none;
-      visibility: hidden;
-    }
-  
-    #formulario-desktop {
-      background-color: #f2f2f2;
-      padding: 10px;
-      margin: 10px auto;
-      width: 95%;
-      border-radius: 10px;
-    }
-    
-    
-    .input-perguntas-2 {
-      margin-bottom: 10px;
-      border-radius: 5px;
-      font-size: 14px;
-      border: solid 0.5px #a7acb1;
-      min-width: 10vw;
-      max-width: 60vw;
-    }
-       
-    #form-label-titulo{
-     background-color: #7C8C03;
-      border-radius: 5px;
-      color: #f2f2f2;
-      text-align: center;
-      width: 100%;
-    }
-    
-    .input-label-uf {
-      margin-bottom: 20px;
-      border-radius: 5px;
-      height: 60%;
-      border: solid 0.5px #a7acb1;
-    }
-    
-    #ajustar-form {
-      height: 100%;
-      width: 100%;
-    }
-    
-    .menu-drop {
-      display: inline-flex;
-    }
+
+  .main-desktop {
+    display: none;
+    visibility: hidden;
+  }
+
+
+  #formulario-mobile {
+    background-color: #f2f2f2;
+    margin: 10px 0px;
+    padding: 10px;
+  }
+
+
+  .input-perguntas-1 {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: solid 0.5px #a7acb1;
+  }
+
+  #form-label-titulo {
+    background-color: #7C8C03;
+    border-radius: 5px;
+    color: #f2f2f2;
+    text-align: center;
+    min-width: 100px;
+  }
+
+  .input-label-uf {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    height: 60%;
+    border: solid 0.5px #a7acb1;
+  }
+
+  #ajustar-form {
+    height: 100%;
+    width: 100%;
+  }
+
+  #mensagem1 {
+    text-align: center;
+  }
+
+  .col {
+    flex-wrap: wrap;
+  }
+
+}
+
+/*! ---------------------MAIN-DESKTOP-AREA-DE-USUARIO---------------------- !*/
+@media only screen and (min-width: 768px) {
+  .mobileNavbar {
+    display: none;
+  }
+
+  .main-mobile {
+    display: none;
+    visibility: hidden;
+  }
+
+  #formulario-desktop {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin: 10px auto;
+    width: 95%;
+    border-radius: 10px;
+  }
+
+
+  .input-perguntas-2 {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: solid 0.5px #a7acb1;
+    min-width: 10vw;
+    max-width: 60vw;
+  }
+
+  #form-label-titulo {
+    background-color: #7C8C03;
+    border-radius: 5px;
+    color: #f2f2f2;
+    text-align: center;
+    width: 100%;
+  }
+
+  .input-label-uf {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    height: 60%;
+    border: solid 0.5px #a7acb1;
+  }
+
+  #ajustar-form {
+    height: 100%;
+    width: 100%;
+  }
+
+  .menu-drop {
+    display: inline-flex;
+  }
 }

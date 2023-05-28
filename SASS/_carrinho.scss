@@ -1,57 +1,60 @@
 .gradient-custom {
-    background:  #2F2F2F;
-    min-width: 300px;
-    }
-  
-  .comecoCard {
-    background-color: #7C8C03;
-    color: #f2f2f2;
-  }
-  
-  .removerCarrinho {
-    background-color: #7C8C03;
-    color: #f2f2f2;
-    border: none;
-  }
-   
-  .seletorQuantidade {
-    background-color: #7C8C03;
-    border: none;
-  }
-  
-  .seletorQuantidade:hover, .removerCarrinho:hover, .finalizarCompra:hover {
-    background-color: rgba(124, 140, 3, 0.5);
-  }
-  
-  .precoCarrinho {
-    background-color: #A83C01;
-    color: #f2f2f2;
-    padding: 0px 5px ;
-    font-size: 1rem;
-    display: inline ;
-    border-radius: 5px; 
-  }
-  
-  .finalizarCompra {
-    background-color: #7C8C03;
-    text-transform: uppercase;
-    border: none;
-  }
-  
-  .freteCarrinho {
-    padding-left: 10px;
-    padding-bottom: 5px;
-    padding-top: 10px;
-    border-radius: 5px;
-  }
-  .formaPagamento {
-    margin-top: 20px;
-  }
-  
-  .botaoCarrinho {
-    border: none;
-  }
-  
-  .textoJustificado {
-    text-align: justify;
-  }
+  background: #2F2F2F;
+  min-width: 300px;
+}
+
+.comecoCard {
+  background-color: #7C8C03;
+  color: #f2f2f2;
+}
+
+.removerCarrinho {
+  background-color: #7C8C03;
+  color: #f2f2f2;
+  border: none;
+}
+
+.seletorQuantidade {
+  background-color: #7C8C03;
+  border: none;
+}
+
+.seletorQuantidade:hover,
+.removerCarrinho:hover,
+.finalizarCompra:hover {
+  background-color: rgba(124, 140, 3, 0.5);
+}
+
+.precoCarrinho {
+  background-color: #A83C01;
+  color: #f2f2f2;
+  padding: 0px 5px;
+  font-size: 1rem;
+  display: inline;
+  border-radius: 5px;
+}
+
+.finalizarCompra {
+  background-color: #7C8C03;
+  text-transform: uppercase;
+  border: none;
+}
+
+.freteCarrinho {
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  border-radius: 5px;
+}
+
+.formaPagamento {
+  margin-top: 20px;
+}
+
+.botaoCarrinho {
+  border: none;
+}
+
+.textoJustificado {
+  text-align: justify;
+}

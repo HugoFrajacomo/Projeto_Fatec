@@ -1,68 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pede Roça - Login</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pede Roça - Login</title>
 
-        <!-- Folha de estilo com Bootstrap -->
-        <link rel="stylesheet" href="../css/estilo.css">
-        <!-- Bootstrap Script -->
-        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    </head>
+    <!-- Folha de estilo com Bootstrap -->
+    <link rel="stylesheet" href="../css/estilo.css">
+    <!-- Bootstrap Script -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
 
-    <body id="telaDeLogin" class="d-flex align-items-center justify-content-center">
-        <main class="container d-none d-md-block AreaLogin">
-            <div class="d-flex justify-content-between tituloLogin">
-                <h4>Login</h4>
-                <a href="index.html"><button><i class="bi bi-x-circle-fill"></i> Voltar</button></a>
+<body id="telaDeLogin" class="d-flex align-items-center justify-content-center">
+    <main class="container d-none d-md-block AreaLogin">
+        <div class="d-flex justify-content-between tituloLogin">
+            <h4>Login</h4>
+            <a href="index.html"><button><i class="bi bi-x-circle-fill"></i> Voltar</button></a>
+        </div>
+        <img class="imgLogoLogin" src="../Imagens/Logo - Pede Roça2.svg" alt="Logo Pede Roça">
+        <div>
+            <div class="form-floating mb-3 needs-validation" novalidate>
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Usuário</label>
+                <div class="valid-feedback">
+                    Tudo Certo!
+                </div>
             </div>
-            <img class="imgLogoLogin" src="../Imagens/Logo - Pede Roça2.svg" alt="Logo Pede Roça">
-            <div>
-                <div class="form-floating mb-3 needs-validation" novalidate>
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Usuário</label>
-                    <div class="valid-feedback">
-                        Tudo Certo!
-                    </div>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Senha</label>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <a href="">Recuperar senha</a>
-                    <a href="Cadastro.html">Criar conta</a>
-                </div>
-                <a href="index.html" class="btnLogin">Entrar</a>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Senha</label>
             </div>
-        </main>
-        <main class="container d-block d-md-none AreaLoginCelular ">
-            <div class="d-flex justify-content-between tituloLoginCelular">
-                <h4>Login</h4>
-                <a href="index.html"><button><i class="bi bi-x-circle-fill"></i> Voltar</button></a>
+            <div class="d-flex justify-content-between">
+                <a href="">Recuperar senha</a>
+                <a href="Cadastro.html">Criar conta</a>
             </div>
-            <img class="imgLogoLogin" src="../Imagens/Logo - Pede Roça2.svg" alt="Logo Pede Roça">
-            <div>
-                <div class="form-floating mb-3 needs-validation" novalidate>
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Usuário</label>
-                    <div class="valid-feedback">
-                        Tudo Certo!
-                    </div>
+            <a href="index.html" class="btnLogin">Entrar</a>
+        </div>
+    </main>
+    <main class="container d-block d-md-none AreaLoginCelular ">
+        <div class="d-flex justify-content-between tituloLoginCelular">
+            <h4>Login</h4>
+            <a href="index.html"><button><i class="bi bi-x-circle-fill"></i> Voltar</button></a>
+        </div>
+        <img class="imgLogoLogin" src="../Imagens/Logo - Pede Roça2.svg" alt="Logo Pede Roça">
+        <div>
+            <div class="form-floating mb-3 needs-validation" novalidate>
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Usuário</label>
+                <div class="valid-feedback">
+                    Tudo Certo!
                 </div>
-                <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Senha</label>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <a href="">Recuperar senha</a>
-                    <a href="Cadastro.html">Criar conta</a>
-                </div>
-                <a href="index.html" class="btnLogin ">Entrar</a>
             </div>
-        </main>
-    </body>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Senha</label>
+            </div>
+            <div class="d-flex justify-content-between">
+                <a href="">Recuperar senha</a>
+                <a href="Cadastro.html">Criar conta</a>
+            </div>
+            <a href="index.html" class="btnLogin ">Entrar</a>
+        </div>
+    </main>
+</body>
+
 </html>

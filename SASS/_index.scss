@@ -1,207 +1,211 @@
 /*! ------------- header - Cabeçalho --------------- !*/
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Merienda', Times, serif;
-  }
-  
-  body {
-    font-family: 'Ubuntu', Tahoma, Geneva, Verdana, sans-serif;
-    background: #2f2f2f;
-  }
-  
-  .ajusteLogo {
-    width: 150px;
-    padding: 5px;
-    border-radius: 10px;
-  }
+  font-family: 'Merienda', Times, serif;
+}
 
-  .bgLinksNav {
-    border: 2px solid #7C8C03;
-    border-radius: 30px;
-  }
+body {
+  font-family: 'Ubuntu', Tahoma, Geneva, Verdana, sans-serif;
+  background: #2f2f2f;
+}
 
-  .bgLinksNav:hover {
-    background: rgba(124, 140, 3, 0.5);
-  }
+.ajusteLogo {
+  width: 150px;
+  padding: 5px;
+  border-radius: 10px;
+}
 
-  .botaoPadraoNav {
-    border-radius: 30px;
-  }
+.bgLinksNav {
+  border: 2px solid #7C8C03;
+  border-radius: 30px;
+}
 
-  
-  .botaoPadraoNav-ativo {
-    border-radius: 30px;
-    background: #7C8C03;
-  }
+.bgLinksNav:hover {
+  background: rgba(124, 140, 3, 0.5);
+}
 
-  .linkPadraoNav:hover {
-    color: #f2f2f2;
-  }
-  
-  .linkPadraoNav-ativo {
-    color: #f2f2f2;
-  }
+.botaoPadraoNav {
+  border-radius: 30px;
+}
 
-  .linkPadraoNav-ativo:hover {
-    color: #f2f2f2;
-  }
 
-  .tamanhoCarrinhoNav {
-    margin-right: 3px;
-  }
+.botaoPadraoNav-ativo {
+  border-radius: 30px;
+  background: #7C8C03;
+}
 
-  .caixaLogoM {
-    background: #f2f2f2;
-    width: 100%;
-    text-align: center;
-  }
+.linkPadraoNav:hover {
+  color: #f2f2f2;
+}
 
-  .ajusteLogoMobile {
-    width: 105px;
-    margin: 5px;
-  }
-  
-  .bgBanner {
-    background: linear-gradient(to left, #7C8C03, #f2f2f2, #7C8C03);
-  }
+.linkPadraoNav-ativo {
+  color: #f2f2f2;
+}
 
-  
-  
-  /*! ------------- header - Barra de navegação  --------------- !*/
-  @media only screen and (max-width: 767px) {
-    .desktopNavbar {
-      display: none;
-    }
-  }
-  
-  /* Estilos para desktops */
-  @media only screen and (min-width: 768px) {
-    .mobileNavbar {
-      display: none;
-    }
-  }
+.linkPadraoNav-ativo:hover {
+  color: #f2f2f2;
+}
 
-  .ajusteteste {
-    height: 10px;
-    box-shadow: 0px 0px 5px 1px;
-    background: #f2f2f2;
-    display: block;
-  }
-  
-  .bgNav {
-    box-shadow: 0px 0px 5px 2px rgba(47, 47, 47, 0.8);
-  }
-  /*------------- HEADER - BARRA NAVEGAÇÃO MOBILE --------------- */
-  .navMobile{
-    background: #F2F2F2;
-    height: 8vh;
-    box-shadow: 0px 0px 1px 1px #2f2f2f;
-  }
+.tamanhoCarrinhoNav {
+  margin-right: 3px;
+}
 
-  .navImgDesktop {
-    font-size: 1.5rem;
-    padding: 0px 12px;
-    color: #2f2f2f;
-    text-align: center;
-  }
+.caixaLogoM {
+  background: #f2f2f2;
+  width: 100%;
+  text-align: center;
+}
 
-  .nomeLinkMobile {
-    color: #2f2f2f;
-    font-size: 0.7rem;
-    margin: 0px 0px 4px 0px;
-    text-align: center;
-    width: 50px;
-  }
+.ajusteLogoMobile {
+  width: 105px;
+  margin: 5px;
+}
 
-  .ativoNavDeskop {
-    background: #7c8c0346;
-    border-radius: 5px 5px 0px 0px;
-  }
-  /*---------- NAVEGAÇÃO DESKTOP -----------*/
-  
-  .efeitoMouseDesktop:hover {
-    background: rgba(124, 140, 3, 0.8);
-    border-radius: 5px;
-    transition: 0.5s;
-  }
-  
-  .efeitoMouseDesktop:active {
-    background: #7C8C03;
-    border-radius: 5px;
-    transition: 0.5s;
-  }
-  
-  .activeDesktop {
-    background: rgba(124, 140, 3, 1);
-    border-radius: 0px 5px 5px 0px;
-    border-radius: 5px;
-    color: #f2f2f2;
-  }
+.bgBanner {
+  background: linear-gradient(to left, #7C8C03, #f2f2f2, #7C8C03);
+}
 
-  .botaoPadrao {
-    border: none;
-    background: #7C8C03;
-    padding: 2px 5px;
-    border-radius: 5px 0px 5px 0px;
-  }
 
-  .botaoPadrao:hover {
-    background: rgba(124, 140, 3, 0.5);
-  }
 
-  .botaoPadrao a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #f2f2f2;
+/*! ------------- header - Barra de navegação  --------------- !*/
+@media only screen and (max-width: 767px) {
+  .desktopNavbar {
+    display: none;
   }
+}
 
-  /*-------Main--------*/
+/* Estilos para desktops */
+@media only screen and (min-width: 768px) {
+  .mobileNavbar {
+    display: none;
+  }
+}
 
-  .marginBanner {
-    margin: 8px 10px 0px 10px;
-    border-radius: 10px;
-  }
+.ajusteteste {
+  height: 10px;
+  box-shadow: 0px 0px 5px 1px;
+  background: #f2f2f2;
+  display: block;
+}
 
-  .marginBannerM {
-    margin-top: 8px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  
-  .imagemCarrossel {
-    width: 200px;
-  }
-  
-  .tamanhoCarrocel {
-    max-width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-  }
+.bgNav {
+  box-shadow: 0px 0px 5px 2px rgba(47, 47, 47, 0.8);
+}
 
-  /*-- Filtro pesquisa ---*/
+/*------------- HEADER - BARRA NAVEGAÇÃO MOBILE --------------- */
+.navMobile {
+  background: #F2F2F2;
+  height: 8vh;
+  box-shadow: 0px 0px 1px 1px #2f2f2f;
+}
 
-  .filtroPesquisa {
-    margin: 8px 10px 5px 10px;
-    border-radius: 10px;
-  }
+.navImgDesktop {
+  font-size: 1.5rem;
+  padding: 0px 12px;
+  color: #2f2f2f;
+  text-align: center;
+}
 
-  .corPesquisa {
-    color: #f2f2f2;
-    font-weight: bold;
-  }
+.nomeLinkMobile {
+  color: #2f2f2f;
+  font-size: 0.7rem;
+  margin: 0px 0px 4px 0px;
+  text-align: center;
+  width: 50px;
+}
 
-  .corFiltro {
-    font-size: 1.5rem;
-    color: #f2f2f2;
-  }
+.ativoNavDeskop {
+  background: #7c8c0346;
+  border-radius: 5px 5px 0px 0px;
+}
 
-  .bgFiltro {
-    background: #7C8C03;
-    border: none;
-  }
+/*---------- NAVEGAÇÃO DESKTOP -----------*/
 
-  .bgFiltro:hover {
-    background: rgba(124, 140, 3, 0.5);
-  }
+.efeitoMouseDesktop:hover {
+  background: rgba(124, 140, 3, 0.8);
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.efeitoMouseDesktop:active {
+  background: #7C8C03;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.activeDesktop {
+  background: rgba(124, 140, 3, 1);
+  border-radius: 0px 5px 5px 0px;
+  border-radius: 5px;
+  color: #f2f2f2;
+}
+
+.botaoPadrao {
+  border: none;
+  background: #7C8C03;
+  padding: 2px 5px;
+  border-radius: 5px 0px 5px 0px;
+}
+
+.botaoPadrao:hover {
+  background: rgba(124, 140, 3, 0.5);
+}
+
+.botaoPadrao a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f2f2f2;
+}
+
+/*-------Main--------*/
+
+.marginBanner {
+  margin: 8px 10px 0px 10px;
+  border-radius: 10px;
+}
+
+.marginBannerM {
+  margin-top: 8px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.imagemCarrossel {
+  width: 200px;
+}
+
+.tamanhoCarrocel {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/*-- Filtro pesquisa ---*/
+
+.filtroPesquisa {
+  margin: 8px 10px 5px 10px;
+  border-radius: 10px;
+}
+
+.corPesquisa {
+  color: #f2f2f2;
+  font-weight: bold;
+}
+
+.corFiltro {
+  font-size: 1.5rem;
+  color: #f2f2f2;
+}
+
+.bgFiltro {
+  background: #7C8C03;
+  border: none;
+  padding: 8px 10px;
+}
+
+.bgFiltro:hover {
+  background: rgba(124, 140, 3, 0.5);
+}
+
 /* ----------------------- Personalização cartões de venda ------------------- */
 .geralCard {
   background: #F2F2F2;
@@ -209,11 +213,14 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px;
 }
 
-  /* Estilos para dispositivos móveis */
+.geralCard:hover {
+  box-shadow: 0px 0px 3px 3px #7C8C03;
+}
+
+/* Estilos para dispositivos móveis */
 @media (max-width: 767px) {
   .geralCard {
     width: 100%;
-    box-shadow: 0px 0px 3px 3px #7C8C03;
   }
 
   .imagemVenda {
@@ -222,7 +229,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
   }
 
-  .tamanhoImgVenda{
+  .tamanhoImgVenda {
     width: 40vw;
     border-radius: 10px;
     border: 1px solid #7C8C03;
@@ -237,7 +244,7 @@ h1, h2, h3, h4, h5, h6 {
   .tamanhoFavorito {
     font-size: 1.4rem;
     color: #A83C01;
-   }
+  }
 
 
   .posicaoFavorito button {
@@ -255,7 +262,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 2px 5px;
     border-radius: 5px;
   }
-  
+
 
   .posicaoPreco::before {
     content: "R$ ";
@@ -313,7 +320,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
   }
 
-  .btnComprar, .btnCarrinho {
+  .btnComprar,
+  .btnCarrinho {
     flex-grow: 1;
   }
 
@@ -343,7 +351,6 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 768px) {
   .geralCard {
     width: 18rem;
-    box-shadow: 0px 0px 3px 3px #7C8C03;
   }
 
   .tamanhoImgVenda {
@@ -367,7 +374,7 @@ h1, h2, h3, h4, h5, h6 {
   .tamanhoFavorito {
     font-size: 1.5rem;
     color: #A83C01;
-   }
+  }
 
   .posicaoPreco {
     position: absolute;
@@ -377,7 +384,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 5px 15px;
     border-radius: 10px 0px 10px 0px;
   }
-  
+
 
   .posicaoPreco::before {
     content: "R$ ";
@@ -423,6 +430,7 @@ h1, h2, h3, h4, h5, h6 {
   .btnComprar {
     background: #7C8C03;
     border: 1px solid black;
+    border-right: none;
     border-radius: 0px 0px 0px 5px;
     width: 133.5px;
     color: #f2f2f2;
@@ -468,5 +476,3 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
   }
 }
-
-

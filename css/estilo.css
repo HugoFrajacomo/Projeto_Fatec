@@ -12099,6 +12099,7 @@ body {
 .bgFiltro {
   background: #7C8C03;
   border: none;
+  padding: 8px 10px;
 }
 
 .bgFiltro:hover {
@@ -12112,11 +12113,14 @@ body {
   padding: 10px;
 }
 
+.geralCard:hover {
+  box-shadow: 0px 0px 3px 3px #7C8C03;
+}
+
 /* Estilos para dispositivos móveis */
 @media (max-width: 767px) {
   .geralCard {
     width: 100%;
-    box-shadow: 0px 0px 3px 3px #7C8C03;
   }
   .imagemVenda {
     display: flex;
@@ -12196,7 +12200,8 @@ body {
     display: flex;
     width: 100%;
   }
-  .btnComprar, .btnCarrinho {
+  .btnComprar,
+  .btnCarrinho {
     flex-grow: 1;
   }
   .btnComprar {
@@ -12221,7 +12226,6 @@ body {
 @media (min-width: 768px) {
   .geralCard {
     width: 18rem;
-    box-shadow: 0px 0px 3px 3px #7C8C03;
   }
   .tamanhoImgVenda {
     border-radius: 10px;
@@ -12287,6 +12291,7 @@ body {
   .btnComprar {
     background: #7C8C03;
     border: 1px solid black;
+    border-right: none;
     border-radius: 0px 0px 0px 5px;
     width: 133.5px;
     color: #f2f2f2;
@@ -12345,15 +12350,33 @@ body {
 
 .FormatImgApresentacao {
   border-radius: 10px;
-  margin: 10px;
-  margin: 0px 30px;
-  max-height: 40vh;
+  max-height: 55vh;
+  aspect-ratio: 2.4974/1;
+  object-fit: cover;
 }
 
 .FormatTextoApresentacao p {
   margin: 10px;
   text-align: justify;
   text-indent: 20px;
+}
+
+.colunaTexto h3, .colunaTexto .h3 {
+  margin: 10px 0px;
+  display: block;
+  background: #7C8C03;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.colunaTexto p, .colunaTexto li {
+  text-align: justify;
+  text-indent: 20px;
+}
+
+.imgSobreApp {
+  margin: 10px 0px;
 }
 
 .tituloSobreEmpresa {
@@ -12375,6 +12398,7 @@ body {
 
 #equipePedeRoca {
   padding: 20px 0px;
+  text-align: center;
 }
 
 .imgEquipe {
@@ -12382,6 +12406,7 @@ body {
   border-radius: 10px;
   margin: 0 25px;
   aspect-ratio: 3/4;
+  -o-object-fit: contain;
   object-fit: contain;
   box-shadow: 0px 0px 5px 3px rgba(124, 140, 3, 0.4196078431);
 }
@@ -12436,6 +12461,14 @@ body {
   min-width: 300px;
 }
 
+.tamanhoArcordeon {
+  width: 100%;
+}
+
+.accordionTitulo {
+  background: #7C8C03;
+}
+
 .gradient-custom {
   background: #2F2F2F;
   min-width: 300px;
@@ -12457,7 +12490,9 @@ body {
   border: none;
 }
 
-.seletorQuantidade:hover, .removerCarrinho:hover, .finalizarCompra:hover {
+.seletorQuantidade:hover,
+.removerCarrinho:hover,
+.finalizarCompra:hover {
   background-color: rgba(124, 140, 3, 0.5);
 }
 
@@ -12537,17 +12572,21 @@ body {
   border-radius: 10px;
 }
 
-.tituloLogin h4, .tituloLogin .h4, .tituloLoginCelular h4, .tituloLoginCelular .h4 {
+.tituloLogin h4, .tituloLogin .h4,
+.tituloLoginCelular h4,
+.tituloLoginCelular .h4 {
   color: #f2f2f2;
   margin: 10px;
   text-transform: uppercase;
 }
 
-.tituloLogin a, .tituloLoginCelular a {
+.tituloLogin a,
+.tituloLoginCelular a {
   margin: 10px;
 }
 
-.tituloLogin a button, .tituloLoginCelular a button {
+.tituloLogin a button,
+.tituloLoginCelular a button {
   border: none;
   border-radius: 5px;
   padding: 0px 20px;
@@ -12590,7 +12629,8 @@ body {
   color: #f2f2f2;
 }
 
-.removerCarrinho, .nProdCar {
+.removerCarrinho,
+.nProdCar {
   background-color: #7C8C03;
   color: #f2f2f2;
 }
