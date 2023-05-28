@@ -17,13 +17,12 @@
 
     <body>
        <header>
-        <!--Banner-->
-        <div class="row bgBanner">
-          <div class="d-flex justify-content-center">
-            <a href="index.html"> <img src="../Imagens/Logo - Pede Roça.svg" class="img-fluid rounded-start ajusteLogo" alt="Pede Roça"></a>
+        <!--  HEADER MOBILE-->
+        <nav>
+          <div class="caixaLogoM d-md-none">
+            <img class="ajusteLogoMobile" src="../Imagens/Logo - Pede Roça2.svg" alt="Pede Roça">
           </div>
-          <span class="mobileNavbar ajusteteste"></span>
-        </div>
+        </nav>
         
         <!-- BARRA DE NAVEGAÇÃO MOBILE DO SITE -->
         <nav class="d-flex justify-content-around align-items-center fixed-bottom navMobile d-md-none">
@@ -49,30 +48,39 @@
           </div>
         </nav>
 
-        <!-- BARRA DE NAVEGAÇÃO DESKTOP-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light desktopNavbar bgNav">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item mx-1 efeitoMouseDesktop">
-                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+<!-- BARRA DE NAVEGAÇÃO DESKTOP-->
+        <nav class="navbar navbar-expand-md navbar bg-light desktopNavbar">
+          <div class="container">
+            <div id="navbarNav" class="bgLinksNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link linkPadraoNav" href="index.html">Home</a>
                 </li>
-                <li class="nav-item mx-1 efeitoMouseDesktop">
-                  <a class="nav-link active" aria-current="page" href="CarrinhoCompras.html">Meu Carrinho</a>
+                <li class="nav-item">
+                  <a class="nav-link linkPadraoNav" href="CarrinhoCompras.html"><i class="bi bi-cart tamanhoCarrinhoNav"></i>Carrinho</a>
                 </li>
-                <li class="nav-item mx-1 efeitoMouseDesktop">
-                  <a class="nav-link active activeDesktop" aria-current="page" href="Sobre.html">Sobre a Empresa</a>
-                </li>
-                <li class="nav-item mx-1 efeitoMouseDesktop">
-                  <a class="nav-link" aria-current="page" href="AreaDoUsuario.html">Área do Usuário</a>
+                <li class="nav-item">
+                  <a class="nav-link linkPadraoNav" href="Sobre.html">Sobre</a>
                 </li>
               </ul>
-              <button class="botaoPadrao my-1">
-                <a aria-current="page" href="Login.html"><i class="bi bi-person-circle mx-2 my-1"></i>Login</a>
-              </button>
+            </div>
+            <div id="navbarNav">
+              <a class="nav-item linkPadraoNav" href="index.html">
+                <img class="ajusteLogo" src="../Imagens//Logo - Pede Roça2.svg" alt="Pede Roça">
+              </a>
+            </div>
+            <div id="navbarNav" class="bgLinksNav">
+              <ul class="navbar-nav">
+                <li class="nav-item ">
+                  <a class="nav-link linkPadraoNav" href="AreaDoUsuario.html">Usuário</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link linkPadraoNav" href="Login.html">Login</a>
+                </li>
+                <li class="nav-item botaoPadraoNav-ativo">
+                  <a class="nav-link linkPadraoNav-ativo" href="Cadastro.html">Cadastre-se</a>
+                </li>
+              </ul>
             </div>
           </div>
         </nav>

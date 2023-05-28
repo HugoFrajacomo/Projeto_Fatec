@@ -15,14 +15,14 @@
 
     <body>
        <header>
-        <!--Banner-->
-        <div class="row bgBanner">
-          <div class="d-flex justify-content-center">
-            <a href="index.html"> <img src="../Imagens/Logo - Pede Roça.svg" class="img-fluid rounded-start ajusteLogo" alt="Pede Roça"></a>
+
+        <!--  HEADER MOBILE-->
+        <nav>
+          <div class="caixaLogoM d-md-none">
+            <img class="ajusteLogoMobile" src="../Imagens/Logo - Pede Roça2.svg" alt="Pede Roça">
           </div>
-          <span class="mobileNavbar ajusteteste"></span>
-        </div>
-        
+        </nav>
+
         <!-- BARRA DE NAVEGAÇÃO MOBILE DO SITE -->
         <nav class="d-flex justify-content-around align-items-center fixed-bottom navMobile d-md-none">
           <div>
@@ -48,32 +48,42 @@
         </nav>
         
         <!-- BARRA DE NAVEGAÇÃO DESKTOP-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light desktopNavbar bgNav">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item mx-1 my-1  efeitoMouseDesktop">
-                  <a class="nav-link activeDesktop" aria-current="page" href="index.html">Home</a>
+        <nav class="navbar navbar-expand-md navbar bg-light desktopNavbar">
+          <div class="container">
+            <div id="navbarNav" class="bgLinksNav">
+              <ul class="navbar-nav">
+                <li class="nav-item botaoPadraoNav-ativo">
+                  <a class="nav-link linkPadraoNav-ativo" href="index.html">Home</a>
                 </li>
-                <li class="nav-item mx-1 my-1  efeitoMouseDesktop">
-                  <a class="nav-link" aria-current="page" href="CarrinhoCompras.html">Meu Carrinho</a>
+                <li class="nav-item">
+                  <a class="nav-link linkPadraoNav" href="CarrinhoCompras.html"><i class="bi bi-cart tamanhoCarrinhoNav"></i>Carrinho</a>
                 </li>
-                <li class="nav-item mx-1 my-1  efeitoMouseDesktop">
-                  <a class="nav-link" aria-current="page" href="Sobre.html">Sobre a Empresa</a>
-                </li>
-                <li class="nav-item mx-1 my-1 efeitoMouseDesktop">
-                  <a class="nav-link" aria-current="page" href="AreaDoUsuario.html">Área do Usuário</a>
+                <li class="nav-item">
+                  <a class="nav-link linkPadraoNav" href="Sobre.html">Sobre</a>
                 </li>
               </ul>
-              <button class="botaoPadrao my-1">
-                <a aria-current="page" href="Login.html"><i class="bi bi-person-circle mx-2 my-1"></i>Login</a>
-              </button>
+            </div>
+            <div id="navbarNav">
+              <a class="nav-item linkPadraoNav" href="index.html">
+                <img class="ajusteLogo" src="../Imagens//Logo - Pede Roça2.svg" alt="Pede Roça">
+              </a>
+            </div>
+            <div id="navbarNav" class="bgLinksNav">
+              <ul class="navbar-nav">
+                <li class="nav-item ">
+                  <a class="nav-link linkPadraoNav" href="AreaDoUsuario.html">Usuário</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link linkPadraoNav" href="Login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link linkPadraoNav" href="Cadastro.html">Cadastre-se</a>
+                </li>
+              </ul>
             </div>
           </div>
         </nav>
+
        </header>
 
        <main>
@@ -143,7 +153,7 @@
                 <div class="form-check colunaItem">
                   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                   <label class="form-check-label" for="flexCheckDefault">
-                    açougue
+                    Favoritos
                   </label>
                 </div>
               </div>
@@ -157,7 +167,7 @@
               <span id="precoProduto1" class="tagMoeda">2,75</span>
             </div>
             <div class="posicaoFavorito">
-              <button><i class="bi bi-heart tamanhoFavorito"></i></button>
+              <button id="boxFavoritoF1" onclick="trocarIcone('F1')"><i class="bi bi-heart tamanhoFavorito" id="favoritoF1"></i></button>
             </div>
             <div class="imagemVenda">
               <img class="card-img-top tamanhoImgVenda" src="../Imagens/Verdura - Alface.jpg" alt="alface">
@@ -184,7 +194,7 @@
               <span id="precoProduto2" class="tagMoeda">1,49</span>
             </div>
             <div class="posicaoFavorito">
-              <button><i class="bi bi-heart tamanhoFavorito"></i></button>
+              <button id="boxFavoritoF2" onclick="trocarIcone('F2')"><i class="bi bi-heart tamanhoFavorito" id="favoritoF2"></i></button>
             </div>
             <div class="imagemVenda">
               <img class="card-img-top tamanhoImgVenda" src="../Imagens/Verdura - Cebolinha.jpg" alt="alface">
@@ -211,7 +221,7 @@
               <span id="precoProduto3" class="tagMoeda">2,48</span>
             </div>
             <div class="posicaoFavorito">
-              <button><i class="bi bi-heart tamanhoFavorito"></i></button>
+              <button id="boxFavoritoF3" onclick="trocarIcone('F3')"><i class="bi bi-heart tamanhoFavorito" id="favoritoF3"></i></button>
             </div>
             <div class="imagemVenda">
               <img class="card-img-top tamanhoImgVenda" src="../Imagens/Verdura - Repolho Roxo.jpg" alt="alface">
@@ -238,7 +248,7 @@
               <span id="precoProduto4" class="tagMoeda">2,20</span>
             </div>
             <div class="posicaoFavorito">
-              <button><i class="bi bi-heart tamanhoFavorito"></i></button>
+              <button id="boxFavoritoF4" onclick="trocarIcone('F4')"><i class="bi bi-heart tamanhoFavorito" id="favoritoF4"></i></button>
             </div>
             <div class="imagemVenda">
               <img class="card-img-top tamanhoImgVenda" src="../Imagens/Verdura - Repolho.jpg" alt="alface">
@@ -265,7 +275,7 @@
               <span id="precoProduto5" class="tagMoeda">2,60</span>
             </div>
             <div class="posicaoFavorito">
-              <button><i class="bi bi-heart tamanhoFavorito"></i></button>
+              <button id="boxFavoritoF5" onclick="trocarIcone('F5')"><i class="bi bi-heart tamanhoFavorito" id="favoritoF5"></i></button>
             </div>
             <div class="imagemVenda">
               <img class="card-img-top tamanhoImgVenda" src="../Imagens/Verdura - Rucula.jpg" alt="alface">
@@ -292,7 +302,7 @@
               <span id="precoProduto6" class="tagMoeda">1,25</span>
             </div>
             <div class="posicaoFavorito">
-              <button><i class="bi bi-heart tamanhoFavorito"></i></button>
+              <button id="boxFavoritoF6" onclick="trocarIcone('F6')"><i class="bi bi-heart tamanhoFavorito" id="favoritoF6"></i></button>
             </div>
             <div class="imagemVenda">
               <img class="card-img-top tamanhoImgVenda" src="../Imagens/Verdura - Salsinha.jpg" alt="alface">
@@ -319,7 +329,7 @@
               <span id="precoProduto7" class="tagMoeda">4,10</span>
             </div>
             <div class="posicaoFavorito">
-              <button><i class="bi bi-heart tamanhoFavorito"></i></button>
+              <button id="boxFavoritoF7" onclick="trocarIcone('F7')"><i class="bi bi-heart tamanhoFavorito" id="favoritoF7"></i></button>
             </div>
             <div class="imagemVenda">
               <img class="card-img-top tamanhoImgVenda" src="../Imagens/Fruta-Banana.jpg" alt="Banana">
@@ -346,7 +356,7 @@
               <span id="precoProduto8" class="tagMoeda">0,50</span>
             </div>
             <div class="posicaoFavorito">
-              <button><i class="bi bi-heart tamanhoFavorito"></i></button>
+              <button id="boxFavoritoF8" onclick="trocarIcone('F8')"><i class="bi bi-heart tamanhoFavorito" id="favoritoF8"></i></button>
             </div>
             <div class="imagemVenda">
               <img class="card-img-top tamanhoImgVenda" src="../Imagens/Fruta-Maca.jpg" alt="Maça">
@@ -373,7 +383,7 @@
               <span id="precoProduto9" class="tagMoeda">0,75</span>
             </div>
             <div class="posicaoFavorito">
-              <button><i class="bi bi-heart tamanhoFavorito"></i></button>
+              <button id="boxFavoritoF9" onclick="trocarIcone('F9')"><i class="bi bi-heart tamanhoFavorito" id="favoritoF9"></i></button>
             </div>
             <div class="imagemVenda">
               <img class="card-img-top tamanhoImgVenda" src="../Imagens/Fruta-Limao.jpg" alt="Limão">
@@ -400,7 +410,7 @@
               <span id="precoProduto10" class="tagMoeda">8,90</span>
             </div>
             <div class="posicaoFavorito">
-              <button><i class="bi bi-heart tamanhoFavorito"></i></button>
+              <button id="boxFavoritoF10" onclick="trocarIcone('F10')"><i class="bi bi-heart tamanhoFavorito" id="favoritoF10"></i></button>
             </div>
             <div class="imagemVenda">
               <img class="card-img-top tamanhoImgVenda" src="../Imagens/Fruta-Melancia.jpg" alt="Melancia">
@@ -428,7 +438,7 @@
               <span id="precoProduto11" class="tagMoeda">2,47</span>
             </div>
             <div class="posicaoFavorito">
-              <button><i class="bi bi-heart tamanhoFavorito"></i></button>
+              <button id="boxFavoritoF11" onclick="trocarIcone('F11')"><i class="bi bi-heart tamanhoFavorito" id="favoritoF11"></i></button>
             </div>
             <div class="imagemVenda">
               <img class="card-img-top tamanhoImgVenda" src="../Imagens/Fruta-Pera.jpg" alt="Melancia">
@@ -456,7 +466,7 @@
               <span id="precoProduto12" class="tagMoeda">5,32</span>
             </div>
             <div class="posicaoFavorito">
-              <button><i class="bi bi-heart tamanhoFavorito"></i></button>
+              <button id="boxFavoritoF12" onclick="trocarIcone('F12')"><i class="bi bi-heart tamanhoFavorito" id="favoritoF12"></i></button>
             </div>
             <div class="imagemVenda">
               <img class="card-img-top tamanhoImgVenda" src="../Imagens/Fruta-Uva.jpg" alt="Uva">
@@ -484,7 +494,7 @@
               <span id="precoProduto13" class="tagMoeda">2,28</span>
             </div>
             <div class="posicaoFavorito">
-              <button><i class="bi bi-heart tamanhoFavorito"></i></button>
+              <button id="boxFavoritoF13" onclick="trocarIcone('F13')"><i class="bi bi-heart tamanhoFavorito" id="favoritoF13"></i></button>
             </div>
             <div class="imagemVenda">
               <img class="card-img-top tamanhoImgVenda" src="../Imagens/Legume-Abobrinha.jpg" alt="Uva">
@@ -512,7 +522,7 @@
               <span id="precoProduto15" class="tagMoeda">2,15</span>
             </div>
             <div class="posicaoFavorito">
-              <button><i class="bi bi-heart tamanhoFavorito"></i></button>
+              <button id="boxFavoritoF15" onclick="trocarIcone('F15')"><i class="bi bi-heart tamanhoFavorito" id="favoritoF15"></i></button>
             </div>
             <div class="imagemVenda">
               <img class="card-img-top tamanhoImgVenda" src="../Imagens/Legume-Beringela.jpg" alt="Berinjela">
@@ -540,7 +550,7 @@
               <span id="precoProduto16" class="tagMoeda">1,42</span>
             </div>
             <div class="posicaoFavorito">
-              <button><i class="bi bi-heart tamanhoFavorito"></i></button>
+              <button id="boxFavoritoF16" onclick="trocarIcone('F16')"><i class="bi bi-heart tamanhoFavorito" id="favoritoF16"></i></button>
             </div>
             <div class="imagemVenda">
               <img class="card-img-top tamanhoImgVenda" src="../Imagens/Legume-Cenoura.jpg" alt="Cenoura">
@@ -568,7 +578,7 @@
               <span id="precoProduto17" class="tagMoeda">6,14</span>
             </div>
             <div class="posicaoFavorito">
-              <button><i class="bi bi-heart tamanhoFavorito"></i></button>
+              <button id="boxFavoritoF17" onclick="trocarIcone('F17')"><i class="bi bi-heart tamanhoFavorito" id="favoritoF17"></i></button>
             </div>
             <div class="imagemVenda">
               <img class="card-img-top tamanhoImgVenda" src="../Imagens/Legume-Pimentao.jpg" alt="Pimentão">
@@ -596,7 +606,7 @@
               <span id="precoProduto18" class="tagMoeda">1,49</span>
             </div>
             <div class="posicaoFavorito">
-              <button><i class="bi bi-heart tamanhoFavorito"></i></button>
+              <button id="boxFavoritoF18" onclick="trocarIcone('F18')"><i class="bi bi-heart tamanhoFavorito" id="favoritoF18"></i></button>
             </div>
             <div class="imagemVenda">
               <img class="card-img-top tamanhoImgVenda" src="../Imagens/Legume-Rabanete.jpg" alt="Rabanete">
@@ -627,6 +637,7 @@
         <p class="footerText"><i class="bi bi-c-circle"></i> Todos os direitos reservados aos alunos Hugo, Gabriel e Daniel - Fatec Matão</p>
        </footer>
 
+       <script src="../javascript/_favoritar.js"></script>
        <script src="../javascript/_cardPrecoTotal.js"></script>
     </body>
 </html>

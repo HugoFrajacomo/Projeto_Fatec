@@ -10,12 +10,60 @@ h1, h2, h3, h4, h5, h6 {
   
   .ajusteLogo {
     width: 150px;
-    margin: 10px 20px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  .bgLinksNav {
+    border: 2px solid #7C8C03;
+    border-radius: 30px;
+  }
+
+  .bgLinksNav:hover {
+    background: rgba(124, 140, 3, 0.5);
+  }
+
+  .botaoPadraoNav {
+    border-radius: 30px;
+  }
+
+  
+  .botaoPadraoNav-ativo {
+    border-radius: 30px;
+    background: #7C8C03;
+  }
+
+  .linkPadraoNav:hover {
+    color: #f2f2f2;
+  }
+  
+  .linkPadraoNav-ativo {
+    color: #f2f2f2;
+  }
+
+  .linkPadraoNav-ativo:hover {
+    color: #f2f2f2;
+  }
+
+  .tamanhoCarrinhoNav {
+    margin-right: 3px;
+  }
+
+  .caixaLogoM {
+    background: #f2f2f2;
+    width: 100%;
+    text-align: center;
+  }
+
+  .ajusteLogoMobile {
+    width: 105px;
+    margin: 5px;
   }
   
   .bgBanner {
     background: linear-gradient(to left, #7C8C03, #f2f2f2, #7C8C03);
   }
+
   
   
   /*! ------------- header - Barra de navegação  --------------- !*/
@@ -46,7 +94,6 @@ h1, h2, h3, h4, h5, h6 {
   .navMobile{
     background: #F2F2F2;
     height: 8vh;
-    border-radius: 10px 10px 0px 0px;
     box-shadow: 0px 0px 1px 1px #2f2f2f;
   }
 
@@ -93,8 +140,12 @@ h1, h2, h3, h4, h5, h6 {
   .botaoPadrao {
     border: none;
     background: #7C8C03;
-    padding: 8px 10px;
-    border-radius: 5px;
+    padding: 2px 5px;
+    border-radius: 5px 0px 5px 0px;
+  }
+
+  .botaoPadrao:hover {
+    background: rgba(124, 140, 3, 0.5);
   }
 
   .botaoPadrao a {
@@ -181,21 +232,17 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     right: 0;
     margin-right: 20px;
-    color: red;
   }
 
   .tamanhoFavorito {
     font-size: 1.4rem;
+    color: #A83C01;
    }
+
 
   .posicaoFavorito button {
     border: none;
     border-radius: 50%;
-    background: white;
-  }
-
-  .posicaoFavorito button:hover {
-    background: rgba(255, 0, 0, 0.322)
   }
 
   .posicaoPreco {
@@ -237,7 +284,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
   }
 
-  .quantidadeProduto, {
+  .quantidadeProduto {
     flex-grow: 1;
   }
 
@@ -308,7 +355,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     margin-left: 230px;
     margin-top: 2px;
-    color: red;
+    color: #A83C01;
   }
 
   .posicaoFavorito button {
@@ -317,12 +364,9 @@ h1, h2, h3, h4, h5, h6 {
     background: white;
   }
 
-  .posicaoFavorito button:hover {
-    background: rgba(255, 0, 0, 0.322)
-  }
-
   .tamanhoFavorito {
     font-size: 1.5rem;
+    color: #A83C01;
    }
 
   .posicaoPreco {
