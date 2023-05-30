@@ -11906,6 +11906,96 @@ textarea.form-control-lg {
 /*----Fontes-------*/
 /*---- Icones bootstrap ----- */
 /*----Estilos das páginas----*/
+/*! ---------------------MAIN-MOBILE-AREA-DE-USUARIO---------------------- !*/
+@media only screen and (max-width: 767px) {
+  .desktopNavbar {
+    display: none;
+  }
+  .main-desktop {
+    display: none;
+    visibility: hidden;
+  }
+  #formulario-mobile {
+    background-color: #f2f2f2;
+    margin: 10px 0px;
+    padding: 10px;
+  }
+  .input-perguntas-1 {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: solid 0.5px #a7acb1;
+  }
+  #form-label-titulo {
+    background-color: #7C8C03;
+    border-radius: 5px;
+    color: #f2f2f2;
+    text-align: center;
+    min-width: 100px;
+  }
+  .input-label-uf {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    height: 60%;
+    border: solid 0.5px #a7acb1;
+  }
+  #ajustar-form {
+    height: 100%;
+    width: 100%;
+  }
+  #mensagem1 {
+    text-align: center;
+  }
+  .col {
+    flex-wrap: wrap;
+  }
+}
+/*! ---------------------MAIN-DESKTOP-AREA-DE-USUARIO---------------------- !*/
+@media only screen and (min-width: 768px) {
+  .mobileNavbar {
+    display: none;
+  }
+  .main-mobile {
+    display: none;
+    visibility: hidden;
+  }
+  #formulario-desktop {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin: 10px auto;
+    width: 95%;
+    border-radius: 10px;
+  }
+  .input-perguntas-2 {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: solid 0.5px #a7acb1;
+    min-width: 10vw;
+    max-width: 60vw;
+  }
+  #form-label-titulo {
+    background-color: #7C8C03;
+    border-radius: 5px;
+    color: #f2f2f2;
+    text-align: center;
+    width: 100%;
+  }
+  .input-label-uf {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    height: 60%;
+    border: solid 0.5px #a7acb1;
+  }
+  #ajustar-form {
+    height: 100%;
+    width: 100%;
+  }
+  .menu-drop {
+    display: inline-flex;
+  }
+}
 /*! ------------- header - Cabeçalho --------------- !*/
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: "Merienda", Times, serif;
@@ -11998,6 +12088,7 @@ body {
 .navMobile {
   background: #F2F2F2;
   height: 8vh;
+  min-height: 65px;
   box-shadow: 0px 0px 1px 1px #2f2f2f;
 }
 
@@ -12011,14 +12102,22 @@ body {
 .nomeLinkMobile {
   color: #2f2f2f;
   font-size: 0.7rem;
-  margin: 0px 0px 4px 0px;
+  margin: 0px;
   text-align: center;
   width: 50px;
+  background: #7C8C03;
+  color: rgba(242, 242, 242, 0.9490196078);
+  border-radius: 3px;
 }
 
 .ativoNavDeskop {
-  background: rgba(124, 140, 3, 0.2745098039);
-  border-radius: 5px 5px 0px 0px;
+  border: 1px solid #7C8C03;
+  border-radius: 5px;
+  box-shadow: 0px 0px 1px 1px #7C8C03;
+}
+
+.ativoNavDeskop a i {
+  color: #7C8C03;
 }
 
 /*---------- NAVEGAÇÃO DESKTOP -----------*/
@@ -12043,9 +12142,11 @@ body {
 
 .botaoPadrao {
   border: none;
+  border-radius: 10px;
   background: #7C8C03;
-  padding: 2px 5px;
-  border-radius: 5px 0px 5px 0px;
+  color: #f2f2f2;
+  padding: 5px 10px;
+  text-decoration: none;
 }
 
 .botaoPadrao:hover {
@@ -12310,6 +12411,13 @@ body {
   }
 }
 /*--------Footer------*/
+.fimPaginaMobile {
+  display: block;
+  width: 100%;
+  height: 65px;
+  margin-top: 10px;
+}
+
 #footer {
   background: #7C8C03;
   color: #f2f2f2;
@@ -12700,95 +12808,4 @@ body {
 .ajusteGmail {
   padding-right: 5px;
   width: 2.25rem;
-}
-
-/*! ---------------------MAIN-MOBILE-AREA-DE-USUARIO---------------------- !*/
-@media only screen and (max-width: 767px) {
-  .desktopNavbar {
-    display: none;
-  }
-  .main-desktop {
-    display: none;
-    visibility: hidden;
-  }
-  #formulario-mobile {
-    background-color: #f2f2f2;
-    margin: 10px 0px;
-    padding: 10px;
-  }
-  .input-perguntas-1 {
-    margin-bottom: 10px;
-    border-radius: 5px;
-    font-size: 14px;
-    border: solid 0.5px #a7acb1;
-  }
-  #form-label-titulo {
-    background-color: #7C8C03;
-    border-radius: 5px;
-    color: #f2f2f2;
-    text-align: center;
-    min-width: 100px;
-  }
-  .input-label-uf {
-    margin-bottom: 20px;
-    border-radius: 5px;
-    font-size: 14px;
-    height: 60%;
-    border: solid 0.5px #a7acb1;
-  }
-  #ajustar-form {
-    height: 100%;
-    width: 100%;
-  }
-  #mensagem1 {
-    text-align: center;
-  }
-  .col {
-    flex-wrap: wrap;
-  }
-}
-/*! ---------------------MAIN-DESKTOP-AREA-DE-USUARIO---------------------- !*/
-@media only screen and (min-width: 768px) {
-  .mobileNavbar {
-    display: none;
-  }
-  .main-mobile {
-    display: none;
-    visibility: hidden;
-  }
-  #formulario-desktop {
-    background-color: #f2f2f2;
-    padding: 10px;
-    margin: 10px auto;
-    width: 95%;
-    border-radius: 10px;
-  }
-  .input-perguntas-2 {
-    margin-bottom: 10px;
-    border-radius: 5px;
-    font-size: 14px;
-    border: solid 0.5px #a7acb1;
-    min-width: 10vw;
-    max-width: 60vw;
-  }
-  #form-label-titulo {
-    background-color: #7C8C03;
-    border-radius: 5px;
-    color: #f2f2f2;
-    text-align: center;
-    width: 100%;
-  }
-  .input-label-uf {
-    margin-bottom: 20px;
-    border-radius: 5px;
-    height: 60%;
-    border: solid 0.5px #a7acb1;
-  }
-  #ajustar-form {
-    height: 100%;
-    width: 100%;
-  }
-  .menu-drop {
-    display: inline-flex;
-  }
 }

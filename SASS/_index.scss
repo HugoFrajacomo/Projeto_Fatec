@@ -95,6 +95,7 @@ body {
 .navMobile {
   background: #F2F2F2;
   height: 8vh;
+  min-height: 65px;
   box-shadow: 0px 0px 1px 1px #2f2f2f;
 }
 
@@ -108,14 +109,22 @@ body {
 .nomeLinkMobile {
   color: #2f2f2f;
   font-size: 0.7rem;
-  margin: 0px 0px 4px 0px;
+  margin: 0px;
   text-align: center;
   width: 50px;
+  background: #7C8C03;
+  color: #f2f2f2f2;
+  border-radius: 3px;
 }
 
 .ativoNavDeskop {
-  background: #7c8c0346;
-  border-radius: 5px 5px 0px 0px;
+  border: 1px solid #7C8C03;
+  border-radius: 5px;
+  box-shadow: 0px 0px 1px 1px #7C8C03;
+}
+
+.ativoNavDeskop a i {
+  color: #7C8C03
 }
 
 /*---------- NAVEGAÇÃO DESKTOP -----------*/
@@ -141,9 +150,11 @@ body {
 
 .botaoPadrao {
   border: none;
+  border-radius: 10px;
   background: #7C8C03;
-  padding: 2px 5px;
-  border-radius: 5px 0px 5px 0px;
+  color: #f2f2f2;
+  padding: 5px 10px;
+  text-decoration: none;
 }
 
 .botaoPadrao:hover {
@@ -453,6 +464,13 @@ body {
 }
 
 /*--------Footer------*/
+.fimPaginaMobile {
+  display: block;
+  width: 100%;
+  height: 65px;
+  margin-top: 10px;
+}
+
 #footer {
   background: #7C8C03;
   color: #f2f2f2;
