@@ -17,8 +17,9 @@
 .seletorQuantidade {
   background-color: #7C8C03;
   border: none;
+ 
 }
-
+.continuarCompra:hover,
 .seletorQuantidade:hover,
 .removerCarrinho:hover,
 .finalizarCompra:hover {
@@ -36,7 +37,6 @@
 
 .finalizarCompra {
   background-color: #7C8C03;
-  text-transform: uppercase;
   border: none;
 }
 
@@ -58,3 +58,13 @@
 .textoJustificado {
   text-align: justify;
 }
+
+.favoritosCarrinho {
+  background-color: #A83C01;
+}
+.continuarCompra {
+  margin-top: 10px;
+  background-color: #7C8C03;
+  border: none;
+}
+
